@@ -37,24 +37,22 @@ qItems = queryExecute(
 );
 ```
 
-# Defining Datasources
+## Defining Datasources
 
 The datasource configuration struct should be defined exactly the same whether you are using an inline, ad-hoc datasource or configuring a datasource in your `boxlang.json` or `Application.bx`. Make sure you have a "driver" key defined OR the driver clearly denoted in the JDBC url:
 
 ```js
 this.datasources[ "testDB" ] = {
-	"driver"    : "mysql",
+    "driver"    : "mysql",
     "host"      : "localhost",
     "port"      : "3306",
     "database"  : "test"
-	// OR:
-	"url"       : "jdbc:mysql://localhost:3306/test"
+    // OR:
+    "url"       : "jdbc:mysql://localhost:3306/test"
 };
 ```
 
-For more information on datasource configuration, see our main Datasources documentation page:
-
-{% embed url="https://boxlang.ortusbooks.com/boxlang-language/datasources" %}
+For more information on datasource configuration, see our [main Datasources documentation page](https://boxlang.ortusbooks.com/boxlang-language/datasources)
 
 ## Displaying Results
 
@@ -64,7 +62,7 @@ The query object can be iterated on like a normal collection through a `for, bx:
 
 {% embed url="https://boxlang.ortusbooks.com/boxlang-language/reference/components/system/loop" %}
 
-**In a BXM Template**
+### In a BXM Template
 
 ```xml
 <bx:output query = "qItems">

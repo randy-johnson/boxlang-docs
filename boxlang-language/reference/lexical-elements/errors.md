@@ -26,12 +26,16 @@ Here's an example of catching a custom error with the `bx:catch` component:
 <bx:try>
     <!--- Some code that might throw an error --->
     <bx:throw type="MyCustomError" message="Something went wrong" detail="More details about the error">
-    <bx:catch type="MyCustomError" variable="e">
-        <!--- Handle the error --->
-        <bx:output>Error: #e.message# (#bx:e.detail#)</bx:output>
-    </bx:catch>
+    <bx:output>
+        <bx:catch type="MyCustomError">
+            <!--- Handle the error --->
+            Error: #bxCatch.message# (#bxCatch.detail#)</bx:output>
+        </bx:catch>
+    </bx:output>
 </bx:try>
 ```
+
+Note: Notice that the component ```<bx:try>``` uses the built in scope ```bxCatch``` whereas the script syntax below uses an argument name like other functions.
 
 And here's how you can use this in script/classes with a `try/catch` statement:
 
