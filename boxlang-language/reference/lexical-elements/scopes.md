@@ -26,8 +26,6 @@ BoxLang has a number of implicit scopes, some which are available only in certai
 
 12. `CGI` (Web runtime only): This scope contains information about the request, such as the IP address of the client, the user agent string, and so on.
 
-13. `bxCatch` : This scope contains information about an error caught by a try/catch. Typically it is used only in the component syntax since the script syntax treats the error as an argument and can therefore be named as desired.
-
-14. `bxThread` : This scope contains errors which are generated within a thread.
+13. `bxThread` : This scope is available anywhere in a request and contains a key for every thread which has been run in that request. The value for the key contains the metadata for that thread as well as any variables set from inside that thread into the thread's thread "scope"
 
 Remember that scoping your variables explicitly is a good practice as it makes your code easier to read and understand, as well as preventing the need for "scope walking" ( attempting to find a variable reference in nearby scopes ). Explicit scoping of your variables provides significant increases in performance.
