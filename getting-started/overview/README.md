@@ -32,7 +32,7 @@ BoxLang combines many features from different programming languages, including J
 3. **Scripting**: BoxLang can be used for enterprise modular applications and highly reusable and quick scripting on the JVM or Cloud Lambda architectures.
 4. **InvokeDynamic:** BoxLang has a solid core foundation based on the JVM’s `InvokeDynamic` features. This makes the dynamic language extremely fast, predictable, and adaptable.
 5. **Java Interoperability:** BoxLang is 100% interoperable with Java. You can extend and implement Java objects, use Java annotations, declare classes, import classes, and even write in Java seamlessly. Thanks to `InvokeDynamic` and our BoxLang `DynamicObject` core, everything in BoxLang is interoperable with Java.
-6. **Pure Functions and Closures:** BoxLang supports creating and using closures as a functional programming aspect. However, it also supports [lambda pure functions 2](https://en.wikipedia.org/wiki/Pure\_function) without access to the surrounding context, which makes them extremely fast and portable. Functions are first-class citizens in BoxLang. You can define them dynamically, pass them around, and execute them whenever possible, making BoxLang a highly functional language.
+6. **Pure Functions and Closures:** BoxLang supports creating and using closures as a functional programming aspect. However, it also supports [lambda pure functions 2](https://en.wikipedia.org/wiki/Pure_function) without access to the surrounding context, which makes them extremely fast and portable. Functions are first-class citizens in BoxLang. You can define them dynamically, pass them around, and execute them whenever possible, making BoxLang a highly functional language.
 7. **Event-Driven Language: BoxLang has an** internal interception event bus that can extend the language's capabilities or even your applications. You can listen to almost every part of the language, parser, and runtime or collaborate with your custom events.
 8. **Modular**: BoxLang has been designed internally to support the concept of BoxLang modules that can enhance every aspect of the language or your applications built with BoxLang. BoxLang is one of the first languages you can build upon using modules. You can add new built-in functions, templating components, and new/modified functions on existing classes, functionality, Runtime Debugger, and AOP aspects, or you can listen to events within the language.
 9. **Professional Open-Source:** BoxLang is a professional open-source project based on the Apache 2 license. Ortus Solutions supports every aspect of the language, and you can get a BoxLang+ subscription for professional support, extended features, and modular capabilities.
@@ -44,16 +44,16 @@ BoxLang combines many features from different programming languages, including J
 
 ### Is it CFML compatible?
 
-{% hint style="danger" %}
-This is still a work in progress until we go stable in Fall 2024
-{% endhint %}
-
-BoxLang had been designed with multiple parsers—one for BoxLang and one for CFML. The CFML parser transpiles to BoxLang at runtime or can be translated to BoxLang via our CLI tools. We try and support as much as we can from CFML. However, we have made very different decisions, and BoxLang is a fresh start for the JVM in a new language. We have introduced a compatibility module to keep old-school CFML working as it is under the BoxLang runtime.
+BoxLang had been designed with multiple parsers—one for BoxLang and one for CFML. The CFML parser transpiles to BoxLang at runtime or can be translated to BoxLang via our [CLI tools](../ide-tooling/). We try and support as much as we can from CFML. However, we have made very different decisions, and BoxLang is a fresh start for the JVM in a new language. We have introduced a [compatibility module](https://forgebox.io/view/bx-compat-cfml) to keep old-school CFML working as it is under the BoxLang runtime.
 
 You will have the choice to continue with CFML-compatible code or come to our new vision with BoxLang. We will support both indefinitely.
 
 {% hint style="success" %}
-We are also in the planning phases for building a [Groovy](https://www.groovy-lang.org/) parser as well.
+Thanks to our multi-parser architecture, the following parsers are currently being developed and will be supported as modules in the BoxLang ecosystem:
+
+* Apache Groovy Programming Language
+* COBOL (yes, finally migrate to a modern language easily!)
+* ...
 {% endhint %}
 
 ### Release Video

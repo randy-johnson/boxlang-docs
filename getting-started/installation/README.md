@@ -11,12 +11,12 @@ PLEASE NOTE THAT WE ARE STILL IN OPEN BETA. ANYTHING CAN CHANGE
 
 ## Requirements <a href="#requirements-7" id="requirements-7"></a>
 
-You should be able to grab the Java 21 JDK for your OS and CPU arch here: [Download Java 21 JDK 4](https://adoptium.net/temurin/releases/?package=jdk\&version=21)
+You should be able to grab the Java 21 JRE for your OS and CPU arch here: [Download Java 21 JRE](https://adoptium.net/temurin/releases/?package=jre\&version=21)
 
-* JDK 21+
+* JRE 21+
 
 {% hint style="warning" %}
-BoxLang is currently compiling Java source on the fly for debugging purposes, so it requires a JDK, not a JRE, to run! Once we go stable, JRE will be the requirement.
+If you want to use our BoxLang/CFML to Java transpiler, you must have the JDK installed, not the JRE.
 {% endhint %}
 
 {% tabs %}
@@ -24,7 +24,7 @@ BoxLang is currently compiling Java source on the fly for debugging purposes, so
 We recommend using [homebrew](https://brew.sh/) to get started on a Mac with the **BoxLang** requirements. If not, you must download the requirements separately from the link above.
 
 ```bash
-brew install curl zip unzip openjdk@21
+brew install curl zip unzip jq openjdk@21
 ```
 {% endtab %}
 
@@ -39,7 +39,7 @@ sudo apt-get update
 sudo apt-get full-upgrade
 
 # Install requirements
-sudo apt-get install curl zip unzip openjdk-21
+sudo apt-get install curl zip unzip jq openjdk-21-jre
 ```
 
 **Yum**
@@ -56,7 +56,7 @@ sudo yum install curl zip unzip java-21-openjdk
 {% endtab %}
 
 {% tab title="Windows" %}
-### Powershell Script
+#### Powershell Script
 
 ```powershell
 # Set the JDK version and download URL
@@ -97,7 +97,7 @@ Write-Host "OpenJDK $jdkVersion installation completed."
 
 ## Quick Installer
 
-To get started quickly with BoxLang, use our BoxLang Quick Installer for Mac/Linux/\*Nix/Windows
+To get started quickly with BoxLang, use our **BoxLang Quick Installer** for Mac/Linux/\*Nix/Windows
 
 {% tabs %}
 {% tab title="Bash / ZSH" %}
@@ -126,17 +126,17 @@ If your system requires admin privileges (Like Chromebooks), make sure you use `
 {% hint style="info" %}
 The quick installer requires the following:
 
-* JDK21+
+* JRE21+
 * Permission to copy files to `/usr/local/bin and /usr/local/lib`
 {% endhint %}
 
-The quick installer will install the **OS** binary and the **MiniServer** in the above directories. It will also install the following scripts for you.
+The quick installer will install the latest stable **OS** binary and the **MiniServer** in the above directories. It will also install the following scripts for you.
 
 * `boxlang` - Our BoxLang binary runner, [learn more](../running-boxlang/)
 * `boxlang-miniserver` - Our BoxLang MiniServer binary runner, [learn more](../running-boxlang/miniserver.md)
 * `install-boxlang` - The quick installer so you can reuse it to upgrade your installations
 * `install-bx-module` - A module installer. Just pass in the slug of the module and watch it install
-* `install-bx-modules` - A way to install multiple modules asynchronously. Just pass a space delimited list
+* `install-bx-modules` - A way to install multiple modules asynchronously. Just pass a space-delimited list
 
 ```bash
 # Install a single module
@@ -148,10 +148,10 @@ install-bx-modules bx-compat-cfml bx-esapi bx-pdf
 
 ### Upgrading Your Install
 
-The `install-boxlang` script will allow you to easily upgrade your OS install as well. If you call it with no arguments, then it will install the latest release and override the local install. You can also pass a specific version to install as the second argument.
+The `install-boxlang` script will allow you to upgrade your OS installation easily. If you call it without arguments, it will install the **latest stable** release and override the local install. You can also pass a specific version to install as the second argument or the word `snapshot`to install the bleeding edge release.
 
 ```bash
-# Install / Upgrade to the latest version
+# Upgrade to the latest stable version
 install-boxlang
 
 # Upgrade or Downgrade to a specific version
@@ -165,28 +165,38 @@ install-boxlang snapshot
 You can get the version of the current BoxLang Runtime by running `boxlang --version`
 {% endhint %}
 
-### REPL
+### Installing Core OS Modules
 
-Just run `boxlang` and you are ready to rock in our REPL:
+You can use the `install-bx-module` binary to install modules into your boxlang home. Just pass in the name of the slug you want.  You can use the `install bx-modules`to install multiple modules at once as well.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+All our modules are available in the cloud software directory [FORGEBOX](https://forgebox.io/type/boxlang-modules).  You can also register and collaborate with modules of your own :person\_raising\_hand:.
+{% endhint %}
 
-### Installing Modules
 
-You can use the `install-bx-module` binary to install modules into your boxlang home. Just pass in the name of the slug you want. All of our core modules are available here and in [FORGEBOX](https://forgebox.io/type/boxlang-modules). Please note that you can only install our core modules from this binary, not any module from FORGEBOX, for that, use CommandBox.
 
 ```bash
+# install individual modules
 install-bx-module bx-compat-cfml
 install-bx-module bx-esapi
+
+# install multiple modules
+install-bx-modules bx-compat-cfml bx-esapi
 ```
+
+## R.E.P.L.
+
+**Read Evaluate Print Loop**
+
+A REPL, or Read-Evaluate-Print Loop, is an interactive programming environment that takes single user inputs, executes them, and returns the result to the user. This is particularly useful for testing code snippets and debugging in real time. In the context of BoxLang, running `boxlang` will start the REPL, allowing you to write and test code quickly within the BoxLang environment.
+
+The REPL will also remember state, so you can define variables and use them in your testing and explorations.  Code away :rocket:
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ## Binaries
 
 The quick installer is the best and easiest way to get installed on Mac or \*Nix. However, below, you can find a collection of all our installers and binaries for running BoxLang and each Runtime.
-
-{% hint style="warning" %}
-Please note that the binaries here are the latest beta builds, not the bleeding edge builds.
-{% endhint %}
 
 ### Operating System Binaries
 
@@ -219,7 +229,7 @@ BoxLang can also run on AWS Lambdas. It even powers our entry playground at [htt
 
 ### CommandBox BoxLang Server
 
-BoxLang can also be deployed using [CommandBox](https://www.ortussolutions.com/products/commandbox). This is our preferred way to deploy web applications using BoxLang. BoxLang +/++ Subscribers even get access to [CommandBox Pro](https://www.ortussolutions.com/products/commandbox-pro). Note: This installation method is typically localized for a particular web application and is not typically accessed generally by other applications.  
+BoxLang can also be deployed using [CommandBox](https://www.ortussolutions.com/products/commandbox). This is our preferred way to deploy web applications using BoxLang. BoxLang +/++ Subscribers even get access to [CommandBox Pro](https://www.ortussolutions.com/products/commandbox-pro). Note: This installation method is typically localized for a particular web application and is not typically accessed generally by other applications.
 
 ```bash
 box install commandbox-boxlang
@@ -243,13 +253,9 @@ We have a full [Docker guide you can follow here.](../running-boxlang/docker.md)
 
 ## BoxLang IDE
 
-<div align="left">
+<div align="left"><figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>BoxLang IDE</p></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>BoxLang IDE</p></figcaption></figure>
-
-</div>
-
-The BoxLang IDE is a collection of modules for VSCode. You can find it here:
+The BoxLang IDE is a collection of modules for VSCode that will give you a line debugger, LSP (Language Server Protocol), highlighting, introspection, generation, and much more. You can find it here:
 
 {% embed url="https://marketplace.visualstudio.com/items?itemName=ortus-solutions.vscode-boxlang" %}
 Install Now
@@ -257,9 +263,9 @@ Install Now
 
 ## Core Modules
 
-The BoxLang core is lightweight and fast. Everything that extends the core comes in the form of modules. We have a collection of core modules that the BoxLang team maintains and curates. We also have several enterprise modules for our BoxLang +,++ subscribers and the community also can create and share modules in our cloud package manager [FORGEBOX](https://forgebox.io).
+The BoxLang core is lightweight and fast. Everything that extends the core comes as modules or individual runtimes. We have a collection of core modules that the BoxLang team maintains and curates. We also have several enterprise modules for our **BoxLang +, ++** subscribers, and the community can create and share modules in our cloud package manager [FORGEBOX](https://forgebox.io).
 
-We recommend you use CommandBox, Our CLI and Package Manager, to interact, install, and work with any package in BoxLang.
+We recommend you use [CommandBox](https://www.ortussolutions.com/products/commandbox), Our CLI and Package Manager, to interact, install, and work with any package in BoxLang.
 
 {% content-ref url="modules.md" %}
 [modules.md](modules.md)
@@ -267,10 +273,6 @@ We recommend you use CommandBox, Our CLI and Package Manager, to interact, insta
 
 ## BoxLang+, ++ Modules
 
-Our [BoxLang+, and ++](https://boxlang.io/plans) subscribers not only get customized support but also new features, and modules. You can find out more about our subscriptions here: [https://boxlang.io/plans](https://boxlang.io/plans). Here is the collection of modules that you will get with your subscription.
+Our [BoxLang+, and ++](https://boxlang.io/plans) subscribers not only get professional/customized support but also new features, and modules. You can find out more about our subscriptions here: [https://boxlang.io/plans](https://boxlang.io/plans). Here is the collection of modules that you will get with your subscription which are not part of the open source edition.
 
 <table><thead><tr><th width="160">Module</th><th width="424">Description</th><th width="158">Status<select><option value="7PvmwHzSW7tN" label="In Development" color="blue"></option><option value="KAAYVEqj9HUs" label="Done" color="blue"></option><option value="LZpOL7kx2Gyb" label="In Planning" color="blue"></option></select></th></tr></thead><tbody><tr><td><strong>bx-redis</strong></td><td>Native Redis integration for caching, session distribution, and publish-subcribe events.</td><td><span data-option="7PvmwHzSW7tN">In Development</span></td></tr><tr><td><strong>bx-mongo</strong></td><td>Native MongoDB integration for caching, session distribution and advanced MongoDB operations.</td><td><span data-option="7PvmwHzSW7tN">In Development</span></td></tr><tr><td><strong>bx-couchbase</strong></td><td>Native Couchbase integration for caching, NoSQL, session distribution and advanced Couchbase usage.</td><td><span data-option="7PvmwHzSW7tN">In Development</span></td></tr><tr><td><strong>bx-pdftools</strong></td><td>Our collection of enhanced PDF tooling. Includes the ability to extract PDF forms, fill out PDF forms, squash, merge and more.</td><td><span data-option="7PvmwHzSW7tN">In Development</span></td></tr></tbody></table>
-
-{% hint style="danger" %}
-Please note that these modules are still under development; we will publish their status as we complete them.
-{% endhint %}

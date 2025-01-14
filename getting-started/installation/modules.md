@@ -7,7 +7,7 @@ description: The Officially supported BoxLang modules
 
 ## Core Modules
 
-Here is the collection of modules built and supported by the BoxLang team.  We show you the way to install them using CommandBox via `install {module_name}` .  However, if you are using the operating system installer shipped with BoxLang: `install-bx-module`.  Then use that instead:
+Here is the collection of modules built and supported by the BoxLang team. We show you the way to install them using CommandBox via `install {module_name}` . However, if you are using the operating system installer shipped with BoxLang: `install-bx-module`. Then use that instead:
 
 ```bash
 // CommandBox
@@ -175,7 +175,7 @@ install bx-wddx
 
 `Security: Testing`
 
-This module provides the CLI runtime with all the web server BIFS, components and utilities need for mocking, testing and feature auditing.  It also provides with testing facilities to mock a web server and interact with it.  This is great for doing CLI based testing on a web application or running the feature audit commands.
+This module provides the CLI runtime with all the web server BIFS, components and utilities need for mocking, testing and feature auditing. It also provides with testing facilities to mock a web server and interact with it. This is great for doing CLI based testing on a web application or running the feature audit commands.
 
 {% hint style="danger" %}
 THIS MODULE IS NOT NEEDED FOR COMMANDBOX OR THE MINISERVER. IT'S PURELY FOR TESTING, MOCKING AND AUDITING.
@@ -236,17 +236,25 @@ install bx-postgresql
 
 ## Module Installation
 
-The fastest way to install modules is with CommandBox and the `install` command. If you used the quick installer, you can use the install-bx-module binary to download the core modules to your OS or MiniServer home.
+The fastest way to install modules is with CommandBox for web runtimes and the `install-bx-module(s)` command for OS runtimes.
 
+{% code title="Operating System" %}
 ```bash
-# Install the latest version
+# Install os-wide modules
 install-bx-module bx-compat-cfml
 
-# Install a specific version
+# Install os-wide modules
 install-bx-module bx-compat-cfml 1.0.0
 ```
+{% endcode %}
 
-If not, you must download the zip package manually and place it into the home folder.
+You can also visit FORGEBOX and download the binaries manually, but that's so 90's.  Below, you can see us installing modules using the same module name but using CommandBox for installation.  CommandBox is used to install modules into web runtimes, not the operating system home.
+
+{% code title="CommandBox" %}
+```bash
+box install bx-compat-cfml bx-esapi
+```
+{% endcode %}
 
 ### Operating System Home
 
