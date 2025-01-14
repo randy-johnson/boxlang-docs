@@ -67,6 +67,16 @@ install bx-esapi
 * Download: [https://forgebox.io/view/bx-esapi](https://forgebox.io/view/bx-esapi)
 * Instructions: [https://github.com/ortus-boxlang/bx-esapi](https://github.com/ortus-boxlang/bx-esapi)
 
+### bx-ftp
+
+`Category: FTP`
+
+The FTP module allows you to perform various operations against an FTP or SFTP server.
+
+```
+install bx-ftp
+```
+
 ### bx-image
 
 `Category: Image Processing`
