@@ -161,7 +161,7 @@ As you navigate all the built-in functions and capabilities of BoxLang, let's le
 
 * `printLn()` - Print with a line break
 * `print()` - Print with no line break
-* `writeOUtput()` - Writes to the output buffer (Each runtime decides what it's buffer is. The CLI is the system output, the Web is the HTML response buffer, etc)
+* `writeOutput()` - Writes to the output buffer (Each runtime decides what it's buffer is. The CLI is the system output, the Web is the HTML response buffer, etc)
 
 ```groovy
 println( "Time is #now()#" )
