@@ -27,7 +27,7 @@ File Types:
 // Infered as 'String'
 name = "boxlang"
 
-// Inferred as Double
+// Inferred as Integer
 age = 1
 // But I can redeclare it to a string if I need to
 age = "one"
