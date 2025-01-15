@@ -53,6 +53,8 @@ sudo yum upgrade
 sudo yum install curl zip unzip java-21-openjdk
 
 ```
+
+Note that you may need to tell the system to use the correct JDK version. This can be done via `update-alternatives --config java` (sudo may be required).
 {% endtab %}
 
 {% tab title="Windows" %}
