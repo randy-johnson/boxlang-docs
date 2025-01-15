@@ -225,7 +225,7 @@ BoxLang supports the concept of multi-variable declaration and assignments by ju
 name = threadname = taskName = "I am Spartacus!"
 ```
 
-This will create the 3 variables in the `variables` scope with the name "I am Spartacus!"
+This will create the 3 variables in the `variables` scope with the value "I am Spartacus!"
 
 ## Switch Statements
 
