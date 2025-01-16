@@ -76,7 +76,6 @@ bx:ftp
     password="password"
     server="server.com"
     port="22"
-    passive="true|false"
     secure="true";
 ```
 
