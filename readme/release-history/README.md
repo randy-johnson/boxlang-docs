@@ -30,4 +30,4 @@ For all BoxLang releases, updates are provided for 12 months, and security fixes
 
 ### Releases
 
-In this section, you will find the release notes and links for each version's documentation once we reach a stable release.  For now, you can see all the different beta releases on the left hand navigation under Release History.\
+In this section, you will find the release notes and links for each version's documentation once we reach a stable release.  For now, you can see all the different beta releases on the left hand navigation under Release History.
