@@ -22,7 +22,7 @@ bx:ftp
     connection="conn"
     name="result";
     
-bx:dump var="Result";
+bx:dump var="result";
 ```
 
 
