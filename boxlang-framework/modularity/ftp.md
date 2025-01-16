@@ -8,6 +8,7 @@ description: >-
 # FTP
 
 ```javascript
+// Open connection to FTP server, calling it 'conn'
 bx:ftp
     action="open"
     connection="conn"
@@ -17,11 +18,13 @@ bx:ftp
     password="password"
     passive="true";
     
+// List the current directory
 bx:ftp
     action="listDir"
     connection="conn"
     name="result";
-    
+
+// Dump the results
 bx:dump var="result";
 ```
 
