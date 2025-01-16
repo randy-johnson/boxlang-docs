@@ -71,8 +71,8 @@ bx:ftp
     connection="conn"
     username="user"
     password="password"
-    server="ftp.server.com"
-    port="21"
+    server="server.com"
+    port="22"
     passive="true|false"
     secure="true";
 ```
