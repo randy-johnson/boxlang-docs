@@ -1,14 +1,14 @@
 ---
 icon: globe
 description: >-
-  The FTP module allows you perform various FTP and SFTP operations against a
-  remote server.
+  The FTP module allows you perform various operations against an FTP or SFTP
+  server.
 ---
 
 # FTP
 
 ```javascript
-// Open connection to FTP server, calling it 'conn'
+ Open connection to FTP server, calling it 'conn'
 bx:ftp
     action="open"
     connection="conn"
@@ -28,26 +28,29 @@ bx:ftp
 bx:dump var="result";
 ```
 
+## Attributes
 
+Here is the list of available attributes you can use.
 
-## Available Actions
-
-Here is the list of available actions you can use.
-
-| Action        | Description |
-| ------------- | ----------- |
-| changeDir     |             |
-| close         |             |
-| createDir     |             |
-| existsDir     |             |
-| existsFile    |             |
-| getCurrentDir |             |
-| getFile       |             |
-| listDir       |             |
-| open          |             |
-| putfile       |             |
-| removeDir     |             |
-| remove        |             |
+| Attribute   | Type    | Description                                                                                                                                                                                                                                     |
+| ----------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| action      | string  | <p>The ftp operation you want to perform. Use<br>Values:<br>* open<br>* close<br>* changeDir<br>* createDir<br>* listDir<br>* removeDir<br>* getFile<br>* putFile<br>* rename<br>* remove<br>* getCurrentDir<br>* existsDir<br>* existsFile</p> |
+| username    | string  | The username to log in with.                                                                                                                                                                                                                    |
+| password    | string  | The password to log in with.                                                                                                                                                                                                                    |
+| server      | string  | The FTP server to connect with. Ex. ftp.server.com                                                                                                                                                                                              |
+| timeout     | numeric | Number of seconds for the timeout of all operations. This includes data request operations. **Defaults to 0, which indicates no timeout.**                                                                                                      |
+| port        | numeric | The FTP server port. **Defaults to port 21.**                                                                                                                                                                                                   |
+| connection  | string  | The variable name and reference for an FTP connection. This is required for all bx-ftp commands.                                                                                                                                                |
+| stopOnError | boolean | Set to true to halt execution if an FTP error occurs. **Defaults to false.**                                                                                                                                                                    |
+| passive     | boolean | Set to true to enable passive mode. Only available for FTP connections, not SFTP.                                                                                                                                                               |
+| directory   | string  | Directory on which operation to perform. Used for actions **listDir**, **changeDir**, and **existsDir**.                                                                                                                                        |
+| localFile   | string  | Name of file on local system. Used in actions **getFile** and **putFile**.                                                                                                                                                                      |
+| remoteFile  | string  | Name of file on the FTP server. Used in actions **existsFile**, **getFile**, and **putFile**.                                                                                                                                                   |
+| item        | string  | Name of file or directory. Used in actions **remove**, and **removeDir**.                                                                                                                                                                       |
+| open        |         |                                                                                                                                                                                                                                                 |
+| putfile     |         |                                                                                                                                                                                                                                                 |
+| removeDir   |         |                                                                                                                                                                                                                                                 |
+| remove      |         |                                                                                                                                                                                                                                                 |
 
 ## Examples
 
