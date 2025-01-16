@@ -48,7 +48,7 @@ Here is the list of available actions you can use.
 
 ## Examples
 
-### Open Connection
+### Open FTP Connection
 
 ```
 bx:ftp
@@ -59,6 +59,22 @@ bx:ftp
     server="ftp.server.com"
     port="21"
     passive="true|false";
+```
+
+### Open SFTP Connection
+
+To connect using SFTP, you need to set `secure`equal to `true`.
+
+```
+bx:ftp
+    action="open"
+    connection="conn"
+    username="user"
+    password="password"
+    server="ftp.server.com"
+    port="21"
+    passive="true|false"
+    secure="true";
 ```
 
 ### Close Connection
