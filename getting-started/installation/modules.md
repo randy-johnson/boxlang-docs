@@ -160,7 +160,7 @@ install bx-pdf
 
 ### bx-unsafe-evaluate
 
-`Security: Compiler`
+`Category: Compiler`
 
 This module will allow you to install an `evaluate()` function that can execute BoxLang and CFML expressions. Please note that this approach to coding is discouraged and unsafe.
 
@@ -173,7 +173,7 @@ install bx-unsafe-evaluate
 
 ### bx-wddx
 
-`Security: Conversion`
+`Category: Conversion`
 
 The WDDX module provides the bridge between the WDDX exchange format and BoxLang. It involves reading and parsing XML, converting data types, handling errors, and ensuring performance and compatibility. The module enables the integration of legacy systems with new applications.
 
@@ -186,7 +186,7 @@ install bx-wddx
 
 ### bx-web-support
 
-`Security: Testing`
+`Category: Testing`
 
 This module provides the CLI runtime with all the web server BIFS, components and utilities need for mocking, testing and feature auditing. It also provides with testing facilities to mock a web server and interact with it. This is great for doing CLI based testing on a web application or running the feature audit commands.
 
@@ -200,6 +200,19 @@ install bx-web-support
 
 * Download: [https://forgebox.io/view/bx-web-support](https://forgebox.io/view/bx-web-support)
 * Instructions: [https://github.com/ortus-boxlang/bx-web-support](https://github.com/ortus-boxlang/bx-web-support)
+
+### bx-yaml
+
+`Category: Conversion`
+
+This module will serialize BoxLang native types to YAML and YAML to BoxLang Types.
+
+```
+install bx-yaml
+```
+
+* Download: [https://forgebox.io/view/bx-yaml](https://forgebox.io/view/bx-yaml)
+* Instructions: [https://github.com/ortus-boxlang/bx-yaml](https://github.com/ortus-boxlang/bx-yaml)
 
 ## JDBC Modules
 

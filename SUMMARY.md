@@ -706,6 +706,7 @@
   * [Image Manipulation](boxlang-framework/modularity/image-manipulation.md)
   * [Sending Emails](boxlang-framework/modularity/sending-emails.md)
   * [FTP](boxlang-framework/modularity/ftp.md)
+  * [Yaml](boxlang-framework/modularity/yaml.md)
 
 ## Extra Credit
 
