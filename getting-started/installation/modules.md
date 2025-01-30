@@ -158,6 +158,19 @@ install bx-pdf
 * Download: [https://forgebox.io/view/bx-pdf](https://forgebox.io/view/bx-pdf)
 * Instructions: [https://github.com/ortus-boxlang/bx-pdf](https://github.com/ortus-boxlang/bx-pdf)
 
+### bx-ui-forms
+
+`Category: UI`
+
+This module contributes several semantic UI components using the BoxLang templating language.
+
+```
+install bx-ui-forms
+```
+
+* Download: [https://forgebox.io/view/bx-ui-forms](https://forgebox.io/view/bx-ui-forms)
+* Instructions: [https://github.com/ortus-boxlang/bx-ui-forms](https://github.com/ortus-boxlang/bx-ui-forms)
+
 ### bx-unsafe-evaluate
 
 `Category: Compiler`

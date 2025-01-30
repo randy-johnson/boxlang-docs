@@ -701,11 +701,12 @@
 * [Modules](boxlang-framework/modularity/README.md)
   * [ESAPI](boxlang-framework/modularity/esapi.md)
   * [Evaluating Code](boxlang-framework/modularity/evaluating-code.md)
-  * [Password Encryption](boxlang-framework/modularity/encryption-and-decryption.md)
+  * [FTP](boxlang-framework/modularity/ftp.md)
   * [Hardware & System Info](boxlang-framework/modularity/hardware-and-system-info.md)
   * [Image Manipulation](boxlang-framework/modularity/image-manipulation.md)
+  * [Password Encryption](boxlang-framework/modularity/encryption-and-decryption.md)
   * [Sending Emails](boxlang-framework/modularity/sending-emails.md)
-  * [FTP](boxlang-framework/modularity/ftp.md)
+  * [UI Forms](boxlang-framework/modularity/ui-forms.md)
   * [Yaml](boxlang-framework/modularity/yaml.md)
 
 ## Extra Credit
