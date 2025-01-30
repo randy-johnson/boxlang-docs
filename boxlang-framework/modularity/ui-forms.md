@@ -22,14 +22,20 @@ This module contributes the following Components to the language:
 Most attributes of these components serve as pass-through attributes of the generated HTML tag.&#x20;
 {% endhint %}
 
-
-
 ### `form`
 
 * `format` - this attribute will throw an error if present and is anything other than `HTML`. XML and Flash forms will not be supported.
 * `passthrough` - this is a list of passthrough attributes that will be added to the form tag.
 * `scriptsrc` - this defines an external location for the custom forms javascript file, which is sourced into the HTML output
 * `preservedata` - When the form action returns to the page containing the form, this attribute determines whether to override the control values with the submitted values.
+
+```xml
+<bx:form format="HTML" action="http://www.example.com" method="post" preservedata="true">
+    <bx:input type="text" name="name" label="Name" />
+    <bx:input type="text" name="email" label="Email" />
+    <bx:input type="submit" value="Submit" />
+</bx:form>
+```
 
 **Unsupported `form` Component Attributes**
 
@@ -51,6 +57,10 @@ The following attributes are unsupported and generate a warning log message if u
 * `label` - if provided, will generate an HTML `label` tag before the generated `input` tag
 * `message` - can be provided as a custom message if validation fails
 * `passthrough` - this is a list of passthrough attributes which will be added to the form tag.
+
+```xml
+<bx:input type="text" name="name" label="Name" />
+```
 
 **Planned `input` Component Attributes supported**
 
@@ -84,6 +94,10 @@ The slider component creates a [`type="range"` input](https://www.w3schools.com/
 * `color` - specifes the color of the slider control
 * `vertical` - Optional boolean attribute. When `true`, the slider will have a vertical orientation
 
+```xml
+<bx:slider name="slider" min="0" max="100" increment="5" bgColor="#f1f1f1" color="#4CAF50" />
+```
+
 ***
 
 ### `textarea`
@@ -91,6 +105,10 @@ The slider component creates a [`type="range"` input](https://www.w3schools.com/
 * `passthrough` - this is a list of passthrough attributes which will be added to the form tag.
 * `message` - can be provided as a custom message if validation fails
 * `passthrough` - this is a list of passthrough attributes which will be added to the form tag.
+
+```xml
+<bx:textarea name="message" label="Message" />
+```
 
 **Unsupported `textarea` Component Attributes**
 
