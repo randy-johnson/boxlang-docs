@@ -7,7 +7,9 @@ description: Configure it your way!
 
 BoxLang has an installation-level configuration file that allows developers to adjust various settings from the compiler to default cache providers, runtime-wide data sources, and much more. You can adjust boxlang settings by placing a `config/boxlang.json` file in your BoxLang home directory.
 
-By default, we create one for you once you execute the runtime for the first time.
+By default, we create an initial  `config/boxlang.json` for you once you execute the runtime for the first time.
+
+You may also change the granular config settings at runtime using the environment or Java properties by prefixing any configuration item with `BOXLANG_`or `boxlang.`  See below.
 
 {% hint style="info" %}
 If you are running BoxLang within CommandBox, the configuration file will be inside the server directory inside of CommandBox under `WEB-INF/boxlang/`. You can also run the following command to see the server home directory:
@@ -452,6 +454,14 @@ Here is a full reference of the current default `boxlang.json` file:
 {% hint style="success" %}
 Please note that JSON support in BoxLang allows you to use comments inline.
 {% endhint %}
+
+### Environmental/Properties Configuration
+
+BoxLang gives you the ability to override any of the runtime configuration or module settings via environment variables or java system properties.  For example adding an environment variable of `boxlang.security.allowedFileOperationExtensions=.exe,.sh`  would override the disallowed defaults above, and allow users to upload and rename files with these extensions ( not a good idea! ).  &#x20;
+
+The variable names can be either snake-cased or dot-delimited.  For example `BOXLANG_DEBUGMODE=true`  will work the same as `boxlang.debugMode=true`  to set the entire runtime in to debug mode. &#x20;
+
+This convention allows  you to make granular changes to sub-segments of the configuration without overriding parent items.   JSON is also allowed when overriding config settings.  For example, if I wanted to set the runtime logging level to trace without putting the runtime in to DebugMode, I could set the environment variable: `boxlang.logging.loggers.runtime.level=TRACE`  or add the JVM arg `-Dboxlang.logging.loggers.runtime.level=TRACE`
 
 ### Internal Variables
 
