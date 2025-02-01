@@ -268,4 +268,4 @@ The `boxlang` binary will also scan for several environment variables as overrid
 | `BOXLANG_PRINTAST = BOOLEAN`  | Print the AST                |
 | `BOXLANG_TRANSPILE = BOOLEAN` | Tranpile the code            |
 
-At this point, you are done getting running with BoxLang. It's now your turn to write some code and get it running.
+In addition to core runtime OS-level settings, you can also use the environment or Java properties to adjust granular configuration setting.  For more [see the Runtime Configuration section](https://boxlang.ortusbooks.com/getting-started/configuration#environmental-properties-configuration).
