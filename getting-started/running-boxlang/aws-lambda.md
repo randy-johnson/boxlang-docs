@@ -9,45 +9,84 @@ description: BoxLang Runtime for AWS Lambda! Serverless for the win!
 
 ## What is AWS Lambda?
 
+<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+
 AWS Lambda is a serverless computing service provided by Amazon Web Services (AWS) that lets you run code without provisioning or managing servers. It automatically scales applications by running code in response to events and allocates compute resources as needed, allowing developers to focus on writing code rather than managing infrastructure ([https://docs.aws.amazon.com/lambda/](https://docs.aws.amazon.com/lambda/)).
 
 {% embed url="https://docs.aws.amazon.com/lambda/" %}
 
-The BoxLang AWS Runtime allows you to run a `Lambda.bx` function in this ecosystem.  We provide you a nice template so you can work with serverless: [https://github.com/ortus-boxlang/bx-aws-lambda-template](https://github.com/ortus-boxlang/bx-aws-lambda-template).
+The **BoxLang AWS Runtime** allows you to code in BoxLang and create Lambda function in this ecosystem.  We provide you a nice template so you can work with serverless: [https://github.com/ortus-boxlang/bx-aws-lambda-template](https://github.com/ortus-boxlang/bx-aws-lambda-template). This template will give you a turnkey application with features like:
+
+* Unit and Integration Testing
+* Java dependency management
+* BoxLang depenency management
+* Automatic shading and packaging
+* GitHub actions to: test, build and release automatically to AWS
 
 {% @github-files/github-code-block url="https://github.com/ortus-boxlang/bx-aws-lambda-template" %}
 
-## BoxLang Default Lambda Handler
+## BoxLang Lambda Handler
 
-The runtime provides a handler for lambda already configured to accept JSON in as a BoxLang Struct and then output either by returning a simple or complex object or using our `response` convention struct.  The default handler is:
+<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+
+Our BoxLang AWS Handler acts as a front controller to all incoming Lambda executions.  It provides you with:
+
+* Automatic request management to an `event`structure
+* Automatic logging and tracing
+* Execution of your Lambda classes by convention
+* Automatic error management
+* Automatic response management and serialization
+
+The BoxLang AWS runtime provides a pre-built Java handler for lambda already configured to accept JSON in as a BoxLang Struct and then output either by returning a simple or complex object or using our `response` convention struct.  Our runtime will automatically convert your results to JSON. &#x20;
+
+The default handler you configure your lambda with is:
 
 ```
 ortus.boxlang.runtime.aws.LambdaRunner::handleRequest
 ```
 
+{% hint style="info" %}
 You can see the code for the handler here: [https://github.com/ortus-boxlang/boxlang-aws-lambda/blob/development/src/main/java/ortus/boxlang/runtime/aws/LambdaRunner.java#L161](https://github.com/ortus-boxlang/boxlang-aws-lambda/blob/development/src/main/java/ortus/boxlang/runtime/aws/LambdaRunner.java#L161)
+{% endhint %}
 
-The handler is Java, but you can easily build it with BoxLang.  However, we have done the hard parts for you so you can focus on your lambda function.
+The handler will look for a `Lambda.bx`in your package and execute the `run()`method by convention.
 
-### Environment Variables
+```java
+class {
+
+    function run( event, context, response ){
+    
+    
+    }
+
+}
+```
+
+
+
+## Environment Variables
 
 The following are the env variables available in the runtime:
 
 <table><thead><tr><th width="305">Environmeent</th><th>Description</th></tr></thead><tbody><tr><td><code>BOXLANG_LAMBDA_CLASS</code></td><td><p>Absolute path to the lambda to execute. The default path is:</p><pre><code>/var/task/Lambda.bx
 </code></pre><p>Which is your lambda deployed within your zip file.</p></td></tr><tr><td><code>BOXLANG_LAMBDA_DEBUGMODE</code></td><td>Turn runtime debug mode or not.</td></tr><tr><td><code>BOXLANG_LAMBDA_CONFIG</code></td><td>Absolute path to a custom <code>boxlang.json</code> configuration for the runtime.</td></tr></tbody></table>
 
-## BoxLang Default Template
+You can also leverage ANY env variable to configure the BoxLang runtime using our runtime [environment conventions](../configuration.md).
 
-The BoxLang default template for AWS lambda can be found here: [https://github.com/ortus-boxlang/bx-aws-lambda-template](https://github.com/ortus-boxlang/bx-aws-lambda-template).  It is a Gradle project for now, it will be migrated to CommandBox soon.  The structure of the project is the following
+## BoxLang AWS Template
+
+The BoxLang default template for AWS lambda can be found here: [https://github.com/ortus-boxlang/bx-aws-lambda-template](https://github.com/ortus-boxlang/bx-aws-lambda-template).  The structure of the project is the following
 
 ```
 /.vscode - Some useful vscode tasks and settings
-/build - Not in source control, where your build and distributions happen
 /gradle - The gradle runtime, keep in source control
 /src
   + main
     + bx
       + Lambda.bx (Your BoxLang Lambda function)
+  + resources
+    + boxlang.json (A custom BoxLang configuration file)
+    + modules (Where you will install BoxLang modules using CommandBox, don't put in source control )
   + test
     + java
       + com
@@ -64,7 +103,7 @@ The BoxLang default template for AWS lambda can be found here: [https://github.c
 /settings.gradle - The project settings
 ```
 
-The BoxLang AWS Lambda runtime will look for a `Lambda.bx` in your project and execute it by default.  Run the following commands to prep for coding:
+The BoxLang AWS Lambda runtime will look for a `Lambda.bx` in your package by convention and execute the `run()`method for you.&#x20;
 
 ```bash
 # Download the runtime, later it will be automatic via maven
@@ -82,7 +121,7 @@ The BoxLang AWS Lambda runtime will look for a `Lambda.bx` in your project and e
 
 ```
 
-### Lambda.bx
+## Lambda.bx
 
 The Lambda function is a BoxLang class with a single function called `run()`.&#x20;
 
@@ -102,7 +141,7 @@ class{
 }
 </code></pre>
 
-#### Arguments
+### Arguments
 
 It accepts three arguments:
 
@@ -181,7 +220,37 @@ class{
 
 Now you can go ahead and build your function.  You can use TestBox to unit test your `Lambda.bx` or we even include a `src/test` folder in Java, that simulates the full life-cycle of the runtime.  Just run `gradle test` or use VSCode BoxLang IDE to run the tests.  Now we go to production!
 
+
+
+### Multiple Functions Header
+
+The runtime also allows you to create other functions inside of your Lambda that can be targeted if your AWS Lambda is exposed as an URL, which we recommend.  You will be able to target different functions in your `Lambda.bx`by using the following header when executing your lambda:
+
+```bash
+x-bx-function=methodName
+```
+
+This makes it incredibly flexible where you can respond to that incoming header in a different function than the one by convention.
+
 ## Deploy to AWS
+
+You can deploy your lambda by uploading the build package manually or using our GitHub Actions included in your template..  Our template also includes the ability to do automatic deployments using GitHub Actions if you give your repository the right credentials and you activate the CI process.
+
+```yaml
+- name: Update AWS Lambda Function
+  uses: kazimanzurrashid/aws-lambda-update-action@v2.0.3
+  with:
+    zip-file: "./build/distributions/${{ env.PROJECT_NAME }}-${{ env.VERSION }}-all.zip"
+    lambda-name: ${{ env.PROJECT_NAME }}-${{ env.DEPLOY_TIER }}
+  env:
+    AWS_REGION: ${{ env.AWS_REGION }}
+    AWS_ACCESS_KEY_ID: ${{ secrets.AWS_PUBLISHER_KEY_ID }}
+    AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_PUBLISHER_KEY }}
+```
+
+Our automated approach will require for you to store your credentials in your repository's secrets.  Please also note that our build process allows you to have a `development`branch and a `master/main`production branch.  This allows you to have a deployment of a `staging`and a `production`tier.
+
+<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 Log in to the Lambda Console and click on `Create function` button.
 
@@ -192,6 +261,12 @@ Now let's add the basic information about our deployment:
 * Add a function name
 * Choose `Java 21` as your runtime
 * Choose `x86_64` as your architecture
+
+{% hint style="success" %}
+TIP: If you choose ARM processors, you can save some money.
+{% endhint %}
+
+
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption><p>Create a function</p></figcaption></figure>
 
@@ -208,6 +283,12 @@ Now important, let's choose the AWS Lambda Runtime Handler in the `Edit runtime 
 <figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 And make sure you use the following handler address: `ortus.boxlang.runtime.aws.LambdaRunner::handleRequest` This is inside the runtime to execute our `Lambda.bx` function.
+
+{% hint style="danger" %}
+Please note that the RAM you chose for your lambda determines your CPU as well. So make sure you increase the RAM accordingly.  We have seen great results with 4GB+.
+{% endhint %}
+
+
 
 ### Testing in AWS
 
