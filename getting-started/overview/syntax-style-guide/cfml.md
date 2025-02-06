@@ -1,15 +1,15 @@
 ---
-description: A quick guide on key differences and issues when migrating from CFML
 icon: bolt-lightning
+description: A quick guide on key differences and issues when migrating from CFML
 ---
 
-# Migrating From CFML
+# Differences From CFML
 
 {% hint style="danger" %}
 Please note that our CFML Compatibility is still in progress. Please keep this page bookmarked as we progress to our stable release.
 {% endhint %}
 
-BoxLang is a new language with a dual parser to support the CFML ecosystem. It also has a compatibility module (`bx-compat-cfml`) that will allow the BoxLang runtime to behave like an Adobe or Lucee Server. We also recommend you read the [Quick Syntax Style Guide](./) to give you an understanding of all the new features of BoxLang.
+BoxLang is a new language with a dual parser to support the CFML ecosystem. It also has a compatibility module (`bx-compat-cfml`) that will allow the BoxLang runtime to behave like an Adobe or Lucee Server. We also recommend you read the [Quick Syntax Style Guide](./) to understand all the new features of BoxLang.
 
 You can install the compatibility module using `box install bx-compat-cfml` or if you have a `server.json` you can add the following:
 

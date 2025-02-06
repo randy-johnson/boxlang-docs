@@ -79,7 +79,7 @@ function hello( name ){
 
 ## High Precision Mathematics
 
-By deafult, BoxLang will use high-precision mathematics by evaluting your numbers and determining the right type for them.  If the numbers whole and short enough, they will be stored in an `Integer` or `Long`.  If they contain decimals they will be a `BigDecimal` and if you do math on them, the result will be the most precise of the two inputs.  You don't have to be knowing or addressing the numerical types, we will do that for you. &#x20;
+By deafult, BoxLang will use high-precision mathematics by evaluting your numbers and determining the right type for them. If the numbers whole and short enough, they will be stored in an `Integer` or `Long`. If they contain decimals they will be a `BigDecimal` and if you do math on them, the result will be the most precise of the two inputs. You don't have to be knowing or addressing the numerical types, we will do that for you.
 
 {% hint style="warning" %}
 You can change this [setting in the configuration to false](../../configuration.md#use-high-precision-math) and it will use basic Double mathematics and it will be up to you when to use high precision evaluations.
@@ -108,7 +108,7 @@ you get:
 * Windows calculator: `33333333333333333333`
 * BoxLang: `33333333333333333333`
 
-You may not be too worried about the use case of very large numbers, but the floating point math has bitten every single developer who’s been around long enough, and can wreak havoc on the simplest of math calculations.&#x20;
+You may not be too worried about the use case of very large numbers, but the floating point math has bitten every single developer who’s been around long enough, and can wreak havoc on the simplest of math calculations.
 
 ### Level of Precision
 
@@ -147,7 +147,7 @@ With numeric place holders, your code can look like this:
 n = 1_000_000_000
 ```
 
-Ahh, so it _was_ 1 billion! There’s no rules on where you can place the underscores, so long as they are INSIDE the number and not leading or trailing.  You can also place numeric separators in decimals:
+Ahh, so it _was_ 1 billion! There’s no rules on where you can place the underscores, so long as they are INSIDE the number and not leading or trailing. You can also place numeric separators in decimals:
 
 ```ini
 n = 3.141_592_653_59
@@ -194,7 +194,7 @@ BoxLang can interpret ANYTHING within `#` as an expression. This can be used for
 
 ## Multi-Line Strings
 
-In Java, you can declare a multi-line string easily (JKD15+) by using the triple (`"""`) quote marks. &#x20;
+In Java, you can declare a multi-line string easily (JKD15+) by using the triple (`"""`) quote marks.
 
 <pre class="language-java"><code class="lang-java">public String getText(){
 <strong>   return """
@@ -205,7 +205,7 @@ In Java, you can declare a multi-line string easily (JKD15+) by using the triple
 }
 </code></pre>
 
-It is by far the most convenient way to declare a multiline string as you dont have to deal with line separators or indentation spaces.  In BoxLang, you only need 1 quote (`"`), we will take care of the rest!
+It is by far the most convenient way to declare a multiline string as you dont have to deal with line separators or indentation spaces. In BoxLang, you only need 1 quote (`"`), we will take care of the rest!
 
 ```javascript
 function getText(){
@@ -558,18 +558,23 @@ assert ()=> { do something }
 
 BoxLang functions are first-class citizens. That means you can pass them around, execute them, dynamically define them, inject them, remove them, and so much more.
 
-It has 3 major functional types:
+It has three major functional types:
 
-* **UDF—User-Defined Function**—Can be created on any scripting template or within Classes. They carry no context with them.
-* **Closures** are _named_ or _anonymous_ functions that carry with them their surrounding scope and context. It uses the fat arrow `=>` syntax.
-* **Lambdas** are _pure_ functions that can be _named_ or _anonymous_ and carry **NO** enclosing scope. They are meant to be pure functions and produce no side effect. Data in, Data out. It uses the skinny arrow `->` Syntax.
+* **UDF—User-Defined Function**—Can be created on any scripting template or within Classes. They carry no context with them except where they exist.
+* **Closures** are _named_ or _anonymous_ functions that carry their surrounding scope and context with them. It uses the fat arrow `=>` syntax.
+* **Lambdas** are _pure_ functions that can be _named_ or _anonymous_ and carry **NO** enclosing scope. They are meant to be pure functions and produce no side effects. Data in, Data out. It uses the skinny arrow `->` Syntax.
 
 {% code title="hola.bxs" %}
 ```cfscript
+// This is a script that can define functions
+
 // A scripting UDF
 function sayHello(){
     return "Hola!"
 }
+
+// Execute the UDF
+println( sayHello() )
 ```
 {% endcode %}
 
@@ -587,18 +592,31 @@ class{
     }
 
 }
+```
+{% endcode %}
 
+{% code title="test.bxs" %}
+```cfscript
+// This script uses the defined class above
 myClass = new MyClass()
 
-// Let's create an alias to the function
+// Let's create an alias for the function
+// Functions are first-class citizens in BoxLang
+// They can be added, removed, mixed at runtime
 myClass.hola = myClass.sayHello
+
 // Let's remove the sayHello function
 myClass.sayHello = null
+// Or use a global BIF call to remove it
+structDelete( myClass, "sayHello" )
 
 println( myClass.hola() )
 ```
 {% endcode %}
 
+Let's write up another script that leverages closures and lambdas.
+
+{% code title="test.bxs" %}
 ```cfscript
 // Named closure
 myClosure = item => item++;
@@ -614,6 +632,7 @@ myLambda( 1 )
 // Anonymous Lambda
 [1,2,3].filter( item -> item > 2 )
 ```
+{% endcode %}
 
 ### `Public` by default
 
