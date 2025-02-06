@@ -355,7 +355,27 @@ You can also use our handy `javaCast()` bif if you needed to.
 
 ### Human Operators
 
-We have several fluent operators using english instead of symbols.
+You can see all the supported operators on our operator's page. We have several fluent operators using English instead of symbols, and some that are only English-based.  You can see all the supported [operators](../../../boxlang-language/operators.md) on our operator's page.
+
+| Symbol Operator | Human Operator          | Hint                                                                                                  |
+| --------------- | ----------------------- | ----------------------------------------------------------------------------------------------------- |
+| `==`            | `eq`                    |                                                                                                       |
+| `!=, <>`        | `neq`                   |                                                                                                       |
+| `>`             | `gt`                    |                                                                                                       |
+| `>=`            | `gte`                   |                                                                                                       |
+| `<`             | `lt`                    |                                                                                                       |
+| `<=`            | `lte`                   |                                                                                                       |
+|                 | `contains, ct`          | <p>Returns true if the left operand contains the right one.<br><code>'hello' contains 'lo'</code></p> |
+|                 | `does not contain, nct` | Negated Contains                                                                                      |
+| `!`             | `not`                   |                                                                                                       |
+| `&&`            | `and`                   |                                                                                                       |
+| `\|\|`          | `or`                    |                                                                                                       |
+|                 | `XOR`                   | Exclusive OR                                                                                          |
+|                 | `EQV`                   | Equivalence                                                                                           |
+|                 | `IMP`                   | Implication                                                                                           |
+| `%`             | `mod`                   | Modulus                                                                                               |
+
+
 
 ### InstanceOf Operator
 

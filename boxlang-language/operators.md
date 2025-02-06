@@ -45,10 +45,6 @@ IMP
 Remember that using parenthesis `(Grouping Operator)` is very important to denote precedence.
 {% endhint %}
 
-{% hint style="warning" %}
- CF code will use CF's precedence.
-{% endhint %}
-
 ## Arithmetic Operators
 
 These operators are used to perform arithmetic/mathematical operations on operands.
@@ -71,7 +67,7 @@ These operators are used to perform arithmetic/mathematical operations on operan
 ## Bitwise Operators
 
 {% hint style="info" %}
-BoxLang has native [bitwise](https://en.wikipedia.org/wiki/Bitwise\_operation) operators and it also implements bitwise operations via functions (since functions can also be operators in BoxLang): `bitAnd, bitMaskClear, bitMaskRead, bitMaskSet, bitNot, bitOr, bitSHLN, bitSHRN, bitXOR` . You can find much more information here: [https://boxlang.ortusbooks.com/boxlang-language/reference/built-in-functions/math](https://boxlang.ortusbooks.com/boxlang-language/reference/built-in-functions/math)
+BoxLang has native [bitwise](https://en.wikipedia.org/wiki/Bitwise_operation) operators and it also implements bitwise operations via functions (since functions can also be operators in BoxLang): `bitAnd, bitMaskClear, bitMaskRead, bitMaskSet, bitNot, bitOr, bitSHLN, bitSHRN, bitXOR` . You can find much more information here: [https://boxlang.ortusbooks.com/boxlang-language/reference/built-in-functions/math](https://boxlang.ortusbooks.com/boxlang-language/reference/built-in-functions/math)
 {% endhint %}
 
 These operators are used to perform bitwise operations on operands.
@@ -81,7 +77,7 @@ The bitwise operators look a bit different in BoxLang vs other languages like Ja
 <table><thead><tr><th width="125">Operator</th><th width="147">Name</th><th>Description</th></tr></thead><tbody><tr><td><code>b|</code></td><td>Bitwise OR</td><td><code>a = 12 b| 25</code></td></tr><tr><td><code>b&#x26;</code></td><td>Bitwise AND</td><td><code>a = 5 b&#x26; 9</code></td></tr><tr><td><code>b^</code></td><td>Bitwise XOR</td><td><code>a = 10 b^ 12</code></td></tr><tr><td><code>b~</code></td><td>Bitwise Complement</td><td><code>a = b~ 35</code></td></tr><tr><td><code>b&#x3C;&#x3C;</code></td><td>Bitwise Signed Left Shift</td><td><code>a = 14 b&#x3C;&#x3C; 4</code></td></tr><tr><td><code>b>></code></td><td>Bitwise Signed Right Shift</td><td><code>a = 4 b>> 2</code></td></tr><tr><td><code>b>>></code></td><td>Bitwise Unsigned Right Shift</td><td><code>a = 25 b>>> 3</code></td></tr></tbody></table>
 
 {% hint style="success" %}
-For more information about bitwise operations, you can read more here: [https://en.wikipedia.org/wiki/Bitwise\_operation](https://en.wikipedia.org/wiki/Bitwise\_operation)
+For more information about bitwise operations, you can read more here: [https://en.wikipedia.org/wiki/Bitwise\_operation](https://en.wikipedia.org/wiki/Bitwise_operation)
 {% endhint %}
 
 ## Assignment Operators
@@ -109,12 +105,12 @@ Logical operators perform logic between values or values, usually denoting a `bo
 | ---------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `!,NOT`    | Negation     | `!true = false` or `a = not true`                                                                                                                                                                                                                                 |
 | `&&,AND`   | And          | <p>Returns true if both operands are true.<br><code>a = b &#x26;&#x26; c</code></p>                                                                                                                                                                               |
-| `\|\|, OR` | Or           | <p>Returns true if either operand is true.<br><code>a = b || c</code></p>                                                                                                                                                                                         |
+| `\|\|, OR` | Or           | <p>Returns true if either operand is true.<br><code>a = b</code></p>                                                                                                                                                                                              |
 | `XOR`      | Exclusive Or | <p>Returns true when either of the operands is true (one is true, and the other is false), but both are not true, and both are not false.<br><code>true XOR true = false</code><br><code>true XOR false = true</code><br><code>false XOR false = false</code></p> |
 | `EQV`      | Equivalence  | <p>The exact opposite of an exclusive or. Meaning that it will return true when both operands are either true or false.<br><code>true EQV true = true</code><br><code>true EQV false = false</code><br><code>false EQV false = true</code></p>                    |
 | `IMP`      | Implication  | A implies B is equivalent to `if a then b`. A imp b is false ONLY if a is true and b is false; else, it returns true always.                                                                                                                                      |
 
-###
+
 
 ## Comparison Operators
 
@@ -132,6 +128,24 @@ Comparison operators are used when comparing two values, expressions, or variabl
 | `lte, <=`                                                            | Less than or equal   | If the left operand is less than or equal in value than the right operand                                                              |
 | `contains, ct`                                                       | Contains             | <p>Returns true if the left operand contains the right one.<br><code>'hello' contains 'lo'</code></p>                                  |
 | `does not contain, nct`                                              | Negated contains     | <p>Returns true if the left operand does NOT contain the right one.<br><code>'hello' does not contain 'pio'</code></p>                 |
+| `assert`                                                             | Assert an expression | Evaluate an expression and if the expression is falsey it will throw an assert exceptions.                                             |
+
+## Assert Operator <a href="#assert" id="assert"></a>
+
+BoxLang offers an `assert` operators that will evaluate an expression, and if the expression is falsey, it will throw an assert exception.
+
+```java
+// Asserts that the name is truthy
+assert name
+
+// Assert an expression
+assert myService.hasData()
+assert name.length() > 3
+
+// Assert a lambda/closure result.
+assert ()-> { do something }
+assert ()=> { do something }
+```
 
 ## Ternary Operator
 
@@ -155,7 +169,7 @@ result = creditScore > 800 ? "Excellent" :
 
 ## Elvis Operator (Null Coalescing)
 
-The Elvis operator is usually referred to as the [null coalescing operator](https://en.wikipedia.org/wiki/Null\_coalescing\_operator). Its name comes from the symbol it represents, which looks like Elivs hair turned sideways: `?:`. If the expression to the operator's left is `null` , then the expression on the right will be evaluated as the result of the expression.
+The Elvis operator is usually referred to as the [null coalescing operator](https://en.wikipedia.org/wiki/Null_coalescing_operator). Its name comes from the symbol it represents, which looks like Elivs hair turned sideways: `?:`. If the expression to the operator's left is `null` , then the expression on the right will be evaluated as the result of the expression.
 
 ```
 expression ?: defaultValueOrExpression
@@ -195,7 +209,7 @@ Many operators can work on collection objects like arrays, structs, and queries.
 
 ### Safe Navigation Operator
 
-The [Safe Navigation operator](https://en.wikipedia.org/wiki/Safe\_navigation\_operator) avoids accessing a key in a structure or a value in an object that does `null` or doesn't exist. Typically when you have a reference to an object, you might need to verify that it exists before accessing the methods or properties of the object. To avoid this, the safe navigation operator will return `null` instead of throwing an exception, like so:
+The [Safe Navigation operator](https://en.wikipedia.org/wiki/Safe_navigation_operator) avoids accessing a key in a structure or a value in an object that does `null` or doesn't exist. Typically when you have a reference to an object, you might need to verify that it exists before accessing the methods or properties of the object. To avoid this, the safe navigation operator will return `null` instead of throwing an exception, like so:
 
 ```javascript
 var user = userService.findById( id )
@@ -229,7 +243,7 @@ mergedObject.append( obj1 ).append( obj2 )
 
 You can accomplish the result of the spread operator with the `append()` member function or traditional function in a very elegant and user-friendly syntax. It also allows you NOT to do chaining but inline expressions.
 
-The Spread syntax also allows an iterable such as an array expression or string, to be expanded in places where zero or more arguments (for function calls) are expected. Here are some examples to help you understand this operator:
+,The Spread syntax also allows an iterable such as an array expression or string, to be expanded in places where zero or more arguments (for function calls) are expected. Here are some examples to help you understand this operator:
 
 #### Function Calls
 
@@ -271,13 +285,9 @@ writeDump( mergedUsers )
 
 ### Rest Operator
 
-{% hint style="danger" %}
-Only available in ACF 2021+ and for function arguments
-{% endhint %}
+The Rest function operator is similar to the Spread Operator but behaves oppositely. The spread syntax expands the iterable constructs into individual elements, and the Rest syntax collects and condenses them into a single construct, usually an array.&#x20;
 
-The Rest function operator is similar to Spread Operator but behaves oppositely. The spread syntax expands the iterable constructs into individual elements, and the Rest syntax collects and condenses them into a single construct, usually an array. Please note that this operator only works on function arguments as of now.
-
-Imagine I need to create a function that takes in an unlimited number of Identifiers, so I can return all items that have that ID:
+Imagine I need to create a function that takes in an unlimited number of Identifiers so I can return all items that have that ID:
 
 ```javascript
 function findById( ...ids ){
