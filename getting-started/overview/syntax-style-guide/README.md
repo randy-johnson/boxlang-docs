@@ -565,7 +565,7 @@ It has three major functional types:
 * **Lambdas** are _pure_ functions that can be _named_ or _anonymous_ and carry **NO** enclosing scope. They are meant to be pure functions and produce no side effects. Data in, Data out. It uses the skinny arrow `->` Syntax.
 
 {% code title="hola.bxs" %}
-```cfscript
+```javascript
 // This is a script that can define functions
 
 // A scripting UDF
@@ -579,7 +579,7 @@ println( sayHello() )
 {% endcode %}
 
 {% code title="MyClass.bx" %}
-```cfscript
+```java
 // Some class UDFs
 class{
 
@@ -596,7 +596,7 @@ class{
 {% endcode %}
 
 {% code title="test.bxs" %}
-```cfscript
+```javascript
 // This script uses the defined class above
 myClass = new MyClass()
 
@@ -617,7 +617,7 @@ println( myClass.hola() )
 Let's write up another script that leverages closures and lambdas.
 
 {% code title="test.bxs" %}
-```cfscript
+```javascript
 // Named closure
 myClosure = item => item++;
 myClosure( 1 )
