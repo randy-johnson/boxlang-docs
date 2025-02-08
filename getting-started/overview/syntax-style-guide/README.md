@@ -339,7 +339,7 @@ Check out our [Scopes](../../../boxlang-language/variable-scopes.md) section to 
 
 ## CastAs Operator
 
-BoxLang has a natural casting operator that is fluent and readable.
+BoxLang has a natural casting operator that is fluent and readable: `castAs {expression}.`  It can be an expression since the right-hand side can be dynamic.  If not, use the name of what to cast to using quotes or no quotes.&#x20;
 
 ```java
 myJavaClass( value castAs "long" )
@@ -351,9 +351,9 @@ return {
 }
 ```
 
-You can also use our handy `javaCast()` bif if you needed to.
+You can also use our handy [`javaCast`](../../../boxlang-language/reference/built-in-functions/system/JavaCast.md)`()` BIF if you need to, but this is integrated into the language.
 
-### Human Operators
+## Human Operators
 
 You can see all the supported operators on our operator's page. We have several fluent operators using English instead of symbols, and some that are only English-based.  You can see all the supported [operators](../../../boxlang-language/operators.md) on our operator's page.
 
@@ -377,7 +377,7 @@ You can see all the supported operators on our operator's page. We have several 
 
 
 
-### InstanceOf Operator
+## InstanceOf Operator
 
 Like other languages, we also offer an `instanceOf` operator alongside a nice BIF: `isInstanceOf()`. You can also use negation using our lovely `not` operator.
 
