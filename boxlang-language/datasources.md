@@ -62,7 +62,7 @@ You can define a datasource at the BoxLang runtime level by placing it in your `
 ```
 {% endcode %}
 
-Note the use of BoxLang's environment variable replacement syntax for the datasource properties: `${env.MYSQL_HOST:localhost}`. See [Environment Variable Substitution](../getting-started/configuration/#environment-variable-substitution) for more info.
+Note the use of BoxLang's environment variable replacement syntax for the datasource properties: `${env.MYSQL_HOST:localhost}`. See [Environment Variable Substitution](../getting-started/configuration.md#environment-variable-substitution) for more info.
 
 ## Defining Datasources In `Application.bx`
 

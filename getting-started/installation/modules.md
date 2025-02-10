@@ -322,4 +322,4 @@ You can customize the boxlang module directory by changing the `runtime.modulesD
 ```
 {% endcode %}
 
-See [Runtime Configuration](../configuration/) for more info on using the `boxlang.json` configuration file.
+See [Runtime Configuration](../configuration.md) for more info on using the `boxlang.json` configuration file.

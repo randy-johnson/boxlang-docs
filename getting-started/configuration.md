@@ -1,6 +1,6 @@
 ---
-icon: wrench-simple
 description: Configure it your way!
+icon: wrench-simple
 ---
 
 # Runtime Configuration
@@ -105,35 +105,35 @@ Inside your `boxlang.json` configuration file, you can use this to populate data
 
 Here, you will find each segment and its configuration details.
 
-{% content-ref url="directives.md" %}
-[directives.md](directives.md)
+{% content-ref url="configuration/directives.md" %}
+[directives.md](configuration/directives.md)
 {% endcontent-ref %}
 
-{% content-ref url="caches.md" %}
-[caches.md](caches.md)
+{% content-ref url="configuration/caches.md" %}
+[caches.md](configuration/caches.md)
 {% endcontent-ref %}
 
-{% content-ref url="datasources.md" %}
-[datasources.md](datasources.md)
+{% content-ref url="configuration/datasources.md" %}
+[datasources.md](configuration/datasources.md)
 {% endcontent-ref %}
 
-{% content-ref url="experimental.md" %}
-[experimental.md](experimental.md)
+{% content-ref url="configuration/experimental.md" %}
+[experimental.md](configuration/experimental.md)
 {% endcontent-ref %}
 
-{% content-ref url="executors.md" %}
-[executors.md](executors.md)
+{% content-ref url="configuration/executors.md" %}
+[executors.md](configuration/executors.md)
 {% endcontent-ref %}
 
-{% content-ref url="logging.md" %}
-[logging.md](logging.md)
+{% content-ref url="configuration/logging.md" %}
+[logging.md](configuration/logging.md)
 {% endcontent-ref %}
 
-{% content-ref url="modules.md" %}
-[modules.md](modules.md)
+{% content-ref url="configuration/modules.md" %}
+[modules.md](configuration/modules.md)
 {% endcontent-ref %}
 
-{% content-ref url="security.md" %}
-[security.md](security.md)
+{% content-ref url="configuration/security.md" %}
+[security.md](configuration/security.md)
 {% endcontent-ref %}
 

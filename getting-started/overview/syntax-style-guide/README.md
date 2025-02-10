@@ -82,7 +82,7 @@ function hello( name ){
 By deafult, BoxLang will use high-precision mathematics by evaluting your numbers and determining the right type for them. If the numbers whole and short enough, they will be stored in an `Integer` or `Long`. If they contain decimals they will be a `BigDecimal` and if you do math on them, the result will be the most precise of the two inputs. You don't have to be knowing or addressing the numerical types, we will do that for you.
 
 {% hint style="warning" %}
-You can change this [setting in the configuration to false](../../configuration/#use-high-precision-math) and it will use basic Double mathematics and it will be up to you when to use high precision evaluations.
+You can change this [setting in the configuration to false](../../configuration.md#use-high-precision-math) and it will use basic Double mathematics and it will be up to you when to use high precision evaluations.
 {% endhint %}
 
 You can store a larger number like:

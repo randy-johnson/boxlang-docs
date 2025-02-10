@@ -71,7 +71,7 @@ The following are the env variables available in the runtime:
 <table><thead><tr><th width="305">Environmeent</th><th>Description</th></tr></thead><tbody><tr><td><code>BOXLANG_LAMBDA_CLASS</code></td><td><p>Absolute path to the lambda to execute. The default path is:</p><pre><code>/var/task/Lambda.bx
 </code></pre><p>Which is your lambda deployed within your zip file.</p></td></tr><tr><td><code>BOXLANG_LAMBDA_DEBUGMODE</code></td><td>Turn runtime debug mode or not.</td></tr><tr><td><code>BOXLANG_LAMBDA_CONFIG</code></td><td>Absolute path to a custom <code>boxlang.json</code> configuration for the runtime.</td></tr></tbody></table>
 
-You can also leverage ANY env variable to configure the BoxLang runtime using our runtime [environment conventions](../configuration/).
+You can also leverage ANY env variable to configure the BoxLang runtime using our runtime [environment conventions](../configuration.md).
 
 ## BoxLang AWS Template
 

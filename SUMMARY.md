@@ -62,7 +62,7 @@
   * [BoxLang Compiler](getting-started/ide-tooling/boxlang-compiler.md)
   * [CFML Feature Audit](getting-started/ide-tooling/cfml-feature-audit.md)
   * [CFML to BoxLang Transpiler](getting-started/ide-tooling/cfml-to-boxlang-transpiler.md)
-* [Runtime Configuration](getting-started/configuration/README.md)
+* [Runtime Configuration](getting-started/configuration.md)
   * [Directives](getting-started/configuration/directives.md)
   * [Caches](getting-started/configuration/caches.md)
   * [Datasources](getting-started/configuration/datasources.md)
