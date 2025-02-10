@@ -62,7 +62,15 @@
   * [BoxLang Compiler](getting-started/ide-tooling/boxlang-compiler.md)
   * [CFML Feature Audit](getting-started/ide-tooling/cfml-feature-audit.md)
   * [CFML to BoxLang Transpiler](getting-started/ide-tooling/cfml-to-boxlang-transpiler.md)
-* [Runtime Configuration](getting-started/configuration.md)
+* [Runtime Configuration](getting-started/configuration/README.md)
+  * [Directives](getting-started/configuration/directives.md)
+  * [Caches](getting-started/configuration/caches.md)
+  * [Datasources](getting-started/configuration/datasources.md)
+  * [Experimental](getting-started/configuration/experimental.md)
+  * [Executors](getting-started/configuration/executors.md)
+  * [Logging](getting-started/configuration/logging.md)
+  * [Modules](getting-started/configuration/modules.md)
+  * [Security](getting-started/configuration/security.md)
 
 ## BoxLang Language
 

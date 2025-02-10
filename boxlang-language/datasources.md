@@ -1,4 +1,4 @@
-# Datasource Definitions
+# Datasources
 
 A datasource is a **named** connection to a specific database with specified credentials. You can define a datasource in one of three locations:
 
@@ -62,7 +62,7 @@ You can define a datasource at the BoxLang runtime level by placing it in your `
 ```
 {% endcode %}
 
-Note the use of BoxLang's environment variable replacement syntax for the datasource properties: `${env.MYSQL_HOST:localhost}`. See [Environment Variable Substitution](../getting-started/configuration.md#environment-variable-substitution) for more info.
+Note the use of BoxLang's environment variable replacement syntax for the datasource properties: `${env.MYSQL_HOST:localhost}`. See [Environment Variable Substitution](../getting-started/configuration/#environment-variable-substitution) for more info.
 
 ## Defining Datasources In `Application.bx`
 
@@ -234,22 +234,22 @@ You can easily place a `.cfconfig.json` in the web root of your project, and if 
 
 ### All Configuration Properties
 
-| Property           | Type    | Default       | Description                                                                                                                                                                                                 |
-|--------------------|---------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| driver             | String  |               | Datasource driver to use. Corresponds with the boxlang JDBC driver module - see [What Database Vendors Are Supported?](#what-database-vendors-are-supported) |
-| dbdriver           | String  |               | Alias for `driver`. *Deprecated* |
-| class              | String  |               | Specify a custom or specific class to use as the database driver. *Not recommended - use the correct `driver` instead.* |
-| custom             | Struct  |               | Struct of custom properties. |
-| username           | String  |               | Database connection username. |
-| password           | String  |               | Database connection password. |
-| maxConnections     | Integer | 10            | The maximum number of connections. Alias for Hikari's `maximumPoolSize` |
-| minConnections     | Integer | 10            | The minimum number of connections. Alias for Hikari's `minimumIdle` |
-| connectionTimeout  | Integer | 1             | Maximum time to wait for a successful connection, in seconds. |
-| idleTimeout        | Integer | 600           | The maximum number of idle time in seconds (10 Minutes = 600). Refers to the maximum amount of time a connection can remain idle in the pool before it is eligible for eviction. |
-| maxLifetime        | Integer | 1800          | This property controls the maximum lifetime of a connection in the pool. An in-use connection will never be retired, only when it is closed will it then be removed. 30 minutes by default = 1800 seconds. |
-| keepaliveTime      | Integer | 600           | This property controls how frequently HikariCP will attempt to keep a connection alive, in order to prevent it from being timed out by the database or network infrastructure. 10 Minutes = 600 seconds. |
-| autoCommit         | Boolean | true          | The default auto-commit state of connections created by this pool. |
-| registerMbeans     | Boolean | true          | Register mbeans for JMX connection monitoring support. |
+| Property          | Type    | Default | Description                                                                                                                                                                                                |
+| ----------------- | ------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| driver            | String  |         | Datasource driver to use. Corresponds with the boxlang JDBC driver module - see [What Database Vendors Are Supported?](datasources.md#what-database-vendors-are-supported)                                 |
+| dbdriver          | String  |         | Alias for `driver`. _Deprecated_                                                                                                                                                                           |
+| class             | String  |         | Specify a custom or specific class to use as the database driver. _Not recommended - use the correct `driver` instead._                                                                                    |
+| custom            | Struct  |         | Struct of custom properties.                                                                                                                                                                               |
+| username          | String  |         | Database connection username.                                                                                                                                                                              |
+| password          | String  |         | Database connection password.                                                                                                                                                                              |
+| maxConnections    | Integer | 10      | The maximum number of connections. Alias for Hikari's `maximumPoolSize`                                                                                                                                    |
+| minConnections    | Integer | 10      | The minimum number of connections. Alias for Hikari's `minimumIdle`                                                                                                                                        |
+| connectionTimeout | Integer | 1       | Maximum time to wait for a successful connection, in seconds.                                                                                                                                              |
+| idleTimeout       | Integer | 600     | The maximum number of idle time in seconds (10 Minutes = 600). Refers to the maximum amount of time a connection can remain idle in the pool before it is eligible for eviction.                           |
+| maxLifetime       | Integer | 1800    | This property controls the maximum lifetime of a connection in the pool. An in-use connection will never be retired, only when it is closed will it then be removed. 30 minutes by default = 1800 seconds. |
+| keepaliveTime     | Integer | 600     | This property controls how frequently HikariCP will attempt to keep a connection alive, in order to prevent it from being timed out by the database or network infrastructure. 10 Minutes = 600 seconds.   |
+| autoCommit        | Boolean | true    | The default auto-commit state of connections created by this pool.                                                                                                                                         |
+| registerMbeans    | Boolean | true    | Register mbeans for JMX connection monitoring support.                                                                                                                                                     |
 
 In addition to the above properties, you can include any [Hikari configuration property](https://github.com/brettwooldridge/HikariCP?tab=readme-ov-file#gear-configuration-knobs-baby) you'd like in your datasource configuration:
 
@@ -295,5 +295,4 @@ This returns a struct of pool metadata including the following keys:
 * `maxConnections`
 * `minConnections`
 
-Find out what datasources you have defined by dumping out this
-getBoxContext().getRuntime().getDatasourceService().getNames()
+Find out what datasources you have defined by dumping out this getBoxContext().getRuntime().getDatasourceService().getNames()

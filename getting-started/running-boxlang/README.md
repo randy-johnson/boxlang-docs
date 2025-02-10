@@ -45,7 +45,7 @@ This is important because inside of the home folder, you can have several folder
 Please note that each runtime can have a different location for the BoxLang home. So make sure you read each of the runtime's docs to see where each goes.
 {% endhint %}
 
-<table><thead><tr><th width="257">Folder/FIle</th><th>Description</th></tr></thead><tbody><tr><td><code>/classes</code></td><td>Where all the compiled classes will be stored</td></tr><tr><td><code>/config</code></td><td>Where configuration files are stored for the runtime</td></tr><tr><td><code>/config/boxlang.json</code></td><td>The <a href="../configuration.md">runtime configuration file</a>. Here is where you can configure all the settings, caches, datasources, compiler information, and so much more.</td></tr><tr><td><code>/global</code></td><td>Where global BoxLang classes and component templates can be stored for the entire runtime</td></tr><tr><td><code>/lib</code></td><td>You can place any *.jar files here, and they will be loaded into the runtime at startup. This is a great place to put third-party jars that will be available at runtime.</td></tr><tr><td><code>/logs</code></td><td>All log files will be stored here</td></tr><tr><td><code>/modules</code></td><td>Here is where the BoxLang modules are installed and will be available for the entire operating system binary.</td></tr><tr><td><code>version.properties</code></td><td>The version information of the installed runtime.</td></tr></tbody></table>
+<table><thead><tr><th width="257">Folder/FIle</th><th>Description</th></tr></thead><tbody><tr><td><code>/classes</code></td><td>Where all the compiled classes will be stored</td></tr><tr><td><code>/config</code></td><td>Where configuration files are stored for the runtime</td></tr><tr><td><code>/config/boxlang.json</code></td><td>The <a href="../configuration/">runtime configuration file</a>. Here is where you can configure all the settings, caches, datasources, compiler information, and so much more.</td></tr><tr><td><code>/global</code></td><td>Where global BoxLang classes and component templates can be stored for the entire runtime</td></tr><tr><td><code>/lib</code></td><td>You can place any *.jar files here, and they will be loaded into the runtime at startup. This is a great place to put third-party jars that will be available at runtime.</td></tr><tr><td><code>/logs</code></td><td>All log files will be stored here</td></tr><tr><td><code>/modules</code></td><td>Here is where the BoxLang modules are installed and will be available for the entire operating system binary.</td></tr><tr><td><code>version.properties</code></td><td>The version information of the installed runtime.</td></tr></tbody></table>
 
 ### Start the REPL <a href="#start-the-repl-8" id="start-the-repl-8"></a>
 
@@ -238,9 +238,9 @@ If you interact with the `boxlang` binary then you will be executing the `BoxRun
 #### Options
 
 * `--bx-code "code here"`—This is used to pass ad-hoc code to execute. Provide code in the next argument, quoted.
-* `--bx-config` - Pass a path to a JSON file for BoxLang configuration. See [Runtime Configuration](../configuration.md) for more information.
+* `--bx-config` - Pass a path to a JSON file for BoxLang configuration. See [Runtime Configuration](../configuration/) for more information.
 * `--bx-debug` - Enable debug mode (more debug logs!)
-* `--bx-home` - Pass a path to a custom runtime home directory for storing modules, configuration, and more. See [Runtime Home Directory](../configuration.md#runtime-home-directory) for more information.
+* `--bx-home` - Pass a path to a custom runtime home directory for storing modules, configuration, and more. See [Runtime Home Directory](../configuration/#runtime-home-directory) for more information.
 * `--bx-printAST` - Prints out BoxLang AST in JSON format for code provided via the `-c` flag (for debugging)
 * `--bx-transpile` - Prints out transpiled Java source that would be compiled to create the bytecode for the passed template path. (for debugging)
 * `--version` - Output the current runtime's version information

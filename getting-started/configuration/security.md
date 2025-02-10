@@ -1,0 +1,124 @@
+---
+description: Configure the security settings in BoxLang
+icon: shield-cross
+---
+
+# Security
+
+This segment is where you can configure the security elements of BoxLang.
+
+## Allowed File Operation Extensions
+
+An explicit whitelist of file extensions that are allowed to be uploaded - overrides any values in the `disallowedWriteExtensions`
+
+```json
+"allowedFileOperationExtensions": [],
+```
+
+## Disallowed Imports
+
+An array of regex patterns (case-sensitive) that will try to be matched to imports or to creation of classes. If they match the patterns a security exception wil be thrown.
+
+```json
+// Ex: "disallowedImports": ["java\\.lang\\.(ProcessBuilder|Reflect", "java\\.io\\.(File|FileWriter)"]
+"disallowedImports": [],
+```
+
+## Disallowed BIFS
+
+An array of BIF names that will be disallowed from execution.
+
+```json
+// Ex: "disallowedBifs": ["createObject", "systemExecute"]
+"disallowedBifs": [],
+```
+
+## Disallowed Components
+
+An array of Component names that will be disallowed from execution.
+
+```json
+// Ex: "disallowedComponents": ["execute", "http"]
+"disallowedComponents": [],
+```
+
+## Disallowed File Operation Extensions
+
+The list of file extensions that are not allowed to be uploaded. Also enforced by file relocation operations ( e.g. copy/move )
+
+```json
+"disallowedFileOperationExtensions": [
+		"bat",
+		"exe",
+		"cmd",
+		"cfm",
+		"cfc",
+		"cfs",
+		"bx",
+		"bxm",
+		"bxs",
+		"sh",
+		"php",
+		"pl",
+		"cgi",
+		"386",
+		"dll",
+		"com",
+		"torrent",
+		"js",
+		"app",
+		"jar",
+		"pif",
+		"vb",
+		"vbscript",
+		"wsf",
+		"asp",
+		"cer",
+		"csr",
+		"jsp",
+		"drv",
+		"sys",
+		"ade",
+		"adp",
+		"bas",
+		"chm",
+		"cpl",
+		"crt",
+		"csh",
+		"fxp",
+		"hlp",
+		"hta",
+		"inf",
+		"ins",
+		"isp",
+		"jse",
+		"htaccess",
+		"htpasswd",
+		"ksh",
+		"lnk",
+		"mdb",
+		"mde",
+		"mdt",
+		"mdw",
+		"msc",
+		"msi",
+		"msp",
+		"mst",
+		"ops",
+		"pcd",
+		"prg",
+		"reg",
+		"scr",
+		"sct",
+		"shb",
+		"shs",
+		"url",
+		"vbe",
+		"vbs",
+		"wsc",
+		"wsf",
+		"wsh"
+	],
+```
+
+###
