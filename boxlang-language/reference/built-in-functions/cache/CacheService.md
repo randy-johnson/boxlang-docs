@@ -2,7 +2,7 @@
 
 # Function: `CacheService`
 
-Get access to the Box Cache services
+No description available.
 
 ## Method Signature
 

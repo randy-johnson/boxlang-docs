@@ -2,11 +2,7 @@
 
 # Function: `CompareNoCase`
 
-Performs a case-insensitive comparison of two strings.
-
--1, if string1 is less than string2
- 0, if string1 is equal to string2
- 1, if string1 is greater than string2
+No description available.
 
 ## Method Signature
 
@@ -19,8 +15,8 @@ CompareNoCase(string1=[string], string2=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string1` | `string` | `true` | The first string to compare |  |
-| `string2` | `string` | `true` | The second string to compare |  |
+| `string1` | `string` | `true` |  |  |
+| `string2` | `string` | `true` |  |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `QueryDeleteRow`
 
-This function deletes a row from the query
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryDeleteRow(query=[query], row=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to delete the row from |  |
-| `row` | `integer` | `true` | The row index to delete |  |
+| `query` | `query` | `true` |  |  |
+| `row` | `integer` | `true` |  |  |
 
 ## Examples
 
@@ -32,6 +32,7 @@ QueryDeleteRow(query=[query], row=[integer])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryEach](./QueryEach.md)
@@ -46,6 +47,7 @@ QueryDeleteRow(query=[query], row=[integer])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

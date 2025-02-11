@@ -2,7 +2,7 @@
 
 # Function: `QueryReverse`
 
-This function reverses the query data
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ QueryReverse(query=[query])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to reverse |  |
+| `query` | `query` | `true` |  |  |
 
 ## Examples
 
@@ -31,6 +31,7 @@ QueryReverse(query=[query])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -46,6 +47,7 @@ QueryReverse(query=[query])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)
   * [QuerySetCell](./QuerySetCell.md)

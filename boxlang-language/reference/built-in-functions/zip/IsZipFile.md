@@ -2,7 +2,7 @@
 
 # Function: `IsZipFile`
 
-Verifies if the incoming file absolute path is a zip file or not
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsZipFile(path=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `path` | `string` | `true` | The absolute path of the file to verify |  |
+| `path` | `string` | `true` |  |  |
 
 ## Examples
 

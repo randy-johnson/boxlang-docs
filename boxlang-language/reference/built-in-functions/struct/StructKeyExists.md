@@ -2,7 +2,7 @@
 
 # Function: `StructKeyExists`
 
-Tests whether a key exists in a struct and returns a boolean value
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ StructKeyExists(struct=[structloose], key=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` | The struct to test |  |
-| `key` | `any` | `true` | The key within the struct to test for existence |  |
+| `struct` | `struct` | `true` |  |  |
+| `key` | `any` | `true` |  |  |
 
 ## Examples
 

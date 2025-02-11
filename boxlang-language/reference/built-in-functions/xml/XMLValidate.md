@@ -2,9 +2,7 @@
 
 # Function: `XMLValidate`
 
-Uses a Document Type Definition (DTD) or XML Schema to validate an XML text document or an XML document object.
-
-Returns keys status (boolean), errors (array), fatalerrors (array) and warnings (array)
+No description available.
 
 ## Method Signature
 
@@ -17,8 +15,8 @@ XMLValidate(XML=[any], validator=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `XML` | `any` | `true` | The XML text document or XML document object to validate. |  |
-| `validator` | `string` | `false` | The DTD or XML Schema to use for validation. If not provided, the DTD declaration within the XML document is used. |  |
+| `XML` | `any` | `true` |  |  |
+| `validator` | `string` | `false` |  |  |
 
 ## Examples
 

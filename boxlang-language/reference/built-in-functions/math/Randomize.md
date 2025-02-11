@@ -2,8 +2,7 @@
 
 # Function: `Randomize`
 
-Seeds the pseudo-random number generator with an
- integer number, ensuring repeatable number patterns.
+No description available.
 
 ## Method Signature
 
@@ -16,8 +15,8 @@ Randomize(seed=[numeric], algorithm=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `seed` | `numeric` | `true` | The number to seed the Random with |  |
-| `algorithm` | `string` | `false` | The algorithm to use to generate the random number. |  |
+| `seed` | `numeric` | `true` |  |  |
+| `algorithm` | `string` | `false` |  |  |
 
 ## Examples
 

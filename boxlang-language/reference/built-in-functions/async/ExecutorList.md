@@ -2,7 +2,7 @@
 
 # Function: `ExecutorList`
 
-Get's an array of all the executors registered in the system
+No description available.
 
 ## Method Signature
 

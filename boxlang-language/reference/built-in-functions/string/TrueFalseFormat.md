@@ -2,7 +2,7 @@
 
 # Function: `TrueFalseFormat`
 
-Return Yes/No based on whether the input is true/false
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ TrueFalseFormat(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` | The value to check for true/false and return Yes/No |  |
+| `value` | `any` | `true` |  |  |
 
 ## Examples
 

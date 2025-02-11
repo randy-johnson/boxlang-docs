@@ -2,7 +2,7 @@
 
 # Function: `StructKeyArray`
 
-Get keys of a struct as an array
+No description available.
 
 ## Method Signature
 

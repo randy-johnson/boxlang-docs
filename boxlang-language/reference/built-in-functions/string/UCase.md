@@ -2,7 +2,7 @@
 
 # Function: `UCase`
 
-Uppercase a string
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ UCase(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The string to uppercase |  |
+| `string` | `string` | `true` |  |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `QueryInsertAt`
 
-Inserts a query data into another query at a specific position
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ QueryInsertAt(query=[query], value=[query], position=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The source query to insert to |  |
-| `value` | `query` | `true` | The query that will be inserted |  |
-| `position` | `numeric` | `true` | The position where the query will be inserted |  |
+| `query` | `query` | `true` |  |  |
+| `value` | `query` | `true` |  |  |
+| `position` | `numeric` | `true` |  |  |
 
 ## Examples
 
@@ -33,6 +33,7 @@ QueryInsertAt(query=[query], value=[query], position=[numeric])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -47,6 +48,7 @@ QueryInsertAt(query=[query], value=[query], position=[numeric])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

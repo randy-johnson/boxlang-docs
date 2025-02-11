@@ -2,7 +2,7 @@
 
 # Function: `ListSetAt`
 
-Retrieves an item in to a delimited list at the specified position
+No description available.
 
 ## Method Signature
 
@@ -15,12 +15,12 @@ ListSetAt(list=[string], position=[integer], value=[string], delimiter=[string],
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` | string list to filter entries from |  |
-| `position` | `integer` | `true` | numeric the one-based index position to retrieve the value at |  |
-| `value` | `string` | `true` | string the value to set at the specified position |  |
-| `delimiter` | `string` | `false` | string the list delimiter | `,` |
-| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
-| `multiCharacterDelimiter` | `boolean` | `false` | boolean whether the delimiter is multi-character | `true` |
+| `list` | `string` | `true` |  |  |
+| `position` | `integer` | `true` |  |  |
+| `value` | `string` | `true` |  |  |
+| `delimiter` | `string` | `false` |  | `,` |
+| `includeEmptyFields` | `boolean` | `false` |  | `false` |
+| `multiCharacterDelimiter` | `boolean` | `false` |  | `true` |
 
 ## Examples
 

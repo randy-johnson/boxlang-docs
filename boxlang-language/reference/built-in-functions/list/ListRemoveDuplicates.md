@@ -2,7 +2,7 @@
 
 # Function: `ListRemoveDuplicates`
 
-De-duplicates a delimited list - either case-sensitively or case-insenstively
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ ListRemoveDuplicates(list=[string], delimiter=[string], ignoreCase=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` | The list to deduplicate |  |
-| `delimiter` | `string` | `false` | The delimiter of the list | `,` |
-| `ignoreCase` | `boolean` | `false` | Whether case should be ignored or not during deduplication - defaults to false | `false` |
+| `list` | `string` | `true` |  |  |
+| `delimiter` | `string` | `false` |  | `,` |
+| `ignoreCase` | `boolean` | `false` |  | `false` |
 
 ## Examples
 

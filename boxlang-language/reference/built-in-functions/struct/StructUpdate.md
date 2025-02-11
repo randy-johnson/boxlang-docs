@@ -2,7 +2,7 @@
 
 # Function: `StructUpdate`
 
-Updates or sets a key/value pair in to a struct
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ StructUpdate(struct=[modifiableStruct], key=[any], value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `modifiableStruct` | `true` | The target struct |  |
-| `key` | `any` | `true` | The struct key |  |
-| `value` | `any` | `true` | The value to assign for the specified key |  |
+| `struct` | `modifiableStruct` | `true` |  |  |
+| `key` | `any` | `true` |  |  |
+| `value` | `any` | `true` |  |  |
 
 ## Examples
 

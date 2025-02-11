@@ -2,10 +2,7 @@
 
 # Function: `GetToken`
 
-Determines whether a token of the list in the delimiters parameter is present in a string.
-
-Returns the token found at position index of the string, as a string.
- If index is greater than the number of tokens in the string, returns an empty string.
+No description available.
 
 ## Method Signature
 
@@ -18,9 +15,9 @@ GetToken(string=[string], index=[integer], delimiter=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | string list to filter entries from |  |
-| `index` | `integer` | `true` | numeric the one-based index position to retrieve the value at |  |
-| `delimiter` | `string` | `false` | string the list delimiter | `,` |
+| `string` | `string` | `true` |  |  |
+| `index` | `integer` | `true` |  |  |
+| `delimiter` | `string` | `false` |  | `,` |
 
 ## Examples
 

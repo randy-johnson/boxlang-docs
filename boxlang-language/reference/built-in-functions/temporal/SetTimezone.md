@@ -2,7 +2,7 @@
 
 # Function: `SetTimezone`
 
-Sets the timezone of the current request context
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ SetTimezone(timezone=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `timezone` | `string` | `true` | The string representation or three character alias of the timezone |  |
+| `timezone` | `string` | `true` |  |  |
 
 ## Examples
 

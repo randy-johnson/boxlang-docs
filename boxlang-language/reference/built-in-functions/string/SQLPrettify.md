@@ -2,7 +2,7 @@
 
 # Function: `SQLPrettify`
 
-Prettify a SQL string
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ SQLPrettify(sql=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `sql` | `string` | `true` | The string to prettify |  |
+| `sql` | `string` | `true` |  |  |
 
 ## Examples
 

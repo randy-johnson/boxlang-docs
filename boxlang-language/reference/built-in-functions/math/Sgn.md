@@ -2,7 +2,7 @@
 
 # Function: `Sgn`
 
-Determine the sign of a number
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Sgn(number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `numeric` | `true` | The number to determine the sign of. |  |
+| `number` | `numeric` | `true` |  |  |
 
 ## Examples
 

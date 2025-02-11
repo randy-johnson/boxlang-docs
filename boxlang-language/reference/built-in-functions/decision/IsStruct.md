@@ -2,7 +2,7 @@
 
 # Function: `IsStruct`
 
-Determine whether a value is a struct
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsStruct(variable=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `variable` | `any` | `true` | The value to test for structi-ness. |  |
+| `variable` | `any` | `true` |  |  |
 
 ## Examples
 

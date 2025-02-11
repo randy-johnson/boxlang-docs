@@ -2,7 +2,7 @@
 
 # Function: `Left`
 
-Extract the leftmost count characters from a string
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ Left(string=[string], count=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The string to extract from |  |
-| `count` | `integer` | `true` | The number of characters to retrieve. |  |
+| `string` | `string` | `true` |  |  |
+| `count` | `integer` | `true` |  |  |
 
 ## Examples
 

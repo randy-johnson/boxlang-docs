@@ -2,7 +2,7 @@
 
 # Function: `XMLSearch`
 
-Get XML values according to given xPath query
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ XMLSearch(XMLNode=[XML], xpath=[String], params=[Struct])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `XMLNode` | `XML` | `true` | The XML node to search |  |
-| `xpath` | `String` | `true` | The xpath query to search for |  |
-| `params` | `Struct` | `false` | The parameters to pass to the xpath query | `{}` |
+| `XMLNode` | `XML` | `true` |  |  |
+| `xpath` | `String` | `true` |  |  |
+| `params` | `Struct` | `false` |  | `{}` |
 
 ## Examples
 

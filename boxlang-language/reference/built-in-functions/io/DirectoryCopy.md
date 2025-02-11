@@ -2,7 +2,7 @@
 
 # Function: `DirectoryCopy`
 
-Copies a directory from one location to another
+No description available.
 
 ## Method Signature
 
@@ -15,11 +15,11 @@ DirectoryCopy(source=[string], destination=[string], recurse=[boolean], filter=[
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `source` | `string` | `true` | The source directory |  |
-| `destination` | `string` | `true` | The destination directory |  |
-| `recurse` | `boolean` | `false` | [ false ] whether to recurse in to sub-directories and create paths | `false` |
-| `filter` | `string` | `false` | [ "*" ] a file or directory filter to pass | `*` |
-| `createPath` | `boolean` | `false` | [ true ] whether to create any nested paths required to the new directory | `true` |
+| `source` | `string` | `true` |  |  |
+| `destination` | `string` | `true` |  |  |
+| `recurse` | `boolean` | `false` |  | `false` |
+| `filter` | `string` | `false` |  | `*` |
+| `createPath` | `boolean` | `false` |  | `true` |
 
 ## Examples
 

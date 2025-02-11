@@ -2,7 +2,7 @@
 
 # Function: `StructReduce`
 
-Run the provided udf against struct to reduce the values to a single output
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ StructReduce(struct=[structloose], callback=[function], initialValue=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` | The struct to reduce |  |
-| `callback` | `function` | `true` | The function to invoke for each entry in the struct. The function will be passed 4 arguments: the accumulator, they entry key,<br>                    the<br>                    current index, and the original struct. The function should return the new accumulator value. |  |
-| `initialValue` | `any` | `false` | The initial value of the accumulator |  |
+| `struct` | `struct` | `true` |  |  |
+| `callback` | `function` | `true` |  |  |
+| `initialValue` | `any` | `false` |  |  |
 
 ## Examples
 

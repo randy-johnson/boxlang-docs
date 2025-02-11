@@ -2,7 +2,7 @@
 
 # Function: `GetLocaleInfo`
 
-Retrieves a struct containin info on a locale, with an optional display locale
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ GetLocaleInfo(locale=[string], dspLocale=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `locale` | `string` | `false` | Optional locale to retrieve information on - either a common format ( "German" ), or an ISO Directive |  |
-| `dspLocale` | `string` | `false` | Optional display language locale |  |
+| `locale` | `string` | `false` |  |  |
+| `dspLocale` | `string` | `false` |  |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `UCFirst`
 
-Transform the first letter of a string to uppercase or the first letter of each word, and optionally lowercase uppercase characters.
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ UCFirst(string=[string], doAll=[boolean], doLowerIfAllUppercase=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The string to transform. |  |
-| `doAll` | `boolean` | `false` | Boolean flag indicating whether to transform the first letter of each word. | `false` |
-| `doLowerIfAllUppercase` | `boolean` | `false` | Boolean flag indicating whether to lowercase uppercase characters. | `false` |
+| `string` | `string` | `true` |  |  |
+| `doAll` | `boolean` | `false` |  | `false` |
+| `doLowerIfAllUppercase` | `boolean` | `false` |  | `false` |
 
 ## Examples
 

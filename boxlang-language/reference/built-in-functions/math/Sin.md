@@ -2,7 +2,7 @@
 
 # Function: `Sin`
 
-Returns the sine of a number
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Sin(number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `numeric` | `true` | The number to calculate the sine of, entered in radians. |  |
+| `number` | `numeric` | `true` |  |  |
 
 ## Examples
 

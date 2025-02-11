@@ -2,7 +2,7 @@
 
 # Function: `QueryAddRow`
 
-Return new query
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryAddRow(query=[query], rowData=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to add the row(s) to. |  |
-| `rowData` | `any` | `false` | Data to populate the query. Can be a struct (with keys matching column names), an array of structs, or an array of arrays (in<br>                   same order as columnList) |  |
+| `query` | `query` | `true` |  |  |
+| `rowData` | `any` | `false` |  |  |
 
 ## Examples
 
@@ -31,6 +31,7 @@ QueryAddRow(query=[query], rowData=[any])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -46,6 +47,7 @@ QueryAddRow(query=[query], rowData=[any])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

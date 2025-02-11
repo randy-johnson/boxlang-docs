@@ -2,7 +2,7 @@
 
 # Function: `CacheProviders`
 
-Get an array of all the registered cache providers in BoxLang
+No description available.
 
 ## Method Signature
 

@@ -2,7 +2,7 @@
 
 # Function: `QueryRowData`
 
-Returns the cells of a query row as a structure
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryRowData(query=[query], rowNumber=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query object to which the row should be returned. |  |
-| `rowNumber` | `integer` | `true` | Position of the query row to return. |  |
+| `query` | `query` | `true` |  |  |
+| `rowNumber` | `integer` | `true` |  |  |
 
 ## Examples
 
@@ -32,6 +32,7 @@ QueryRowData(query=[query], rowNumber=[integer])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -47,6 +48,7 @@ QueryRowData(query=[query], rowNumber=[integer])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowSwap](./QueryRowSwap.md)
   * [QuerySetCell](./QuerySetCell.md)

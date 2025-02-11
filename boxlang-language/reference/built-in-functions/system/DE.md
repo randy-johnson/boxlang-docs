@@ -2,10 +2,7 @@
 
 # Function: `DE`
 
-Delay evaluation of a string as an expression, when it is passed as a parameter to the IIf or Evaluate functions.
-
-Escapes any double quotation
- marks in the parameter and wraps the result in double quotation marks. It does not escape # so the string could still be evaluated in some cases.
+No description available.
 
 ## Method Signature
 
@@ -18,7 +15,7 @@ DE(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The string to delay evaluation of. |  |
+| `string` | `string` | `true` |  |  |
 
 ## Examples
 
@@ -59,6 +56,7 @@ DE(string=[string])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

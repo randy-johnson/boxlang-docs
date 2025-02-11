@@ -2,7 +2,7 @@
 
 # Function: `LCase`
 
-Uppercase a string
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ LCase(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The string to uppercase |  |
+| `string` | `string` | `true` |  |  |
 
 ## Examples
 

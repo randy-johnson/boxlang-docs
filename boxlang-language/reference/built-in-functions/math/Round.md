@@ -2,7 +2,7 @@
 
 # Function: `Round`
 
-Rounds a number to the closest integer.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Round(number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `numeric` | `true` | The number to be rounded. |  |
+| `number` | `numeric` | `true` |  |  |
 
 ## Examples
 

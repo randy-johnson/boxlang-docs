@@ -2,7 +2,7 @@
 
 # Function: `ArrayUnshift`
 
-This function adds one or more elements to the beginning of the original array and returns the length of the modified array.
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ ArrayUnshift(array=[modifiablearray], object=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiablearray` | `true` | The array to add an item to |  |
-| `object` | `any` | `true` | The value to add |  |
+| `array` | `modifiablearray` | `true` |  |  |
+| `object` | `any` | `true` |  |  |
 
 ## Examples
 

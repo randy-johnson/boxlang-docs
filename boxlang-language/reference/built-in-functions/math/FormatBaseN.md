@@ -2,7 +2,7 @@
 
 # Function: `FormatBaseN`
 
-Converts a number to a string representation in the specified base.
+No description available.
 
 ## Method Signature
 

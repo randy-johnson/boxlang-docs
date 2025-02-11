@@ -2,10 +2,7 @@
 
 # Function: `ReEscape`
 
-Escapes regular expression control characters within a string.
-
-If a string is "foo.bar" and you want to escape it for use in a regular expression, you would use this BIF.
- Escaped Pattern will be "foo\\.bar"
+No description available.
 
 ## Method Signature
 
@@ -18,7 +15,7 @@ ReEscape(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The string you that to escape. |  |
+| `string` | `string` | `true` |  |  |
 
 ## Examples
 

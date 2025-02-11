@@ -2,7 +2,7 @@
 
 # Function: `ArrayLast`
 
-Return first item in array
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ArrayLast(array=[array])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` | The array to get the last |  |
+| `array` | `array` | `true` |  |  |
 
 ## Examples
 

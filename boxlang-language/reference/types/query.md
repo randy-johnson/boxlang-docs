@@ -18,7 +18,7 @@ Arguments:
 | Argument | Type | Required | Default |
 |----------|------|----------|---------|
 | `columnName` | `string` | `true` | `null` |
-| `datatype` | `any` | `false` | `Varchar` |
+| `datatype` | `any` | `false` | `object` |
 | `array` | `array` | `false` | `[]` |
 
 </details>
@@ -84,6 +84,11 @@ Arguments:
 |----------|------|----------|---------|
 | `column` | `string` | `true` | `null` |
 
+</details>
+<details>
+<summary><code>columnList()</code></summary>
+
+This function returns the delimited column list of a query.
 </details>
 <details>
 <summary><code>currentRow()</code></summary>

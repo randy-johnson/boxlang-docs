@@ -2,7 +2,7 @@
 
 # Function: `KebabCase`
 
-Convert a string to kebab case
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ KebabCase(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The target string |  |
+| `string` | `string` | `true` |  |  |
 
 ## Examples
 

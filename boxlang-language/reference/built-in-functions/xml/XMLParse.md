@@ -2,7 +2,7 @@
 
 # Function: `XMLParse`
 
-Return new array
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ XMLParse(XML=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `XML` | `string` | `true` |  |  |
+| `XML` | `string` | `false` |  |  |
 
 ## Examples
 

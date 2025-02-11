@@ -2,7 +2,7 @@
 
 # Function: `ArrayFirst`
 
-Return first item in array
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ArrayFirst(array=[array])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` | The array to get the first item from. |  |
+| `array` | `array` | `true` |  |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `QueryDeleteColumn`
 
-Deletes a column within a query object.
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryDeleteColumn(query=[query], column=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query object to which the column should be deleted. |  |
-| `column` | `string` | `true` | The name of the column to delete. |  |
+| `query` | `query` | `true` |  |  |
+| `column` | `string` | `true` |  |  |
 
 ## Examples
 
@@ -32,6 +32,7 @@ QueryDeleteColumn(query=[query], column=[string])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
   * [QueryEach](./QueryEach.md)
@@ -46,6 +47,7 @@ QueryDeleteColumn(query=[query], column=[string])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

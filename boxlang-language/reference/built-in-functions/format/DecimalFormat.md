@@ -2,7 +2,7 @@
 
 # Function: `DecimalFormat`
 
-Converts a number to a decimal-formatted string.
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ DecimalFormat(number=[any], length=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `any` | `true` | The number to convert to decimal format. |  |
-| `length` | `integer` | `false` | The number of decimal places to include in the formatted string. | `2` |
+| `number` | `any` | `true` |  |  |
+| `length` | `integer` | `false` |  | `2` |
 
 ## Examples
 

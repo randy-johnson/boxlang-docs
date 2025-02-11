@@ -1332,7 +1332,9 @@ Arguments:
 <details>
 <summary><code>wrap(limit=[integer], strip=[boolean])</code></summary>
 
-nullArguments:
+Wraps a string at the specified limit, breaking at the last space within the limit.
+
+Arguments:
 
 | Argument | Type | Required | Default |
 |----------|------|----------|---------|

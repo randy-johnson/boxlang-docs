@@ -2,7 +2,7 @@
 
 # Function: `StructToSorted`
 
-Converts a struct to a sorted struct - using either a callback comparator or textual directives as the sort option
+No description available.
 
 ## Method Signature
 
@@ -15,11 +15,11 @@ StructToSorted(struct=[structloose], sortType=[any], sortOrder=[string], localeS
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` | The struct to sort |  |
-| `sortType` | `any` | `false` | An optional sort type to apply to that type - if a callback is given in this position it will be used as that argument | `text` |
-| `sortOrder` | `string` | `false` | The sort order applicable to the sortType argument | `asc` |
+| `struct` | `struct` | `true` |  |  |
+| `sortType` | `any` | `false` |  | `text` |
+| `sortOrder` | `string` | `false` |  | `asc` |
 | `localeSensitive` | `any` | `false` |  | `false` |
-| `callback` | `function:Comparator` | `false` | An optional callback to use as the sorting function. You can alternatively pass a Java Comparator. |  |
+| `callback` | `function:Comparator` | `false` |  |  |
 
 ## Examples
 

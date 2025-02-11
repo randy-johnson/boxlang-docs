@@ -2,9 +2,7 @@
 
 # Function: `FileInfo`
 
-Returns a struct of file information.
-
-Different values are returned for FileInfo and GetFileInfo
+No description available.
 
 ## Method Signature
 
@@ -17,7 +15,7 @@ FileInfo(file=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `file` | `any` | `true` | The filepath or file object to retrieve info upon |  |
+| `file` | `any` | `true` |  |  |
 
 ## Examples
 

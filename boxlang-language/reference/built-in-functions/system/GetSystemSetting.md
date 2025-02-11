@@ -2,11 +2,7 @@
 
 # Function: `GetSystemSetting`
 
-Retrieve a Java System property or environment value by name.
-
-It looks at properties first then environment variables second.
-
- You can also pass a default value to return if the property or environment variable is not found.
+No description available.
 
 ## Method Signature
 
@@ -19,8 +15,8 @@ GetSystemSetting(key=[String], defaultValue=[String])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `key` | `String` | `true` | The name of the system property or environment variable to retrieve |  |
-| `defaultValue` | `String` | `false` | The default value to return if the property or environment variable is not found |  |
+| `key` | `String` | `true` |  |  |
+| `defaultValue` | `String` | `false` |  |  |
 
 ## Examples
 
@@ -62,6 +58,7 @@ GetSystemSetting(key=[String], defaultValue=[String])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)
   * [htmlEditFormat](./htmlEditFormat.md)

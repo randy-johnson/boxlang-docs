@@ -2,7 +2,7 @@
 
 # Function: `FileMove`
 
-Moves file from source to destination
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ FileMove(source=[string], destination=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `source` | `string` | `true` | The source file path. |  |
-| `destination` | `string` | `true` | The destination file path. |  |
+| `source` | `string` | `true` |  |  |
+| `destination` | `string` | `true` |  |  |
 
 ## Examples
 

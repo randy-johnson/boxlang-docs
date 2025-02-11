@@ -2,7 +2,7 @@
 
 # Function: `Log`
 
-Returns the natural logarithm of a number.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Log(number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `numeric` | `true` | The number to calculate the natural logarithm of |  |
+| `number` | `numeric` | `true` |  |  |
 
 ## Examples
 

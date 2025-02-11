@@ -2,9 +2,7 @@
 
 # Function: `GetBaseTagData`
 
-Used within a custom tag.
-
-Finds calling (ancestor) tag by name and accesses its data.
+No description available.
 
 ## Method Signature
 
@@ -59,6 +57,7 @@ GetBaseTagData(tagName=[string], ancestorLevels=[integer])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

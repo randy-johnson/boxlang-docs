@@ -1,7 +1,7 @@
 [comment]: # (Note: This documentation is generated dynamically in the build process.  To modify the contents, change the javadoc on the _invoke method of the Component class)
 # Component: `Sleep`
 
-Sleep for a specified number of milliseconds
+No description available.
 
 ## Component Signature
 
@@ -14,7 +14,7 @@ Sleep for a specified number of milliseconds
 
 | Atrribute | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `time` | `any` | `true` | The number of milliseconds to sleep |  |
+| `time` | `any` | `true` |  |  |
 
 ## Examples
 

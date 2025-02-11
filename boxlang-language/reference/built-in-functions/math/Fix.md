@@ -2,7 +2,7 @@
 
 # Function: `Fix`
 
-Converts a real number to an integer
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Fix(number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `numeric` | `true` | The number to convert to an integer |  |
+| `number` | `numeric` | `true` |  |  |
 
 ## Examples
 

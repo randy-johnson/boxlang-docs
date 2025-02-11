@@ -2,10 +2,7 @@
 
 # Function: `ListDeleteAt`
 
-Deletes an element from a list.
-
-Returns a copy of the list, without the
- specified element.
+No description available.
 
 ## Method Signature
 
@@ -18,11 +15,11 @@ ListDeleteAt(list=[string], position=[integer], delimiter=[string], includeEmpty
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` | The list to delete from. |  |
-| `position` | `integer` | `true` | The one-based index position of the element to delete. |  |
-| `delimiter` | `string` | `false` | The delimiter used in the list. | `,` |
-| `includeEmptyFields` | `boolean` | `false` | Whether to include empty fields in the list. | `false` |
-| `multiCharacterDelimiter` | `boolean` | `false` | Whether the delimiter is a multi-character<br>                                   delimiter. | `false` |
+| `list` | `string` | `true` |  |  |
+| `position` | `integer` | `true` |  |  |
+| `delimiter` | `string` | `false` |  | `,` |
+| `includeEmptyFields` | `boolean` | `false` |  | `false` |
+| `multiCharacterDelimiter` | `boolean` | `false` |  | `false` |
 
 ## Examples
 

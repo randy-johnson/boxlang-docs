@@ -2,7 +2,7 @@
 
 # Function: `FileReadLine`
 
-Returns the next line from the file object stream
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ FileReadLine(file=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `file` | `any` | `true` | The currently open file object |  |
+| `file` | `any` | `true` |  |  |
 
 ## Examples
 

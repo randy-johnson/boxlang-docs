@@ -2,7 +2,7 @@
 
 # Function: `DecrementValue`
 
-Decrement the integer part of a number
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ DecrementValue(number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `numeric` | `true` | The number to decrement the integer part of. |  |
+| `number` | `numeric` | `true` |  |  |
 
 ## Examples
 

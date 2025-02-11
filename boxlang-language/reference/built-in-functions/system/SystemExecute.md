@@ -2,17 +2,7 @@
 
 # Function: `SystemExecute`
 
-Executes a system process/command on the underlying OS.
-
-Returns a struct with the following keys:
-
- {
- output : [ the command output ]
- error : [ any errors emitted by the command ]
- timeout : [ boolean value as to whether a timeout was reached ]
- terminated : [ boolean value as to whether the process was terminated ]
- pid : the PID of the process
- }
+No description available.
 
 ## Method Signature
 
@@ -25,13 +15,13 @@ SystemExecute(name=[string], arguments=[any], timeout=[long], terminateOnTimeout
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `name` | `string` | `true` | The process name or binary path ( e.g. bash or /bin/sh ) |  |
-| `arguments` | `any` | `false` | The process arguments ( e.g. for `java --version` this would be `--version` ) |  |
-| `timeout` | `long` | `false` | The timeout to wait for the command, in seconds ( default unlimited ) |  |
-| `terminateOnTimeout` | `boolean` | `false` | Whether to terminate the process/command if a timeout is reached | `false` |
-| `directory` | `string` | `false` | A working directory to execute the command from |  |
+| `name` | `string` | `true` |  |  |
+| `arguments` | `any` | `false` |  |  |
+| `timeout` | `long` | `false` |  |  |
+| `terminateOnTimeout` | `boolean` | `false` |  | `false` |
+| `directory` | `string` | `false` |  |  |
 | `output` | `string` | `false` |  |  |
-| `error` | `string` | `false` | An optional file path to write errors to |  |
+| `error` | `string` | `false` |  |  |
 
 ## Examples
 
@@ -73,6 +63,7 @@ SystemExecute(name=[string], arguments=[any], timeout=[long], terminateOnTimeout
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

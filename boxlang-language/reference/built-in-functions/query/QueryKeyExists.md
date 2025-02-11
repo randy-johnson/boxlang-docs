@@ -2,7 +2,7 @@
 
 # Function: `QueryKeyExists`
 
-This function returns true if the key exists in the query
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryKeyExists(query=[query], key=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to check for the key |  |
-| `key` | `string` | `true` | The key to check for |  |
+| `query` | `query` | `true` |  |  |
+| `key` | `string` | `true` |  |  |
 
 ## Examples
 
@@ -32,6 +32,7 @@ QueryKeyExists(query=[query], key=[string])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -46,6 +47,7 @@ QueryKeyExists(query=[query], key=[string])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

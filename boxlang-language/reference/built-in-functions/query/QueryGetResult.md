@@ -2,7 +2,7 @@
 
 # Function: `QueryGetResult`
 
-Returns the metadata of a query.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ QueryGetResult(query=[query])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to get the result from |  |
+| `query` | `query` | `true` |  |  |
 
 ## Examples
 
@@ -31,6 +31,7 @@ QueryGetResult(query=[query])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -45,6 +46,7 @@ QueryGetResult(query=[query])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

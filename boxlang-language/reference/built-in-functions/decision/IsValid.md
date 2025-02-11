@@ -2,13 +2,7 @@
 
 # Function: `IsValid`
 
-Determine whether the given value is a string, numeric, or date.Arrays, structs, queries, closures, classes and components, and other complex
- structures will return false.
-
-<p>
-
- Note we expressly do not support the `eurodate` type, since date formats vary across EU countries. For this, prefer the `LSIsDate( date, locale )`
- method instead.
+No description available.
 
 ## Method Signature
 
@@ -21,11 +15,11 @@ IsValid(type=[string], value=[any], min=[any], max=[any], pattern=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `type` | `string` | `true` | The type to validate the value against |  |
-| `value` | `any` | `true` | Value to test for validaty on a given type |  |
-| `min` | `any` | `false` | The minimum value for the range type or a pattern to validate the value against |  |
-| `max` | `any` | `false` | The maximum value for the range type |  |
-| `pattern` | `any` | `false` | The pattern to validate the value against |  |
+| `type` | `string` | `true` |  |  |
+| `value` | `any` | `true` |  |  |
+| `min` | `any` | `false` |  |  |
+| `max` | `any` | `false` |  |  |
+| `pattern` | `any` | `false` |  |  |
 
 ## Examples
 

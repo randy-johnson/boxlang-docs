@@ -2,7 +2,7 @@
 
 # Function: `Abs`
 
-Returns the absolute value of a number
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Abs(value=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `numeric` | `true` | The number to return the absolute value of |  |
+| `value` | `numeric` | `true` |  |  |
 
 ## Examples
 

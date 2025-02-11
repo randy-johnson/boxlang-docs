@@ -2,7 +2,7 @@
 
 # Function: `BitMaskClear`
 
-Performs a bitwise mask clear operation.
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ BitMaskClear(number=[integer], start=[integer], length=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `integer` | `true` | 32-bit signed integer on which the mask clear operation is performed. |  |
-| `start` | `integer` | `true` | Start bit for the clear mask (Integer in the range 0-31, inclusive). |  |
-| `length` | `integer` | `true` | Length of bits in the clear mask (Integer in the range 0-31, inclusive). |  |
+| `number` | `integer` | `true` |  |  |
+| `start` | `integer` | `true` |  |  |
+| `length` | `integer` | `true` |  |  |
 
 ## Examples
 

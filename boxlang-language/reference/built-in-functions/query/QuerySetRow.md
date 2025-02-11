@@ -2,7 +2,7 @@
 
 # Function: `QuerySetRow`
 
-Adds or updates a row in a query based on the provided row data and position.
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ QuerySetRow(query=[query], rowNumber=[integer], rowData=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query object to which the row should be added or updated. |  |
-| `rowNumber` | `integer` | `false` | Optional position of the row to update; if omitted or zero, a new row will be added. | `0` |
-| `rowData` | `any` | `true` | A struct or array containing data for the row. |  |
+| `query` | `query` | `true` |  |  |
+| `rowNumber` | `integer` | `false` |  | `0` |
+| `rowData` | `any` | `true` |  |  |
 
 ## Examples
 
@@ -33,6 +33,7 @@ QuerySetRow(query=[query], rowNumber=[integer], rowData=[any])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -48,6 +49,7 @@ QuerySetRow(query=[query], rowNumber=[integer], rowData=[any])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

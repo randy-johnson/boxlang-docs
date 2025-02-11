@@ -2,12 +2,12 @@
 
 # Function: `Invoke`
 
-Invokes an object method and returns the result of the invoked method.
+No description available.
 
 ## Method Signature
 
 ```
-Invoke(instance=[any], methodname=[string], arguments=[any])
+Invoke(object=[any], method=[string], arguments=[any])
 ```
 
 ### Arguments
@@ -15,9 +15,9 @@ Invoke(instance=[any], methodname=[string], arguments=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `instance` | `any` | `true` | Instance of a Box Class or name of one to instantiate. If an empty string is provided, the method will be invoked within the<br>                    same template or Box Class. |  |
-| `methodname` | `string` | `true` | The name of the method to invoke |  |
-| `arguments` | `any` | `false` | An array of positional arguments or a struct of named arguments to pass into the method. |  |
+| `object` | `any` | `true` |  |  |
+| `method` | `string` | `true` |  |  |
+| `arguments` | `any` | `false` |  |  |
 
 ## Examples
 
@@ -59,6 +59,7 @@ Invoke(instance=[any], methodname=[string], arguments=[any])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

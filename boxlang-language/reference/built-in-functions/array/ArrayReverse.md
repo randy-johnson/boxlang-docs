@@ -2,10 +2,7 @@
 
 # Function: `ArrayReverse`
 
-Returns an array with all of the elements reversed.
-
-The value in [0] within the input array will then exist in [n] in the output array, where n is
- the amount of elements in the array minus one.
+No description available.
 
 ## Method Signature
 
@@ -18,7 +15,7 @@ ArrayReverse(array=[array])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` | The array to reverse |  |
+| `array` | `array` | `true` |  |  |
 
 ## Examples
 

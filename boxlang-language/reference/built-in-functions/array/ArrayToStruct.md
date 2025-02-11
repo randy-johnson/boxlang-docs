@@ -2,7 +2,7 @@
 
 # Function: `ArrayToStruct`
 
-Transform the array to a struct, the index of the array is the key of the struct
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ArrayToStruct(array=[array])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` | The array to convert |  |
+| `array` | `array` | `true` |  |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `StringSort`
 
-Sorts a string and returns the result
+No description available.
 
 ## Method Signature
 

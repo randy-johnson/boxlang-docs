@@ -2,9 +2,7 @@
 
 # Function: `FileDelete`
 
-Deletes the specified file on the server.
-
-Throws an exception if the file doesn't exist.
+No description available.
 
 ## Method Signature
 
@@ -17,7 +15,7 @@ FileDelete(file=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `file` | `string` | `true` | The file to delete. |  |
+| `file` | `string` | `true` |  |  |
 
 ## Examples
 

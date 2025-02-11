@@ -20,4 +20,3 @@ This function does not accept any arguments
 
 ## Related
 
-

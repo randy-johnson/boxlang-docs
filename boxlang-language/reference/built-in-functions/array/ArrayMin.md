@@ -2,7 +2,7 @@
 
 # Function: `ArrayMin`
 
-Return length of array
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ArrayMin(array=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `any` | `true` | The array to get min value from |  |
+| `array` | `any` | `true` |  |  |
 
 ## Examples
 

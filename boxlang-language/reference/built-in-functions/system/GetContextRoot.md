@@ -2,9 +2,7 @@
 
 # Function: `GetContextRoot`
 
-Gets the context root.
-
-If BoxLang is not running as a servlet-based web server, this always returns "/".
+No description available.
 
 ## Method Signature
 
@@ -55,6 +53,7 @@ This function does not accept any arguments
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

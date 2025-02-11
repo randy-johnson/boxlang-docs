@@ -2,7 +2,7 @@
 
 # Function: `Slugify`
 
-Slugify a string for URL safety
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ Slugify(string=[string], maxLength=[integer], allow=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The target string |  |
-| `maxLength` | `integer` | `false` | The maximum number of chracters to allow, 0 is all | `0` |
-| `allow` | `string` | `false` | A regex safe list of additional characters to allow. The default is <code>[^a-z0-9]</code> |  |
+| `string` | `string` | `true` |  |  |
+| `maxLength` | `integer` | `false` |  | `0` |
+| `allow` | `string` | `false` |  |  |
 
 ## Examples
 

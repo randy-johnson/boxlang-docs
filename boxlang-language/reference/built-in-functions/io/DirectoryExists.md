@@ -2,7 +2,7 @@
 
 # Function: `DirectoryExists`
 
-Determines whether a directory exists
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ DirectoryExists(path=[string], allowRealPath=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `path` | `string` | `true` | The directory path |  |
-| `allowRealPath` | `boolean` | `true` | Whether to allow an absolute path as the path argument | `true` |
+| `path` | `string` | `true` |  |  |
+| `allowRealPath` | `boolean` | `true` |  | `true` |
 
 ## Examples
 

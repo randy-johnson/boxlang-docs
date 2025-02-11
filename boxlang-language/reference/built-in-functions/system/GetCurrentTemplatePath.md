@@ -2,7 +2,7 @@
 
 # Function: `GetCurrentTemplatePath`
 
-Gets the absolute server file system path of the file that calls this function.
+No description available.
 
 ## Method Signature
 
@@ -53,6 +53,7 @@ This function does not accept any arguments
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

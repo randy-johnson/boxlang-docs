@@ -2,7 +2,7 @@
 
 # Function: `StructDelete`
 
-Deletes a key from a struct
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ StructDelete(struct=[modifiableStruct], key=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `modifiableStruct` | `true` | The struct target |  |
-| `key` | `any` | `true` | The key to delete |  |
+| `struct` | `modifiableStruct` | `true` |  |  |
+| `key` | `any` | `true` |  |  |
 
 ## Examples
 

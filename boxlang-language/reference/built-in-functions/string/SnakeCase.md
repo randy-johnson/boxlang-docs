@@ -2,7 +2,7 @@
 
 # Function: `SnakeCase`
 
-Convert a string to snake case
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ SnakeCase(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The target string |  |
+| `string` | `string` | `true` |  |  |
 
 ## Examples
 

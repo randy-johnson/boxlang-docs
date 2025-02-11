@@ -2,7 +2,7 @@
 
 # Function: `QuerySort`
 
-Sorts array elements.
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QuerySort(query=[query], sortFunc=[function:Comparator])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | Query to sort |  |
-| `sortFunc` | `function:Comparator` | `true` | Sort function to use. You can alternatively pass a Java Comparator. |  |
+| `query` | `query` | `true` |  |  |
+| `sortFunc` | `function:Comparator` | `true` |  |  |
 
 ## Examples
 
@@ -32,6 +32,7 @@ QuerySort(query=[query], sortFunc=[function:Comparator])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -47,6 +48,7 @@ QuerySort(query=[query], sortFunc=[function:Comparator])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

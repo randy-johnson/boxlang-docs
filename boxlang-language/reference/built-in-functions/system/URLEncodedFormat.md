@@ -2,10 +2,7 @@
 
 # Function: `URLEncodedFormat`
 
-Generates a URL-encoded string.
-
-For example, it replaces spaces with %20, and non-alphanumeric characters with equivalent hexadecimal escape
- sequences. Passes arbitrary strings within a URL. *
+No description available.
 
 ## Method Signature
 
@@ -60,6 +57,7 @@ URLEncodedFormat(string=[any])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

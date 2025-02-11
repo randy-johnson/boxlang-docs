@@ -2,7 +2,7 @@
 
 # Function: `ArrayFindAll`
 
-Return an array containing the indexes of matched values
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ ArrayFindAll(array=[array], value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` | The array to be searched. |  |
-| `value` | `any` | `true` | The value to found. |  |
+| `array` | `array` | `true` |  |  |
+| `value` | `any` | `true` |  |  |
 
 ## Examples
 

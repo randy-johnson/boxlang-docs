@@ -1,7 +1,7 @@
 [comment]: # (Note: This documentation is generated dynamically in the build process.  To modify the contents, change the javadoc on the _invoke method of the Component class)
 # Component: `HTTPParam`
 
-I add an HTTP param to an HTTP call.
+No description available.
 
 ## Component Signature
 
@@ -23,7 +23,7 @@ mimetype =[string] />
 | `name` | `string` | `false` |  |  |
 | `value` | `any` | `false` |  |  |
 | `file` | `string` | `false` |  |  |
-| `encoded` | `boolean` | `false` |  | `true` |
+| `encoded` | `boolean` | `false` |  | `false` |
 | `mimetype ` | `string` | `false` |  |  |
 
 ## Examples

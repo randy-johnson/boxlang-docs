@@ -1,7 +1,7 @@
 [comment]: # (Note: This documentation is generated dynamically in the build process.  To modify the contents, change the javadoc on the _invoke method of the Component class)
 # Component: `ProcResult`
 
-Register a result set variable for a stored procedure.
+No description available.
 
 ## Component Signature
 
@@ -16,9 +16,9 @@ maxRows=[integer] />
 
 | Atrribute | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `name` | `string` | `true` | The variable name to place the result set in. |  |
-| `resultSet` | `integer` | `false` | The index of the resultset to access. Required if there is more than one ProcResult component. |  |
-| `maxRows` | `integer` | `false` | The maximum number of rows to fetch per resultset. | `-1` |
+| `name` | `string` | `true` |  |  |
+| `resultSet` | `integer` | `false` |  |  |
+| `maxRows` | `integer` | `false` |  | `-1` |
 
 ## Examples
 

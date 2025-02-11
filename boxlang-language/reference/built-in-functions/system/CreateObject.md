@@ -2,12 +2,12 @@
 
 # Function: `CreateObject`
 
-Creates a new object representation
+No description available.
 
 ## Method Signature
 
 ```
-CreateObject(type=[string], className=[string])
+CreateObject(type=[string], className=[string], properties=[any])
 ```
 
 ### Arguments
@@ -15,8 +15,9 @@ CreateObject(type=[string], className=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `type` | `string` | `false` | The type of object to create: java, bx, or component | `class` |
-| `className` | `string` | `false` | A classname for a component/class request or the java class to create |  |
+| `type` | `string` | `false` |  | `class` |
+| `className` | `string` | `false` |  |  |
+| `properties` | `any` | `false` |  |  |
 
 ## Examples
 
@@ -57,6 +58,7 @@ CreateObject(type=[string], className=[string])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

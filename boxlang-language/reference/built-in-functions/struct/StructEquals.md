@@ -2,7 +2,7 @@
 
 # Function: `StructEquals`
 
-Tests equality between two structs
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ StructEquals(struct1=[structloose], struct2=[structloose])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct1` | `struct` | `true` | The reference struct |  |
-| `struct2` | `struct` | `true` | The struct to test for equality |  |
+| `struct1` | `struct` | `true` |  |  |
+| `struct2` | `struct` | `true` |  |  |
 
 ## Examples
 

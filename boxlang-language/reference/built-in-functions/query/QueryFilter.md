@@ -2,7 +2,7 @@
 
 # Function: `QueryFilter`
 
-Filters query rows specified in filter criteria
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryFilter(query=[query], callback=[function:Predicate], parallel=[boolean], ma
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to get filtered |  |
-| `callback` | `function:Predicate` | `true` | The function to invoke for each item. The function will be passed 3 arguments: the query row as a struct, the row number, the query. You can alternatively pass a Java Predicate which will only receive the 1st arg. |  |
+| `query` | `query` | `true` |  |  |
+| `callback` | `function:Predicate` | `true` |  |  |
 | `parallel` | `boolean` | `false` |  | `false` |
 | `maxThreads` | `integer` | `false` |  |  |
 
@@ -34,6 +34,7 @@ QueryFilter(query=[query], callback=[function:Predicate], parallel=[boolean], ma
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -48,6 +49,7 @@ QueryFilter(query=[query], callback=[function:Predicate], parallel=[boolean], ma
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

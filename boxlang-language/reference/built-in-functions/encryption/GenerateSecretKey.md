@@ -2,8 +2,7 @@
 
 # Function: `GenerateSecretKey`
 
-Generates an encoded encryption key using the specified algorithm and key
- size
+No description available.
 
 ## Method Signature
 
@@ -16,8 +15,8 @@ GenerateSecretKey(algorithm=[string], keySize=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `algorithm` | `string` | `false` | The algorithm to use for generating the key. The default<br>                     is AES. Example values are: AES, DES, DESede, Blowfish,<br>                     HmacSHA1, HmacSHA256, HmacSHA384, HmacSHA512 | `AES` |
-| `keySize` | `numeric` | `false` | The optional size of the key to generate. If not provided<br>                   the default key size for the algorithm will be used |  |
+| `algorithm` | `string` | `false` |  | `AES` |
+| `keySize` | `numeric` | `false` |  |  |
 
 ## Examples
 

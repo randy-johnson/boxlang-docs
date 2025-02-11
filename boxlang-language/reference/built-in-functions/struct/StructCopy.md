@@ -2,9 +2,7 @@
 
 # Function: `StructCopy`
 
-Creates a shallow copy of a struct.
-
-Copies top-level keys, values, and arrays in the structure by value; copies nested structures by reference.
+No description available.
 
 ## Method Signature
 
@@ -17,7 +15,7 @@ StructCopy(struct=[structloose])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` | The struct to copy |  |
+| `struct` | `struct` | `true` |  |  |
 
 ## Examples
 

@@ -2,10 +2,7 @@
 
 # Function: `ArrayShift`
 
-Removes the first element from an array and returns the removed element.
-
-This method changes the length of the array. If used on an empty array, an
- exception will be thrown.
+No description available.
 
 ## Method Signature
 
@@ -18,7 +15,7 @@ ArrayShift(array=[modifiablearray], defaultValue=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiablearray` | `true` | The array to shift |  |
+| `array` | `modifiablearray` | `true` |  |  |
 | `defaultValue` | `any` | `false` |  |  |
 
 ## Examples

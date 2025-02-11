@@ -2,7 +2,7 @@
 
 # Function: `Sleep`
 
-Sleeps the current thread for the specified duration in millisecons
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Sleep(duration=[long])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `duration` | `long` | `true` | The amount of time, in milliseconds to sleep the thread |  |
+| `duration` | `long` | `true` |  |  |
 
 ## Examples
 
@@ -57,6 +57,7 @@ Sleep(duration=[long])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

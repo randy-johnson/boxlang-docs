@@ -2,7 +2,7 @@
 
 # Function: `StructClear`
 
-Clear all items from struct
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ StructClear(structure=[modifiableStruct])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `structure` | `modifiableStruct` | `true` | The struct to clear. |  |
+| `structure` | `modifiableStruct` | `true` |  |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `IsQuery`
 
-Determine whether the given value is a BoxLang Query object.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsQuery(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` | Value to test for query-ness. |  |
+| `value` | `any` | `true` |  |  |
 
 ## Examples
 

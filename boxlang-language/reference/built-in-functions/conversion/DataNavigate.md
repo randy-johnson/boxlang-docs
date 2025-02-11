@@ -2,41 +2,7 @@
 
 # Function: `DataNavigate`
 
-Constructs a fluent data navigator based on different types of data.
-
-<p>
-
- Available Input Types:
- 
-<ul>
-
- 
-<li>
-String: A JSON string
-</li>
-
- 
-<li>
-File Path: A path to a JSON file as a string
-</li>
-
- 
-<li>
-File Path: A path to a JSON file as a Java Path
-</li>
-
- 
-<li>
-Struct: A structure
-</li>
-
- 
-<li>
-Map: A Java map
-</li>
-
- 
-</ul>
+No description available.
 
 ## Method Signature
 

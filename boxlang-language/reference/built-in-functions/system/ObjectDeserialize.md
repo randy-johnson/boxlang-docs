@@ -2,7 +2,7 @@
 
 # Function: `ObjectDeserialize`
 
-Loads an object serialized in a binary form from a file or as binary input
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ObjectDeserialize(input=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `input` | `any` | `true` | The binary representation of the object to load, or the file path to load the object from. |  |
+| `input` | `any` | `true` |  |  |
 
 ## Examples
 
@@ -57,6 +57,7 @@ ObjectDeserialize(input=[any])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

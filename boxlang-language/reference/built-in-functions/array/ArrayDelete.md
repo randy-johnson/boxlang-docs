@@ -2,7 +2,7 @@
 
 # Function: `ArrayDelete`
 
-Delete first occurance of item in array case sensitive
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ ArrayDelete(array=[modifiableArray], value=[any], scope=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiableArray` | `true` | The array to be deleted from. |  |
-| `value` | `any` | `true` | The value to deleted. |  |
+| `array` | `modifiableArray` | `true` |  |  |
+| `value` | `any` | `true` |  |  |
 | `scope` | `string` | `false` |  | `one` |
 
 ## Examples

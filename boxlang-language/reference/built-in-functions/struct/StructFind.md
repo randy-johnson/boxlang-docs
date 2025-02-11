@@ -2,7 +2,7 @@
 
 # Function: `StructFind`
 
-Finds and retrieves a top-level key from a string in a struct
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ StructFind(struct=[structloose], key=[any], defaultValue=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` | The struct object |  |
-| `key` | `any` | `true` | The key to search |  |
-| `defaultValue` | `any` | `false` | An optional value to be returned if the struct does not contain the key |  |
+| `struct` | `struct` | `true` |  |  |
+| `key` | `any` | `true` |  |  |
+| `defaultValue` | `any` | `false` |  |  |
 
 ## Examples
 

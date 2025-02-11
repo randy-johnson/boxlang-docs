@@ -1,7 +1,7 @@
 [comment]: # (Note: This documentation is generated dynamically in the build process.  To modify the contents, change the javadoc on the _invoke method of the Component class)
 # Component: `HTTP`
 
-I make an HTTP call
+No description available.
 
 ## Component Signature
 
@@ -9,10 +9,6 @@ I make an HTTP call
 <bx:HTTP URL=[string]
 port=[numeric]
 method=[string]
-proxyServer=[string]
-proxyPort=[string]
-proxyUser=[string]
-proxyPassword=[string]
 username=[string]
 password=[string]
 userAgent=[string]
@@ -23,11 +19,6 @@ redirect=[boolean]
 timeout=[numeric]
 getAsBinary=[string]
 result=[string]
-delimiter=[string]
-name=[string]
-columns=[string]
-firstRowAsHeaders=[boolean]
-textQualifier=[string]
 file=[string]
 multipart=[boolean]
 multipartType=[string]
@@ -36,10 +27,19 @@ path=[string]
 clientCert=[string]
 compression=[string]
 authType=[string]
-domain=[string]
-workstation=[string]
 cachedWithin=[string]
-encodeUrl=[boolean] />
+encodeUrl=[boolean]
+proxyServer=[string]
+proxyPort=[integer]
+proxyUser=[string]
+proxyPassword=[string]
+name=[string]
+delimiter=[string]
+columns=[string]
+firstRowAsHeaders=[boolean]
+textQualifier=[string]
+domain=[string]
+workstation=[string] />
 ```
 
 ### Attributes
@@ -50,10 +50,6 @@ encodeUrl=[boolean] />
 | `URL` | `string` | `true` |  |  |
 | `port` | `numeric` | `false` |  |  |
 | `method` | `string` | `true` |  | `GET` |
-| `proxyServer` | `string` | `false` |  |  |
-| `proxyPort` | `string` | `false` |  |  |
-| `proxyUser` | `string` | `false` |  |  |
-| `proxyPassword` | `string` | `false` |  |  |
 | `username` | `string` | `false` |  |  |
 | `password` | `string` | `false` |  |  |
 | `userAgent` | `string` | `false` |  | `BoxLang` |
@@ -64,11 +60,6 @@ encodeUrl=[boolean] />
 | `timeout` | `numeric` | `false` |  |  |
 | `getAsBinary` | `string` | `true` |  | `auto` |
 | `result` | `string` | `true` |  | `bxhttp` |
-| `delimiter` | `string` | `false` |  |  |
-| `name` | `string` | `false` |  |  |
-| `columns` | `string` | `false` |  |  |
-| `firstRowAsHeaders` | `boolean` | `false` |  |  |
-| `textQualifier` | `string` | `false` |  |  |
 | `file` | `string` | `false` |  |  |
 | `multipart` | `boolean` | `false` |  | `false` |
 | `multipartType` | `string` | `true` |  | `form-data` |
@@ -77,10 +68,19 @@ encodeUrl=[boolean] />
 | `clientCert` | `string` | `false` |  |  |
 | `compression` | `string` | `false` |  |  |
 | `authType` | `string` | `true` |  | `BASIC` |
-| `domain` | `string` | `false` |  |  |
-| `workstation` | `string` | `false` |  |  |
 | `cachedWithin` | `string` | `false` |  |  |
 | `encodeUrl` | `boolean` | `false` |  | `true` |
+| `proxyServer` | `string` | `false` |  |  |
+| `proxyPort` | `integer` | `false` |  |  |
+| `proxyUser` | `string` | `false` |  |  |
+| `proxyPassword` | `string` | `false` |  |  |
+| `name` | `string` | `false` |  |  |
+| `delimiter` | `string` | `false` |  |  |
+| `columns` | `string` | `false` |  |  |
+| `firstRowAsHeaders` | `boolean` | `false` |  |  |
+| `textQualifier` | `string` | `false` |  |  |
+| `domain` | `string` | `false` |  |  |
+| `workstation` | `string` | `false` |  |  |
 
 ## Examples
 
@@ -88,10 +88,6 @@ encodeUrl=[boolean] />
 <bx:HTTP URL=[string]
 port=[numeric]
 method=[string]
-proxyServer=[string]
-proxyPort=[string]
-proxyUser=[string]
-proxyPassword=[string]
 username=[string]
 password=[string]
 userAgent=[string]
@@ -102,11 +98,6 @@ redirect=[boolean]
 timeout=[numeric]
 getAsBinary=[string]
 result=[string]
-delimiter=[string]
-name=[string]
-columns=[string]
-firstRowAsHeaders=[boolean]
-textQualifier=[string]
 file=[string]
 multipart=[boolean]
 multipartType=[string]
@@ -115,8 +106,17 @@ path=[string]
 clientCert=[string]
 compression=[string]
 authType=[string]
-domain=[string]
-workstation=[string]
 cachedWithin=[string]
-encodeUrl=[boolean] />
+encodeUrl=[boolean]
+proxyServer=[string]
+proxyPort=[integer]
+proxyUser=[string]
+proxyPassword=[string]
+name=[string]
+delimiter=[string]
+columns=[string]
+firstRowAsHeaders=[boolean]
+textQualifier=[string]
+domain=[string]
+workstation=[string] />
 ```

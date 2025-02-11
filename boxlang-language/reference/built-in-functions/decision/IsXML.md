@@ -2,7 +2,7 @@
 
 # Function: `IsXML`
 
-Determines whether a string is well-formed XML text.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsXML(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` | A string containing the XML document text. |  |
+| `value` | `any` | `true` |  |  |
 
 ## Examples
 

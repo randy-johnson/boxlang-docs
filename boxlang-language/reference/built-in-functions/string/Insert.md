@@ -2,7 +2,7 @@
 
 # Function: `Insert`
 
-Inserts a substring into another string at a specified position.
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ Insert(substring=[string], string=[string], position=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `substring` | `string` | `true` | The string to insert. |  |
+| `substring` | `string` | `true` |  |  |
 | `string` | `string` | `true` |  |  |
-| `position` | `integer` | `true` | The position at which to insert the string. |  |
+| `position` | `integer` | `true` |  |  |
 
 ## Examples
 

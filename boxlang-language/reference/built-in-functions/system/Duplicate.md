@@ -2,7 +2,7 @@
 
 # Function: `Duplicate`
 
-Duplicates an object - either shallow or deep
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ Duplicate(object=[any], deep=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `object` | `any` | `true` | Any object to duplicate |  |
-| `deep` | `boolean` | `false` | Whether to deep copy the object or make a shallow copy (e.g. only the top level keys in a struct) | `true` |
+| `object` | `any` | `true` |  |  |
+| `deep` | `boolean` | `false` |  | `true` |
 
 ## Examples
 
@@ -57,6 +57,7 @@ Duplicate(object=[any], deep=[boolean])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

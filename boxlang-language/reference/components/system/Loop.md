@@ -1,7 +1,7 @@
 [comment]: # (Note: This documentation is generated dynamically in the build process.  To modify the contents, change the javadoc on the _invoke method of the Component class)
 # Component: `Loop`
 
-Different items are required based on loop type.
+No description available.
 
 ## Component Signature
 
@@ -22,7 +22,8 @@ groupCaseSensitive=[boolean]
 startRow=[integer]
 endRow=[integer]
 label=[string]
-times=[integer] />
+times=[integer]
+step=[number] />
 ```
 
 ### Attributes
@@ -47,6 +48,7 @@ times=[integer] />
 | `endRow` | `integer` | `false` |  |  |
 | `label` | `string` | `false` |  |  |
 | `times` | `integer` | `false` |  |  |
+| `step` | `number` | `false` |  | `1` |
 
 ## Examples
 
@@ -67,5 +69,6 @@ groupCaseSensitive=[boolean]
 startRow=[integer]
 endRow=[integer]
 label=[string]
-times=[integer] />
+times=[integer]
+step=[number] />
 ```

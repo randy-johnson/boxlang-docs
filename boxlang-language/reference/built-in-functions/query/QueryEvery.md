@@ -2,7 +2,7 @@
 
 # Function: `QueryEvery`
 
-Executes a callback/closure against every row in a query and returns true if the callback/closure returned true for every row.
+No description available.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ QueryEvery(query=[query], closure=[function:Predicate], parallel=[boolean], maxT
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to iterate over |  |
-| `closure` | `function:Predicate` | `true` | The function to invoke for each item. The function will be passed 3 arguments: the row, the currentRow, the query. You can alternatively pass a Java Predicate which will only receive the 1st arg. |  |
-| `parallel` | `boolean` | `false` | Specifies whether the items can be executed in parallel | `false` |
-| `maxThreads` | `integer` | `false` | The maximum number of threads to use when parallel = true |  |
+| `query` | `query` | `true` |  |  |
+| `closure` | `function:Predicate` | `true` |  |  |
+| `parallel` | `boolean` | `false` |  | `false` |
+| `maxThreads` | `integer` | `false` |  |  |
 
 ## Examples
 
@@ -34,6 +34,7 @@ QueryEvery(query=[query], closure=[function:Predicate], parallel=[boolean], maxT
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -48,6 +49,7 @@ QueryEvery(query=[query], closure=[function:Predicate], parallel=[boolean], maxT
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

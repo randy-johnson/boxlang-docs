@@ -2,7 +2,7 @@
 
 # Function: `IsCustomFunction`
 
-Determine whether a given object is a custom function.
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ IsCustomFunction(object=[any], type=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `object` | `any` | `true` | The value to test for closure-ness. |  |
-| `type` | `string` | `false` | Check for a specific type of custom function - `UDF`, `Lambda`, or `Closure`. |  |
+| `object` | `any` | `true` |  |  |
+| `type` | `string` | `false` |  |  |
 
 ## Examples
 

@@ -2,10 +2,7 @@
 
 # Function: `Val`
 
-Converts numeric characters and the first period found that occur at the beginning of a string to a number.
-
-A period not accompianied by at least
- one numeric digit will be ignored. If no numeric digits are found at the start of the string, zero will be returned.
+No description available.
 
 ## Method Signature
 
@@ -18,7 +15,7 @@ Val(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The string to parse |  |
+| `string` | `string` | `true` |  |  |
 
 ## Examples
 

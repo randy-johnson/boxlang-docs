@@ -2,7 +2,7 @@
 
 # Function: `QueryEach`
 
-Iterates over query rows and passes each row per iteration to a callback function
+No description available.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ QueryEach(query=[query], callback=[function:Consumer], parallel=[boolean], maxTh
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to iterate over |  |
-| `callback` | `function:Consumer` | `true` | The function to invoke for each item. The function will be passed 3 arguments: the row, the currentRow, the query. You can alternatively pass a Java Consumer which will only receive the 1st arg. |  |
-| `parallel` | `boolean` | `false` | Specifies whether the items can be executed in parallel | `false` |
-| `maxThreads` | `integer` | `false` | The maximum number of threads to use when parallel = true |  |
+| `query` | `query` | `true` |  |  |
+| `callback` | `function:Consumer` | `true` |  |  |
+| `parallel` | `boolean` | `false` |  | `false` |
+| `maxThreads` | `integer` | `false` |  |  |
 
 ## Examples
 
@@ -34,6 +34,7 @@ QueryEach(query=[query], callback=[function:Consumer], parallel=[boolean], maxTh
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -48,6 +49,7 @@ QueryEach(query=[query], callback=[function:Consumer], parallel=[boolean], maxTh
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

@@ -2,7 +2,7 @@
 
 # Function: `DatePart`
 
-Extracts a part from a datetime value as a numeric.
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ DatePart(datepart=[string], date=[any], timezone=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `datepart` | `string` | `true` | The part of the date to extract. |  |
-| `date` | `any` | `true` | The date to extract the part from. |  |
-| `timezone` | `string` | `false` | An optional, explicit timezone to apply to the date. |  |
+| `datepart` | `string` | `true` |  |  |
+| `date` | `any` | `true` |  |  |
+| `timezone` | `string` | `false` |  |  |
 
 ## Examples
 

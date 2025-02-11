@@ -2,7 +2,7 @@
 
 # Function: `IsArray`
 
-Determine whether a value is an array
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ IsArray(value=[any], number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` | The value to test for array-ness. |  |
-| `number` | `numeric` | `false` | If passed, the array dimension to test. |  |
+| `value` | `any` | `true` |  |  |
+| `number` | `numeric` | `false` |  |  |
 
 ## Examples
 

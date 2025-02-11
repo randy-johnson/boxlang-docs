@@ -2,7 +2,7 @@
 
 # Function: `BinaryEncode`
 
-Encodes binary data to a string with the specified algorithm
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ BinaryEncode(binary=[any], encoding=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `binary` | `any` | `true` | The binary data to encode |  |
-| `encoding` | `string` | `true` | The encoding to use |  |
+| `binary` | `any` | `true` |  |  |
+| `encoding` | `string` | `true` |  |  |
 
 ## Examples
 

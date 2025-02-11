@@ -2,12 +2,7 @@
 
 # Function: `StringBind`
 
-This BIF allows you to bind a string with placeholders to a set of values.
-
-Each placeholder is defined as 
-{@code ${placeholder-name}}
- and can be used anywhere
- and multiple times in the string.
+No description available.
 
 ## Method Signature
 
@@ -20,8 +15,8 @@ StringBind(string=[string], placeholders=[structloose])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The string to bind with placeholders |  |
-| `placeholders` | `struct` | `true` | A struct containing the placeholder values |  |
+| `string` | `string` | `true` |  |  |
+| `placeholders` | `struct` | `true` |  |  |
 
 ## Examples
 

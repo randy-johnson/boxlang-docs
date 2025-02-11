@@ -2,13 +2,7 @@
 
 # Function: `GetMetaData`
 
-Gets metadata (the methods, properties, and parameters of a component) associated with an object.
-
-This returns the 
-<code>
-$bx.meta
-</code>
- object for the object.
+No description available.
 
 ## Method Signature
 
@@ -21,7 +15,7 @@ GetMetaData(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` | The object to get metadata for. |  |
+| `value` | `any` | `true` |  |  |
 
 ## Examples
 
@@ -34,3 +28,4 @@ GetMetaData(value=[any])
   * [NullValue](./NullValue.md)
   * [StringLen](./StringLen.md)
   * [StructCount](./StructCount.md)
+  * [TranspileCollectionKeySwap](./TranspileCollectionKeySwap.md)

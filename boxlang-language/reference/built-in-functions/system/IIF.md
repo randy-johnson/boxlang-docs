@@ -2,10 +2,7 @@
 
 # Function: `IIF`
 
-A boolean condition or value is passed into the first argument.
-
-If the condition is true the second argument is evaluated and returned, if false
- the third argument is evaluated and returned.
+No description available.
 
 ## Method Signature
 
@@ -18,9 +15,9 @@ IIF(condition=[boolean], expression1=[string], expression2=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `condition` | `boolean` | `true` | The condition to evaluate |  |
-| `expression1` | `string` | `true` | The expression to evaluate if the condition is true |  |
-| `expression2` | `string` | `true` | The expression to evaluate if the condition is false |  |
+| `condition` | `boolean` | `true` |  |  |
+| `expression1` | `string` | `true` |  |  |
+| `expression2` | `string` | `true` |  |  |
 
 ## Examples
 
@@ -62,6 +59,7 @@ IIF(condition=[boolean], expression1=[string], expression2=[string])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

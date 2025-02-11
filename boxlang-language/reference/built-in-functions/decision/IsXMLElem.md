@@ -2,7 +2,7 @@
 
 # Function: `IsXMLElem`
 
-Determines whether the function parameter is an ELEMENT node of an XML doc.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsXMLElem(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` | Value to test |  |
+| `value` | `any` | `true` |  |  |
 
 ## Examples
 

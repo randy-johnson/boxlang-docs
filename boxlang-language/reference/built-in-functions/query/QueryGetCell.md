@@ -2,7 +2,7 @@
 
 # Function: `QueryGetCell`
 
-This function maps the query to a new query.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ QueryGetCell(query=[query], column_name=[string], row_number=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to iterate over |  |
+| `query` | `query` | `true` |  |  |
 | `column_name` | `string` | `true` |  |  |
 | `row_number` | `integer` | `false` |  |  |
 
@@ -33,6 +33,7 @@ QueryGetCell(query=[query], column_name=[string], row_number=[integer])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -47,6 +48,7 @@ QueryGetCell(query=[query], column_name=[string], row_number=[integer])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

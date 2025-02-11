@@ -2,7 +2,7 @@
 
 # Function: `Acos`
 
-Returns the arccosine (inverse cosine) of a number
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Acos(number=[double])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `double` | `true` | The number to calculate the arccosine of |  |
+| `number` | `double` | `true` |  |  |
 
 ## Examples
 

@@ -2,9 +2,7 @@
 
 # Function: `SystemCacheClear`
 
-For Lucee compat right now.
-
-We'll see if we need to do anything else.
+No description available.
 
 ## Method Signature
 
@@ -17,7 +15,7 @@ SystemCacheClear(cacheName=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `cacheName` | `string` | `false` |  |  |
+| `cacheName` | `string` | `false` |  | `all` |
 
 ## Examples
 
@@ -59,6 +57,7 @@ SystemCacheClear(cacheName=[string])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

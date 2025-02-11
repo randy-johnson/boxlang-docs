@@ -2,7 +2,7 @@
 
 # Function: `ListEvery`
 
-Tests whether all items in a list meet the specified callback
+No description available.
 
 ## Method Signature
 
@@ -15,13 +15,13 @@ ListEvery(list=[string], callback=[function:Predicate], delimiter=[string], incl
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` | string list to filter entries from |  |
+| `list` | `string` | `true` |  |  |
 | `callback` | `function:Predicate` | `true` |  |  |
-| `delimiter` | `string` | `false` | string the list delimiter | `,` |
-| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
-| `multiCharacterDelimiter` | `boolean` | `false` | boolean whether the delimiter is multi-character | `true` |
-| `parallel` | `boolean` | `false` | boolean whether to execute the filter in parallel | `false` |
-| `maxThreads` | `integer` | `false` | number the maximum number of threads to use in the parallel filter |  |
+| `delimiter` | `string` | `false` |  | `,` |
+| `includeEmptyFields` | `boolean` | `false` |  | `false` |
+| `multiCharacterDelimiter` | `boolean` | `false` |  | `true` |
+| `parallel` | `boolean` | `false` |  | `false` |
+| `maxThreads` | `integer` | `false` |  |  |
 
 ## Examples
 

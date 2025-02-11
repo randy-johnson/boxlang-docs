@@ -2,10 +2,7 @@
 
 # Function: `TransactionSetSavepoint`
 
-Sets a savepoint in the current transaction.
-
-This savepoint can then be a rollback point when executing a rollback via `transactionRollback(
- "mySavepointName" )`.
+No description available.
 
 ## Method Signature
 
@@ -18,7 +15,7 @@ TransactionSetSavepoint(savepoint=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `savepoint` | `string` | `true` | Specify a savepoint name. |  |
+| `savepoint` | `string` | `true` |  |  |
 
 ## Examples
 
@@ -40,7 +37,6 @@ transaction {
 ```
 
 In this example, the UPDATE will be rolled back while the INSERT statement will remain. Remember that in `transactionRollback()`, the savepoint is not the name of a single savepoint to roll back, but the name of the savepoint to rollback TO.
-
 
 ## Related
 

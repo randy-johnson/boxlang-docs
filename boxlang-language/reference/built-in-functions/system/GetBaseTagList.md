@@ -2,7 +2,7 @@
 
 # Function: `GetBaseTagList`
 
-A comma-delimited list of ancestor tag names as a string.
+No description available.
 
 ## Method Signature
 
@@ -53,6 +53,7 @@ This function does not accept any arguments
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

@@ -2,7 +2,7 @@
 
 # Function: `CreateODBCDateTime`
 
-Creates a DateTime object with the format set to ODBC Implicit format
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ CreateODBCDateTime(date=[any], timezone=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `date` | `any` | `true` | The date string or object |  |
-| `timezone` | `string` | `false` | An optional timezone to apply |  |
+| `date` | `any` | `true` |  |  |
+| `timezone` | `string` | `false` |  |  |
 
 ## Examples
 

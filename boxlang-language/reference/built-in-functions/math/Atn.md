@@ -2,7 +2,7 @@
 
 # Function: `Atn`
 
-Returns the arc tangent (inverse tangent) of a number
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Atn(number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `numeric` | `true` | The number to calculate the arc tangent of |  |
+| `number` | `numeric` | `true` |  |  |
 
 ## Examples
 

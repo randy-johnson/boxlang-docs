@@ -2,7 +2,7 @@
 
 # Function: `GetTempDirectory`
 
-Get the system's temporary directory.
+No description available.
 
 ## Method Signature
 
@@ -54,6 +54,7 @@ This function does not accept any arguments
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTickCount](./GetTickCount.md)
   * [htmlEditFormat](./htmlEditFormat.md)

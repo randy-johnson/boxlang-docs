@@ -2,7 +2,7 @@
 
 # Function: `Pi`
 
-Returns the mathmatical constant Pi accurate to 15 digits
+No description available.
 
 ## Method Signature
 

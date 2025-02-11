@@ -27,6 +27,18 @@ Arguments:
 Get XML values according to given xPath query
 </details>
 <details>
+<summary><code>keyExists(key=[any])</code></summary>
+
+Tests whether a key exists in a struct and returns a boolean value
+
+Arguments:
+
+| Argument | Type | Required | Default |
+|----------|------|----------|---------|
+| `key` | `any` | `true` | `null` |
+
+</details>
+<details>
 <summary><code>search(xpath=[String], params=[Struct])</code></summary>
 
 Get XML values according to given xPath query

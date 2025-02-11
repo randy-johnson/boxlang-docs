@@ -2,7 +2,7 @@
 
 # Function: `ReplaceList`
 
-Replaces occurrences of the elements from a delimited list, in a string with corresponding elements from another delimited list.
+No description available.
 
 ## Method Signature
 
@@ -15,12 +15,12 @@ ReplaceList(string=[string], list1=[string], list2=[string], delimiter_list1=[st
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The string to operate on |  |
-| `list1` | `string` | `true` | The first delimited list of search values |  |
-| `list2` | `string` | `true` | The second delimited list of replacement values |  |
-| `delimiter_list1` | `string` | `false` | The delimiters for list 1 | `,` |
-| `delimiter_list2` | `string` | `false` | The delimiters for list 2 | `,` |
-| `includeEmptyFields` | `boolean` | `false` | Whether to include empty fields in the final result | `false` |
+| `string` | `string` | `true` |  |  |
+| `list1` | `string` | `true` |  |  |
+| `list2` | `string` | `true` |  |  |
+| `delimiter_list1` | `string` | `false` |  | `,` |
+| `delimiter_list2` | `string` | `false` |  | `,` |
+| `includeEmptyFields` | `boolean` | `false` |  | `false` |
 
 ## Examples
 

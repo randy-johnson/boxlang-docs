@@ -2,7 +2,7 @@
 
 # Function: `GetClassMetadata`
 
-Returns the current value of an internal millisecond timer.
+No description available.
 
 ## Method Signature
 
@@ -56,6 +56,7 @@ GetClassMetadata(path=[any])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

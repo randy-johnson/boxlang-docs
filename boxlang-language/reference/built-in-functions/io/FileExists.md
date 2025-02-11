@@ -2,7 +2,7 @@
 
 # Function: `FileExists`
 
-Determines whether a file exists
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ FileExists(source=[string], allowRealPath=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `source` | `string` | `true` | The file path |  |
-| `allowRealPath` | `boolean` | `true` | Whether to allow an absolute path as the path argument | `true` |
+| `source` | `string` | `true` |  |  |
+| `allowRealPath` | `boolean` | `true` |  | `true` |
 
 ## Examples
 

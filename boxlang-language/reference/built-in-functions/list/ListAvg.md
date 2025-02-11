@@ -2,7 +2,7 @@
 
 # Function: `ListAvg`
 
-Gets the average of all values in a list
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ ListAvg(list=[string], delimiter=[string], multiCharacterDelimiter=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` | The list to compact |  |
-| `delimiter` | `string` | `false` | string the list delimiter | `,` |
-| `multiCharacterDelimiter` | `boolean` | `false` | boolean whether the delimiter is multi-character | `false` |
+| `list` | `string` | `true` |  |  |
+| `delimiter` | `string` | `false` |  | `,` |
+| `multiCharacterDelimiter` | `boolean` | `false` |  | `false` |
 
 ## Examples
 

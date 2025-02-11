@@ -2,7 +2,7 @@
 
 # Function: `QueryRowSwap`
 
-In a query object, swap the record in the sourceRow with the record from the destinationRow.
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ QueryRowSwap(query=[query], source=[numeric], destination=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to swap a row with |  |
-| `source` | `numeric` | `true` | The row to swap from |  |
-| `destination` | `numeric` | `true` | The row to swap to |  |
+| `query` | `query` | `true` |  |  |
+| `source` | `numeric` | `true` |  |  |
+| `destination` | `numeric` | `true` |  |  |
 
 ## Examples
 
@@ -33,6 +33,7 @@ QueryRowSwap(query=[query], source=[numeric], destination=[numeric])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -48,6 +49,7 @@ QueryRowSwap(query=[query], source=[numeric], destination=[numeric])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QuerySetCell](./QuerySetCell.md)

@@ -2,7 +2,7 @@
 
 # Function: `IsNull`
 
-Determine whether a given value or variable reference is null.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsNull(object=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `object` | `any` | `true` | Value to test for null. |  |
+| `object` | `any` | `true` |  |  |
 
 ## Examples
 

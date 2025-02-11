@@ -2,7 +2,7 @@
 
 # Function: `ListIndexExists`
 
-Checks if a list has a given index
+No description available.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ ListIndexExists(list=[string], index=[integer], delimiter=[string], includeEmpty
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` | string list to check for an index |  |
-| `index` | `integer` | `true` | numeric The index to check for |  |
-| `delimiter` | `string` | `false` | string the list delimiter | `,` |
-| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
+| `list` | `string` | `true` |  |  |
+| `index` | `integer` | `true` |  |  |
+| `delimiter` | `string` | `false` |  | `,` |
+| `includeEmptyFields` | `boolean` | `false` |  | `false` |
 
 ## Examples
 

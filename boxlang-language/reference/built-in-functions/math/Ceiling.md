@@ -2,7 +2,7 @@
 
 # Function: `Ceiling`
 
-Determines the closest integer that is greater than a specified floating point number.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Ceiling(number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `numeric` | `true` | The number for which to find the ceiling value. |  |
+| `number` | `numeric` | `true` |  |  |
 
 ## Examples
 

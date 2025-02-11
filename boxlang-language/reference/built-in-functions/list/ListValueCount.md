@@ -2,7 +2,7 @@
 
 # Function: `ListValueCount`
 
-returns a count of the number of occurrences of a value in a list
+No description available.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ ListValueCount(list=[string], value=[string], delimiter=[string], includeEmptyFi
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` | The list to be searched. |  |
-| `value` | `string` | `true` | The value to locale |  |
-| `delimiter` | `string` | `false` | The list delimiter(s) | `,` |
-| `includeEmptyFields` | `boolean` | `false` | Whether to include empty fields in the search | `false` |
+| `list` | `string` | `true` |  |  |
+| `value` | `string` | `true` |  |  |
+| `delimiter` | `string` | `false` |  | `,` |
+| `includeEmptyFields` | `boolean` | `false` |  | `false` |
 
 ## Examples
 

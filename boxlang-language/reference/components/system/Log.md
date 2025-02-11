@@ -1,7 +1,7 @@
 [comment]: # (Note: This documentation is generated dynamically in the build process.  To modify the contents, change the javadoc on the _invoke method of the Component class)
 # Component: `Log`
 
-Logs information to the specified log file
+No description available.
 
 ## Component Signature
 
@@ -9,7 +9,8 @@ Logs information to the specified log file
 <bx:Log text=[string]
 file=[string]
 log=[string]
-type=[string] />
+type=[string]
+application=[boolean] />
 ```
 
 ### Attributes
@@ -17,10 +18,11 @@ type=[string] />
 
 | Atrribute | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `text` | `string` | `false` | The text to log |  |
-| `file` | `string` | `false` | An optional explicit file to log to |  |
-| `log` | `string` | `false` | The log category to write to | `Application` |
-| `type` | `string` | `false` | The log level of the entry. One of "Information", "Warning", "Error", "Debug", "Trace" | `Information` |
+| `text` | `string` | `false` |  |  |
+| `file` | `string` | `false` |  |  |
+| `log` | `string` | `false` |  |  |
+| `type` | `string` | `false` |  | `info` |
+| `application` | `boolean` | `false` |  | `true` |
 
 ## Examples
 
@@ -28,5 +30,6 @@ type=[string] />
 <bx:Log text=[string]
 file=[string]
 log=[string]
-type=[string] />
+type=[string]
+application=[boolean] />
 ```

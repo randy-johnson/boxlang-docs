@@ -2,7 +2,7 @@
 
 # Function: `BoxRegisterInterceptor`
 
-Registers a global interceptor that can listen to global runtime events.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ BoxRegisterInterceptor(interceptor=[any], states=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `interceptor` | `any` | `true` | This can be a class or a closure/lambda that will listen to global events |  |
+| `interceptor` | `any` | `true` |  |  |
 | `states` | `any` | `false` |  | `[]` |
 
 ## Examples
@@ -57,6 +57,7 @@ BoxRegisterInterceptor(interceptor=[any], states=[any])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

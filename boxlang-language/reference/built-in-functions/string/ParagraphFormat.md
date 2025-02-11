@@ -2,7 +2,7 @@
 
 # Function: `ParagraphFormat`
 
-Replaces characters in a string: Single newline characters (CR/LF sequences) with spaces and double newline characters with HTML paragraph tags
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ParagraphFormat(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The string to format. |  |
+| `string` | `string` | `true` |  |  |
 
 ## Examples
 

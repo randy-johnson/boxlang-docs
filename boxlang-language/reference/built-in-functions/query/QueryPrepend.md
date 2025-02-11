@@ -2,7 +2,7 @@
 
 # Function: `QueryPrepend`
 
-Adds a query to the beginning of another query
+No description available.
 
 ## Method Signature
 
@@ -32,6 +32,7 @@ QueryPrepend(query1=[query], query2=[query])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -46,6 +47,7 @@ QueryPrepend(query1=[query], query2=[query])
   * [QueryNew](./QueryNew.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

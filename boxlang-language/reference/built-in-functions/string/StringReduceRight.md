@@ -2,7 +2,7 @@
 
 # Function: `StringReduceRight`
 
-Run the provided udf over a reversed string to reduce the values to a single output
+No description available.
 
 ## Method Signature
 
@@ -16,8 +16,8 @@ StringReduceRight(list=[string], callback=[function:BiFunction], initialValue=[a
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
 | `list` | `string` | `true` |  |  |
-| `callback` | `function:BiFunction` | `true` | The function to invoke for each item. The function will be passed 3 arguments: the value, the index, the array. |  |
-| `initialValue` | `any` | `false` | The initial value of the reduction |  |
+| `callback` | `function:BiFunction` | `true` |  |  |
+| `initialValue` | `any` | `false` |  |  |
 | `delimiter` | `string` | `false` |  | `,` |
 | `includeEmptyFields` | `boolean` | `false` |  | `false` |
 | `multiCharacterDelimiter` | `boolean` | `false` |  | `true` |

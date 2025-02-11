@@ -2,7 +2,7 @@
 
 # Function: `QuerySetCell`
 
-Sets a cell to a value.
+No description available.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ QuerySetCell(query=[query], column=[string], value=[any], row=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to set the cell in |  |
-| `column` | `string` | `true` | The column name to set the cell in |  |
-| `value` | `any` | `true` | The value to set the cell to |  |
-| `row` | `integer` | `false` | The row number to set the cell in. If no row number is specified, the cell on the last row is set. |  |
+| `query` | `query` | `true` |  |  |
+| `column` | `string` | `true` |  |  |
+| `value` | `any` | `true` |  |  |
+| `row` | `integer` | `false` |  |  |
 
 ## Examples
 
@@ -34,6 +34,7 @@ QuerySetCell(query=[query], column=[string], value=[any], row=[integer])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -49,6 +50,7 @@ QuerySetCell(query=[query], column=[string], value=[any], row=[integer])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

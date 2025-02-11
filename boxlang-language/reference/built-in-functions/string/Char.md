@@ -2,7 +2,7 @@
 
 # Function: `Char`
 
-Convert a numeric UCS-2 code to a character
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Char(number=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `integer` | `true` | The UCS-2 code value to convert. |  |
+| `number` | `integer` | `true` |  |  |
 
 ## Examples
 

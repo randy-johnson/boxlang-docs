@@ -2,9 +2,7 @@
 
 # Function: `GetFunctionCalledName`
 
-Get the name of the function that is being called.
-
-If no function is being called, an empty string is returned.
+No description available.
 
 ## Method Signature
 
@@ -55,6 +53,7 @@ This function does not accept any arguments
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

@@ -2,7 +2,7 @@
 
 # Function: `ExecutorGet`
 
-Get an executor by name
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ExecutorGet(name=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `name` | `string` | `true` | The name of the executor to get. |  |
+| `name` | `string` | `true` |  |  |
 
 ## Examples
 

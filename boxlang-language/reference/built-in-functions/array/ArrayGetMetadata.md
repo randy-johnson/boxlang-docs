@@ -2,7 +2,7 @@
 
 # Function: `ArrayGetMetadata`
 
-Gets metadata for items of an array and indicates the array type.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ArrayGetMetadata(array=[array])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` | The array to be inserted into |  |
+| `array` | `array` | `true` |  |  |
 
 ## Examples
 

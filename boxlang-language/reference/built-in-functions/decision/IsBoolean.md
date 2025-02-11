@@ -2,7 +2,7 @@
 
 # Function: `IsBoolean`
 
-Determine whether a given object is a boolean
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsBoolean(object=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `object` | `any` | `true` | The value to test for boolean-ness. |  |
+| `object` | `any` | `true` |  |  |
 
 ## Examples
 

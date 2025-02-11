@@ -2,7 +2,7 @@
 
 # Function: `GetTimezoneInfo`
 
-Retrieves a struct of information about the timezone
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ GetTimezoneInfo(timezone=[string], locale=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `timezone` | `string` | `false` | optional, a specific timezone to retrieve information on |  |
-| `locale` | `string` | `false` | optional, a specific locale for language output of the timezone name fields |  |
+| `timezone` | `string` | `false` |  |  |
+| `locale` | `string` | `false` |  |  |
 
 ## Examples
 

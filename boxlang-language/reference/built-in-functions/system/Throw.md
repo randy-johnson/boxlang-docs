@@ -2,12 +2,12 @@
 
 # Function: `Throw`
 
-Throws a developer-specified exception, which can be caught with a catch block.
+No description available.
 
 ## Method Signature
 
 ```
-Throw(message=[String], type=[String], detail=[String], errorcode=[String], extendedinfo=[any], object=[Throwable])
+Throw(message=[any], type=[String], detail=[String], errorcode=[String], extendedinfo=[any], object=[Throwable])
 ```
 
 ### Arguments
@@ -15,12 +15,12 @@ Throw(message=[String], type=[String], detail=[String], errorcode=[String], exte
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `message` | `String` | `false` | Message that describes exception event |  |
-| `type` | `String` | `false` | The type of the exception |  |
-| `detail` | `String` | `false` | Description of the event |  |
-| `errorcode` | `String` | `false` | A custom error code that you supply |  |
-| `extendedinfo` | `any` | `false` | Additional custom error data that you supply |  |
-| `object` | `Throwable` | `false` | An instance of an exception object. If there is no message provided, this object will be thrown directly. If there is a message, a<br>                  CustomException will be thrown and this object will be used as the cause. |  |
+| `message` | `any` | `false` |  |  |
+| `type` | `String` | `false` |  |  |
+| `detail` | `String` | `false` |  |  |
+| `errorcode` | `String` | `false` |  |  |
+| `extendedinfo` | `any` | `false` |  |  |
+| `object` | `Throwable` | `false` |  |  |
 
 ## Examples
 
@@ -62,6 +62,7 @@ Throw(message=[String], type=[String], detail=[String], errorcode=[String], exte
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

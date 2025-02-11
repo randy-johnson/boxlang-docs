@@ -2,7 +2,7 @@
 
 # Function: `GetTickCount`
 
-Returns the current value of an internal millisecond timer.
+No description available.
 
 ## Method Signature
 
@@ -54,6 +54,7 @@ This function does not accept any arguments
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [htmlEditFormat](./htmlEditFormat.md)

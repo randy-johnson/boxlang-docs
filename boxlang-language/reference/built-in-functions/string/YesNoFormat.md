@@ -2,7 +2,7 @@
 
 # Function: `YesNoFormat`
 
-Return Yes/No based on whether the input is true/false
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ YesNoFormat(value=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `boolean` | `true` | The value to check for true/false and return Yes/No |  |
+| `value` | `boolean` | `true` |  |  |
 
 ## Examples
 

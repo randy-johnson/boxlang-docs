@@ -2,10 +2,7 @@
 
 # Function: `ReplaceNoCase`
 
-Replaces occurrences of substring1 in a string with obj, in a specified scope.
-
-The search is case-sensitive. Function returns original string with
- replacements made
+No description available.
 
 ## Method Signature
 
@@ -18,10 +15,10 @@ ReplaceNoCase(string=[string], substring1=[string], obj=[any], scope=[string], s
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The string to search |  |
-| `substring1` | `string` | `true` | The substring to search for |  |
-| `obj` | `any` | `true` | The string to replace substring1 with |  |
-| `scope` | `string` | `true` | The scope to search in | `one` |
+| `string` | `string` | `true` |  |  |
+| `substring1` | `string` | `true` |  |  |
+| `obj` | `any` | `true` |  |  |
+| `scope` | `string` | `true` |  | `one` |
 | `start` | `string` | `false` |  | `1` |
 
 ## Examples

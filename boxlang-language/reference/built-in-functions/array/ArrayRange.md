@@ -2,24 +2,7 @@
 
 # Function: `ArrayRange`
 
-Build an array out of a range of numbers or using our range syntax: {start}..{end}
- or using the from and to arguments
-
-<p>
-
- You can also build negative ranges
- 
-<p>
-
-
- 
-<pre>
-
- arrayRange( "1..5" )
- arrayRange( "-10..5" )
- arrayRange( 1, 500 )
- 
-</pre>
+No description available.
 
 ## Method Signature
 
@@ -32,8 +15,8 @@ ArrayRange(from=[any], to=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `from` | `any` | `false` | The initial index, defaults to 1 or you can use the {start}..{end} notation | `1` |
-| `to` | `numeric` | `false` | The last index item, or defaults to the from value |  |
+| `from` | `any` | `false` |  | `1` |
+| `to` | `numeric` | `false` |  |  |
 
 ## Examples
 

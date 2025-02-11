@@ -2,7 +2,7 @@
 
 # Function: `CreateTempDirectory`
 
-Creates a temporary directory in the specified directory with the specified prefix if passed.
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ CreateTempDirectory(directory=[string], prefix=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `directory` | `string` | `false` | The directory in which to create the temp directory, we default to the system temp directory | `/var/folders/sh/yq09rnbj48764cvf2k4nhcxh0000gn/T/` |
-| `prefix` | `string` | `false` | The prefix string to be used in generating the directory's name; may be empty |  |
+| `directory` | `string` | `false` |  | `/var/folders/sh/yq09rnbj48764cvf2k4nhcxh0000gn/T/` |
+| `prefix` | `string` | `false` |  |  |
 
 ## Examples
 

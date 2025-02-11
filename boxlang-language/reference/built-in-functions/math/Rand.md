@@ -2,7 +2,7 @@
 
 # Function: `Rand`
 
-Return a random double between 0 and 1
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Rand(algorithm=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `algorithm` | `string` | `false` | The algorithm to use to generate the random number. |  |
+| `algorithm` | `string` | `false` |  |  |
 
 ## Examples
 

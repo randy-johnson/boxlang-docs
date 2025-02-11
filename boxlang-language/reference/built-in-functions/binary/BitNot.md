@@ -2,7 +2,7 @@
 
 # Function: `BitNot`
 
-Performs a bitwise logical NOT operation.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ BitNot(number=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `integer` | `true` | Numeric value for bitwise NOT. |  |
+| `number` | `integer` | `true` |  |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `NumberFormat`
 
-Formats a number with an optional format mask
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ NumberFormat(number=[number], mask=[string], locale=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `number` | `true` | The number to be formatted |  |
-| `mask` | `string` | `false` | The formatting mask to apply |  |
-| `locale` | `string` | `false` | An optional locale string to apply to the format |  |
+| `number` | `number` | `true` |  |  |
+| `mask` | `string` | `false` |  |  |
+| `locale` | `string` | `false` |  |  |
 
 ## Examples
 

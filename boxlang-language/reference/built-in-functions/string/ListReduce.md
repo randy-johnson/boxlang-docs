@@ -2,7 +2,7 @@
 
 # Function: `ListReduce`
 
-Run the provided udf over a delimited list to reduce the values to a single output
+No description available.
 
 ## Method Signature
 
@@ -15,12 +15,12 @@ ListReduce(list=[string], callback=[function:BiFunction], initialValue=[any], de
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` | The delimited list to perform operations on |  |
-| `callback` | `function:BiFunction` | `true` | The function to invoke for each item. The function will be passed 3 arguments: the value, the index, the array. You can alternatively pass a Java BiFunction which will only receive the ffirst 2 args. |  |
-| `initialValue` | `any` | `false` | The initial value of the reduction |  |
-| `delimiter` | `string` | `false` | string the list delimiter | `,` |
-| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
-| `multiCharacterDelimiter` | `boolean` | `false` | boolean whether the delimiter is multi-character | `true` |
+| `list` | `string` | `true` |  |  |
+| `callback` | `function:BiFunction` | `true` |  |  |
+| `initialValue` | `any` | `false` |  |  |
+| `delimiter` | `string` | `false` |  | `,` |
+| `includeEmptyFields` | `boolean` | `false` |  | `false` |
+| `multiCharacterDelimiter` | `boolean` | `false` |  | `true` |
 
 ## Examples
 

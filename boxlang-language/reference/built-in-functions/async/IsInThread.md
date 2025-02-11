@@ -2,7 +2,7 @@
 
 # Function: `IsInThread`
 
-Verifies if the calling execution code is running in a thread or not.
+No description available.
 
 ## Method Signature
 

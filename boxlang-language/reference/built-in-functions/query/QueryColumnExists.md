@@ -2,7 +2,7 @@
 
 # Function: `QueryColumnExists`
 
-This function returns true if the column exists in the query
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryColumnExists(query=[query], column=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to check for the column |  |
-| `column` | `string` | `true` | The column to check for |  |
+| `query` | `query` | `true` |  |  |
+| `column` | `string` | `true` |  |  |
 
 ## Examples
 
@@ -31,6 +31,7 @@ QueryColumnExists(query=[query], column=[string])
   * [QueryColumnArray](./QueryColumnArray.md)
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -46,6 +47,7 @@ QueryColumnExists(query=[query], column=[string])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

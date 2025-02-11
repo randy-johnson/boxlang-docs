@@ -2,7 +2,7 @@
 
 # Function: `BooleanFormat`
 
-Returns the value formatted as a boolean string
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ BooleanFormat(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` | The value to cast as a boolean and return the string value |  |
+| `value` | `any` | `true` |  |  |
 
 ## Examples
 

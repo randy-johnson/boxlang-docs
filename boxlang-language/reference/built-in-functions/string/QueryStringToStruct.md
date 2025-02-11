@@ -2,28 +2,7 @@
 
 # Function: `QueryStringToStruct`
 
-Convert a query string to a struct.
-
-Each key-value pair in the query string is separated by a delimiter.
- The default delimiter is 
-{@code "&"}
-
- 
-<p>
-
- Example:
-
- 
-<pre>
-
- queryStringToStruct( "foo=bar
-&amp;
-baz=qux" );
- "foo=bar
-&amp;
-baz=qux".toStruct();
- 
-</pre>
+No description available.
 
 ## Method Signature
 
@@ -36,8 +15,8 @@ QueryStringToStruct(target=[string], delimiter=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `target` | `string` | `true` | The query string to convert. |  |
-| `delimiter` | `string` | `false` | The delimiter used to separate key-value pairs in the query string. | `&` |
+| `target` | `string` | `true` |  |  |
+| `delimiter` | `string` | `false` |  | `&` |
 
 ## Examples
 

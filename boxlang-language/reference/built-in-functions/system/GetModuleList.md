@@ -2,7 +2,7 @@
 
 # Function: `GetModuleList`
 
-Get a collection of all the registered global functions in the runtime.
+No description available.
 
 ## Method Signature
 
@@ -53,6 +53,7 @@ This function does not accept any arguments
   * [GetFunctionList](./GetFunctionList.md)
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

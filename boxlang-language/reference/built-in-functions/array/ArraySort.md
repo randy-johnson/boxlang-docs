@@ -2,7 +2,7 @@
 
 # Function: `ArraySort`
 
-Sorts array elements.
+No description available.
 
 ## Method Signature
 
@@ -15,11 +15,11 @@ ArraySort(array=[modifiablearray], sortType=[any], sortOrder=[string], localeSen
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiablearray` | `true` | The array to sort |  |
-| `sortType` | `any` | `false` | Options are text, numeric, or textnocase | `textnocase` |
-| `sortOrder` | `string` | `false` | Options are asc or desc | `asc` |
-| `localeSensitive` | `boolean` | `false` | Sort based on local rules |  |
-| `callback` | `function:Comparator` | `false` | Function to sort by |  |
+| `array` | `modifiablearray` | `true` |  |  |
+| `sortType` | `any` | `false` |  | `textnocase` |
+| `sortOrder` | `string` | `false` |  | `asc` |
+| `localeSensitive` | `boolean` | `false` |  |  |
+| `callback` | `function:Comparator` | `false` |  |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `XMLNew`
 
-Creates a new empty XML Object
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ XMLNew(caseSensitive=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `caseSensitive` | `boolean` | `true` | Whether the identifiers in the XML document ( e.g. dot notation ) are case sensitive | `false` |
+| `caseSensitive` | `boolean` | `true` |  | `false` |
 
 ## Examples
 

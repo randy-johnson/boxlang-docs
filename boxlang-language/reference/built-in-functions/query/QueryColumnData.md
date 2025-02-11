@@ -2,7 +2,7 @@
 
 # Function: `QueryColumnData`
 
-Returns the data in a query column.
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryColumnData(query=[query], columnName=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to get the column data from. |  |
-| `columnName` | `string` | `true` | The name of the column to get the data from. |  |
+| `query` | `query` | `true` |  |  |
+| `columnName` | `string` | `true` |  |  |
 
 ## Examples
 
@@ -31,6 +31,7 @@ QueryColumnData(query=[query], columnName=[string])
   * [QueryColumnArray](./QueryColumnArray.md)
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -46,6 +47,7 @@ QueryColumnData(query=[query], columnName=[string])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

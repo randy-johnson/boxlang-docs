@@ -2,7 +2,7 @@
 
 # Function: `QueryMap`
 
-This function maps the query to a new query.
+No description available.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ QueryMap(query=[query], callback=[function:Function], parallel=[boolean], maxThr
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to iterate over |  |
-| `callback` | `function:Function` | `true` | The function to invoke for each item. The function will be passed 3 arguments: the row, the currentRow, the query. You can alternatively pass a Java Function which will only receive the 1st arg. |  |
-| `parallel` | `boolean` | `false` | Specifies whether the items can be executed in parallel | `false` |
-| `maxThreads` | `integer` | `false` | The maximum number of threads to use when parallel = true |  |
+| `query` | `query` | `true` |  |  |
+| `callback` | `function:Function` | `true` |  |  |
+| `parallel` | `boolean` | `false` |  | `false` |
+| `maxThreads` | `integer` | `false` |  |  |
 
 ## Examples
 
@@ -34,6 +34,7 @@ QueryMap(query=[query], callback=[function:Function], parallel=[boolean], maxThr
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -48,6 +49,7 @@ QueryMap(query=[query], callback=[function:Function], parallel=[boolean], maxThr
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

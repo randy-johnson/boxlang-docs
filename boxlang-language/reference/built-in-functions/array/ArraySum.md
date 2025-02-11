@@ -2,7 +2,7 @@
 
 # Function: `ArraySum`
 
-Returns the sum of all values in an array
+No description available.
 
 ## Method Signature
 

@@ -2,7 +2,7 @@
 
 # Function: `ListSort`
 
-Sorts a delimited list and returns the result
+No description available.
 
 ## Method Signature
 
@@ -15,14 +15,14 @@ ListSort(list=[string], sortType=[any], sortOrder=[string], delimiter=[string], 
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` | The list to sort |  |
-| `sortType` | `any` | `false` | Options are text, numeric, or textnocase |  |
-| `sortOrder` | `string` | `false` | Options are asc or desc | `asc` |
-| `delimiter` | `string` | `false` | string the list delimiter | `,` |
-| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
-| `multiCharacterDelimiter` | `boolean` | `false` | boolean whether the delimiter is multi-character | `false` |
-| `localeSensitive` | `boolean` | `false` | Sort based on local rules |  |
-| `callback` | `any` | `false` | Optional function to use for sorting - if the sort type is a closure, it will be recognized as a callback |  |
+| `list` | `string` | `true` |  |  |
+| `sortType` | `any` | `false` |  |  |
+| `sortOrder` | `string` | `false` |  | `asc` |
+| `delimiter` | `string` | `false` |  | `,` |
+| `includeEmptyFields` | `boolean` | `false` |  | `false` |
+| `multiCharacterDelimiter` | `boolean` | `false` |  | `false` |
+| `localeSensitive` | `boolean` | `false` |  |  |
+| `callback` | `any` | `false` |  |  |
 
 ## Examples
 

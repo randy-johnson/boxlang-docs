@@ -2,7 +2,7 @@
 
 # Function: `FileRead`
 
-Reads the contents of a file and returns it as a string or binary object
+No description available.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ FileRead(filepath=[string], charsetOrBufferSize=[string], charset=[string], buff
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `filepath` | `string` | `true` | The path to the file to read. |  |
-| `charsetOrBufferSize` | `string` | `false` | Either the charset to use when reading the file, or the buffer size to use when reading the file. If providing a buffer size, the next argument can be the charset. |  |
-| `charset` | `string` | `false` | The explicit charset to use when reading the file. |  |
-| `buffersize` | `string` | `false` | The explicit buffer size to use when reading the file. |  |
+| `filepath` | `string` | `true` |  |  |
+| `charsetOrBufferSize` | `string` | `false` |  |  |
+| `charset` | `string` | `false` |  |  |
+| `buffersize` | `string` | `false` |  |  |
 
 ## Examples
 

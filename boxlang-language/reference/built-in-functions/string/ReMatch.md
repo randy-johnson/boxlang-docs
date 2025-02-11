@@ -2,7 +2,7 @@
 
 # Function: `ReMatch`
 
-Uses a regular expression (RE) to search a string for a pattern, starting from a specified position.
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ ReMatch(reg_expression=[string], string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `reg_expression` | `string` | `true` | The regular expression to search for |  |
-| `string` | `string` | `true` | The string to serach in |  |
+| `reg_expression` | `string` | `true` |  |  |
+| `string` | `string` | `true` |  |  |
 
 ## Examples
 

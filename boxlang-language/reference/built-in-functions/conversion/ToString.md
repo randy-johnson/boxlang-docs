@@ -2,7 +2,7 @@
 
 # Function: `ToString`
 
-Converts a value to a string.
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ ToString(value=[any], encoding=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` | Value to convert to a string; can be a simple value such as an integer, a binary object, or an XML document object. |  |
-| `encoding` | `string` | `false` | The character encoding (character set) of the string, used with binary data. |  |
+| `value` | `any` | `true` |  |  |
+| `encoding` | `string` | `false` |  |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `SystemOutput`
 
-Writes the given object to the output stream
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ SystemOutput(obj=[any], addNewLine=[boolean], doErrorStream=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `obj` | `any` | `true` | The object to write to the output stream |  |
-| `addNewLine` | `boolean` | `true` | If true, a new line will be added to the output stream | `false` |
-| `doErrorStream` | `boolean` | `false` | If true, the object will be written to the error stream | `false` |
+| `obj` | `any` | `true` |  |  |
+| `addNewLine` | `boolean` | `true` |  | `false` |
+| `doErrorStream` | `boolean` | `false` |  | `false` |
 
 ## Examples
 
@@ -59,6 +59,7 @@ SystemOutput(obj=[any], addNewLine=[boolean], doErrorStream=[boolean])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

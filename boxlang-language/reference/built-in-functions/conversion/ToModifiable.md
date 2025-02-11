@@ -2,7 +2,7 @@
 
 # Function: `ToModifiable`
 
-Convert an array, struct or query to its Modifiable counterpart.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ToModifiable(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` | The array, struct or query to convert. |  |
+| `value` | `any` | `true` |  |  |
 
 ## Examples
 

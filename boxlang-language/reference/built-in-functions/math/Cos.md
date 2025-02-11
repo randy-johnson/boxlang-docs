@@ -2,7 +2,7 @@
 
 # Function: `Cos`
 
-Returns the cosine of an angle entered in radians
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Cos(number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `numeric` | `true` | The number to calculate the cosine of (in radians). |  |
+| `number` | `numeric` | `true` |  |  |
 
 ## Examples
 

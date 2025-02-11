@@ -2,8 +2,7 @@
 
 # Function: `Attempt`
 
-Create an Attempt object with or without a given value so you can do fluent operations on the
- registered attempt value.
+No description available.
 
 ## Method Signature
 
@@ -16,7 +15,7 @@ Attempt(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `false` | The value to store as the attempt. This can be a value, or a closure/lambda that will be executed to get the value. |  |
+| `value` | `any` | `false` |  |  |
 
 ## Examples
 

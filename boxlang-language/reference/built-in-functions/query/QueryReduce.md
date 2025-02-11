@@ -2,7 +2,7 @@
 
 # Function: `QueryReduce`
 
-This function reduces the query to a single value.
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ QueryReduce(query=[query], callback=[function:BiFunction], initialValue=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to iterate over |  |
-| `callback` | `function:BiFunction` | `true` | The function to invoke for each item. The function will be passed 4 arguments: the accumulator, the current item, the current index, and the query. You can alternatively pass a Java Predicate which will only receive the first 2<br>                    args. |  |
-| `initialValue` | `any` | `true` | The initial value to use for the reduction |  |
+| `query` | `query` | `true` |  |  |
+| `callback` | `function:BiFunction` | `true` |  |  |
+| `initialValue` | `any` | `true` |  |  |
 
 ## Examples
 
@@ -33,6 +33,7 @@ QueryReduce(query=[query], callback=[function:BiFunction], initialValue=[any])
   * [QueryColumnCount](./QueryColumnCount.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -47,6 +48,7 @@ QueryReduce(query=[query], callback=[function:BiFunction], initialValue=[any])
   * [QueryNew](./QueryNew.md)
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

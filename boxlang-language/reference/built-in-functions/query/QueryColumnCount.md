@@ -2,7 +2,7 @@
 
 # Function: `QueryColumnCount`
 
-This function returns the number of columns in a query
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ QueryColumnCount(query=[query])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` | The query to get the column count from |  |
+| `query` | `query` | `true` |  |  |
 
 ## Examples
 
@@ -30,6 +30,7 @@ QueryColumnCount(query=[query])
   * [QueryColumnArray](./QueryColumnArray.md)
   * [QueryColumnData](./QueryColumnData.md)
   * [QueryColumnExists](./QueryColumnExists.md)
+  * [QueryColumnList](./QueryColumnList.md)
   * [QueryCurrentRow](./QueryCurrentRow.md)
   * [QueryDeleteColumn](./QueryDeleteColumn.md)
   * [QueryDeleteRow](./QueryDeleteRow.md)
@@ -45,6 +46,7 @@ QueryColumnCount(query=[query])
   * [QueryPrepend](./QueryPrepend.md)
   * [QueryRecordCount](./QueryRecordCount.md)
   * [QueryReduce](./QueryReduce.md)
+  * [QueryRegisterFunction](./QueryRegisterFunction.md)
   * [QueryReverse](./QueryReverse.md)
   * [QueryRowData](./QueryRowData.md)
   * [QueryRowSwap](./QueryRowSwap.md)

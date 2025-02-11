@@ -2,7 +2,7 @@
 
 # Function: `Exp`
 
-Calculates the exponent whose base is e that represents a number.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Exp(number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `numeric` | `true` | The number to calculate the exponent for. |  |
+| `number` | `numeric` | `true` |  |  |
 
 ## Examples
 

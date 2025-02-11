@@ -2,7 +2,7 @@
 
 # Function: `GetFileFromPath`
 
-Extracts a filename from an absolute path.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ GetFileFromPath(path=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `path` | `string` | `true` | The absolute path to extract the filename from |  |
+| `path` | `string` | `true` |  |  |
 
 ## Examples
 
@@ -56,6 +56,7 @@ GetFileFromPath(path=[string])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

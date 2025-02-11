@@ -2,7 +2,7 @@
 
 # Function: `StructMap`
 
-Used to map a struct to a new struct of the same type containing the result
+No description available.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ StructMap(struct=[structloose], callback=[function:BiFunction], parallel=[boolea
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` | The target struct to test |  |
-| `callback` | `function:BiFunction` | `true` | The function used to produce the right-hand value assignment in the new struct. The function will be passed 3 arguments: the key, the value, the struct. You can alternatively pass a Java BiFunction which will only receive the<br>                    first 2 args. |  |
-| `parallel` | `boolean` | `false` | Specifies whether the items can be executed in parallel | `false` |
-| `maxThreads` | `integer` | `false` | The maximum number of threads to use when parallel = true |  |
+| `struct` | `struct` | `true` |  |  |
+| `callback` | `function:BiFunction` | `true` |  |  |
+| `parallel` | `boolean` | `false` |  | `false` |
+| `maxThreads` | `integer` | `false` |  |  |
 
 ## Examples
 

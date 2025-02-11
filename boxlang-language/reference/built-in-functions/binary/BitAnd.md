@@ -2,7 +2,7 @@
 
 # Function: `BitAnd`
 
-Performs a bitwise logical AND operation.
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ BitAnd(number1=[integer], number2=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number1` | `integer` | `true` | Numeric value for bitwise AND. |  |
-| `number2` | `integer` | `true` | Numeric value for bitwise AND. |  |
+| `number1` | `integer` | `true` |  |  |
+| `number2` | `integer` | `true` |  |  |
 
 ## Examples
 

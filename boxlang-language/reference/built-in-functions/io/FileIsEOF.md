@@ -2,7 +2,7 @@
 
 # Function: `FileIsEOF`
 
-Determines whether the end of the file has been reached while reading it.
+No description available.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ FileIsEOF(file=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `file` | `any` | `true` | The currently open file object |  |
+| `file` | `any` | `true` |  |  |
 
 ## Examples
 

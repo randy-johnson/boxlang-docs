@@ -2,7 +2,7 @@
 
 # Function: `RemoveChars`
 
-Removes characters from a string.
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ RemoveChars(string=[string], start=[integer], count=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` | The string to remove characters from. |  |
-| `start` | `integer` | `true` | The one-based index position of the first character to remove. |  |
-| `count` | `integer` | `true` | The number of characters to remove. |  |
+| `string` | `string` | `true` |  |  |
+| `start` | `integer` | `true` |  |  |
+| `count` | `integer` | `true` |  |  |
 
 ## Examples
 

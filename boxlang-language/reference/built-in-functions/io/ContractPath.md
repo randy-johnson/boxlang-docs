@@ -2,9 +2,7 @@
 
 # Function: `ContractPath`
 
-Does the opposite of expandPath.
-
-Tries to match a given absolute path to mappings in the environment and will return a path that is contracted by the shortest matched mapping. If there are no matches, returns the absolute path it was given.
+No description available.
 
 ## Method Signature
 
@@ -17,7 +15,7 @@ ContractPath(path=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `path` | `string` | `true` | The absolute path to contract. |  |
+| `path` | `string` | `true` |  |  |
 
 ## Examples
 

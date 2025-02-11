@@ -2,7 +2,7 @@
 
 # Function: `JavaCast`
 
-Cast a variable to a specified Java type
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ JavaCast(type=[string], variable=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `type` | `string` | `true` | The name of a Java primitive or a Java class name. |  |
-| `variable` | `any` | `true` | The variable, Java object, or array to cast. |  |
+| `type` | `string` | `true` |  |  |
+| `variable` | `any` | `true` |  |  |
 
 ## Examples
 
@@ -58,6 +58,7 @@ JavaCast(type=[string], variable=[any])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

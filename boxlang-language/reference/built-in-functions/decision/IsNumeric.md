@@ -2,7 +2,7 @@
 
 # Function: `IsNumeric`
 
-Tests whether a value is numeric
+No description available.
 
 ## Method Signature
 
@@ -16,7 +16,7 @@ IsNumeric(string=[any], locale=[string])
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
 | `string` | `any` | `true` |  |  |
-| `locale` | `string` | `false` | Optional locale string, otherwise the context locale default is used when parsing string values |  |
+| `locale` | `string` | `false` |  |  |
 
 ## Examples
 

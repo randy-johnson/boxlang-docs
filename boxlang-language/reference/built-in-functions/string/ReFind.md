@@ -2,10 +2,7 @@
 
 # Function: `ReFind`
 
-Uses a regular expression (RE) to search a string for a pattern, starting from a specified position.
-
-The search is case-sensitive.
- It will return numeric if returnsubexpressions is false and a struct of arrays named "len", "match" and "pos" when returnsubexpressions is true.
+No description available.
 
 ## Method Signature
 
@@ -18,11 +15,11 @@ ReFind(reg_expression=[string], string=[string], start=[integer], returnSubExpre
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `reg_expression` | `string` | `true` | The regular expression to search for |  |
-| `string` | `string` | `true` | The string to serach in |  |
-| `start` | `integer` | `false` | The position from which to start searching in the string. Default is 1. | `1` |
-| `returnSubExpressions` | `boolean` | `false` | True: if the regular expression is found, the first array element contains the length and position, respectively, of<br>                                the first match. If the regular expression contains parentheses that group subexpressions, each subsequent array<br>                                element contains the length and position, respectively, of the first occurrence of each group. If the regular<br>                                expression is not found, the arrays each contain one element with the value 0. False: the function returns the<br>                                position in the string where the match begins. Default. | `false` |
-| `scope` | `string` | `false` | "one": returns the first value that matches the regex. "all": returns all values that match the regex. | `one` |
+| `reg_expression` | `string` | `true` |  |  |
+| `string` | `string` | `true` |  |  |
+| `start` | `integer` | `false` |  | `1` |
+| `returnSubExpressions` | `boolean` | `false` |  | `false` |
+| `scope` | `string` | `false` |  | `one` |
 
 ## Examples
 

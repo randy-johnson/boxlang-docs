@@ -2,7 +2,7 @@
 
 # Function: `JSONDeserialize`
 
-Converts a JSON (JavaScript Object Notation) string data representation into data, such as a structure or array.
+No description available.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ JSONDeserialize(json=[string], strictMapping=[boolean], useCustomSerializer=[str
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `json` | `string` | `true` | The JSON string to convert to data. |  |
-| `strictMapping` | `boolean` | `false` | A Boolean value that specifies whether to convert the JSON strictly. If true, everything becomes structures. | `true` |
-| `useCustomSerializer` | `string` | `false` | A string that specifies the name of a custom serializer to use. (Not used) |  |
+| `json` | `string` | `true` |  |  |
+| `strictMapping` | `boolean` | `false` |  | `true` |
+| `useCustomSerializer` | `string` | `false` |  |  |
 
 ## Examples
 

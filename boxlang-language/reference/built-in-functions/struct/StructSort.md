@@ -2,7 +2,7 @@
 
 # Function: `StructSort`
 
-Sorts a struct according to the specified arguments and returns an array of struct keys
+No description available.
 
 ## Method Signature
 
@@ -15,11 +15,11 @@ StructSort(struct=[structloose], sortType=[any], sortOrder=[string], path=[strin
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` | The struct to sort |  |
-| `sortType` | `any` | `false` | An optional sort type to apply to that type - if a callback is given in this position it will be used as that argument | `text` |
-| `sortOrder` | `string` | `false` | The sort order applicable to the sortType argument | `asc` |
+| `struct` | `struct` | `true` |  |  |
+| `sortType` | `any` | `false` |  | `text` |
+| `sortOrder` | `string` | `false` |  | `asc` |
 | `path` | `string` | `false` |  |  |
-| `callback` | `function:Comparator` | `false` | An optional callback to use as the sorting function. You can alternatively pass a Java Comparator. |  |
+| `callback` | `function:Comparator` | `false` |  |  |
 
 ## Examples
 

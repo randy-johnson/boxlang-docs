@@ -2,9 +2,7 @@
 
 # Function: `StructIsOrdered`
 
-Tests whether a struct is ordered ( e.g.
-
-linked )
+No description available.
 
 ## Method Signature
 
@@ -17,7 +15,7 @@ StructIsOrdered(struct=[structloose])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` | The struct to test for a linked type |  |
+| `struct` | `struct` | `true` |  |  |
 
 ## Examples
 

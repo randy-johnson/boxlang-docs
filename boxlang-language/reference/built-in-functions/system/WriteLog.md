@@ -2,12 +2,12 @@
 
 # Function: `WriteLog`
 
-Writes a log message out
+No description available.
 
 ## Method Signature
 
 ```
-WriteLog(text=[string], file=[string], log=[string], type=[string])
+WriteLog(text=[string], type=[string], application=[boolean], log=[string])
 ```
 
 ### Arguments
@@ -15,10 +15,10 @@ WriteLog(text=[string], file=[string], log=[string], type=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `text` | `string` | `true` | The text of the log message |  |
-| `file` | `string` | `false` | A custom log file to write to |  |
-| `log` | `string` | `false` | If a custom file is not specified the log category to write to | `Application` |
-| `type` | `string` | `false` | The log level ( debug, info, warn, error ) | `Information` |
+| `text` | `string` | `true` |  |  |
+| `type` | `string` | `false` |  | `info` |
+| `application` | `boolean` | `false` |  | `true` |
+| `log` | `string` | `false` |  |  |
 
 ## Examples
 
@@ -60,6 +60,7 @@ WriteLog(text=[string], file=[string], log=[string], type=[string])
   * [GetModuleInfo](./GetModuleInfo.md)
   * [GetModuleList](./GetModuleList.md)
   * [GetRequestClassLoader](./GetRequestClassLoader.md)
+  * [GetSemver](./GetSemver.md)
   * [GetSystemSetting](./GetSystemSetting.md)
   * [GetTempDirectory](./GetTempDirectory.md)
   * [GetTickCount](./GetTickCount.md)

@@ -2,7 +2,7 @@
 
 # Function: `IsCurrency`
 
-Determines whether a value can be parsed to numeric in the given or default locale
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ IsCurrency(number=[any], locale=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `any` | `true` | The value to be parsed |  |
-| `locale` | `string` | `false` | The locale to apply to parsing - uses the context config value if not specified |  |
+| `number` | `any` | `true` |  |  |
+| `locale` | `string` | `false` |  |  |
 
 ## Examples
 

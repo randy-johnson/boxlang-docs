@@ -2,7 +2,7 @@
 
 # Function: `ArrayFilter`
 
-Used to filter an array to items for which the closure function returns true.
+No description available.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ ArrayFilter(array=[array], callback=[function:Predicate], parallel=[boolean], ma
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` | The array to reduce |  |
-| `callback` | `function:Predicate` | `true` | The function to invoke for each item. The function will be passed 3 arguments: the value, the index, the array. You can alternatively pass a Java Predicate which will only receive the 1st arg. |  |
-| `parallel` | `boolean` | `false` | Specifies whether the items can be executed in parallel | `false` |
-| `maxThreads` | `integer` | `false` | The maximum number of threads to use when parallel = true |  |
+| `array` | `array` | `true` |  |  |
+| `callback` | `function:Predicate` | `true` |  |  |
+| `parallel` | `boolean` | `false` |  | `false` |
+| `maxThreads` | `integer` | `false` |  |  |
 | `initialValue` | `any` | `false` |  |  |
 
 ## Examples

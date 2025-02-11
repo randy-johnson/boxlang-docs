@@ -2,7 +2,7 @@
 
 # Function: `ParseDateTime`
 
-Parses a datetime string or object
+No description available.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ ParseDateTime(date=[any], format=[string], timezone=[string], locale=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `date` | `any` | `true` | the date, datetime string or an object |  |
-| `format` | `string` | `false` | the format mask to use in parsing |  |
-| `timezone` | `string` | `false` | the timezone to apply to the parsed datetime |  |
-| `locale` | `string` | `false` | optional ISO locale string ( e.g. en-US, en_US, es-SA, es_ES, ru-RU, etc ) used to parse localized formats |  |
+| `date` | `any` | `true` |  |  |
+| `format` | `string` | `false` |  |  |
+| `timezone` | `string` | `false` |  |  |
+| `locale` | `string` | `false` |  |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `CharsetDecode`
 
-Encodes a string to a binary representation
+No description available.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ CharsetDecode(encoded_binary=[string], encoding=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `encoded_binary` | `string` | `true` | The string to encode to binary |  |
-| `encoding` | `string` | `false` | The charset encoding to use (default: utf-8 ) | `utf-8` |
+| `encoded_binary` | `string` | `true` |  |  |
+| `encoding` | `string` | `false` |  | `utf-8` |
 
 ## Examples
 
