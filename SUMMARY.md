@@ -659,7 +659,7 @@
       * [Thread](boxlang-language/reference/components/async/Thread.md)
     * [cache](boxlang-language/reference/components/cache/README.md)
       * [Cache](boxlang-language/reference/components/cache/Cache.md)
-    * [components](boxlang-language/reference/components/components/README.md)
+    * [components](boxlang-language/reference/components/components.md)
     * [debug](boxlang-language/reference/components/debug/README.md)
       * [Stopwatch](boxlang-language/reference/components/debug/Stopwatch.md)
       * [Timer](boxlang-language/reference/components/debug/Timer.md)
@@ -705,7 +705,7 @@
     * [xml](boxlang-language/reference/components/xml/README.md)
       * [XML](boxlang-language/reference/components/xml/XML.md)
     * [zip](boxlang-language/reference/components/zip/README.md)
-      * [Zip](boxlang-language/reference/components/zip/Zip.md)  
+      * [Zip](boxlang-language/reference/components/zip/Zip.md)
   * [Exceptions](boxlang-language/reference/Exceptions.md)
 
 ## BoxLang Framework
