@@ -882,10 +882,13 @@ If you create your own `init()` then it's your job to initialize your class :)
 BoxLang annotations can be added to `properties`, `functions`, and `classes`. Using the following pattern:
 
 ```
-@annonationName [AnyLiteralExpression=null]
+@annonationName
+// or...
+@annonationName( value, value, value )
 ```
+The `value` is a litearl expression (string, boolean null, number, array, or struct) or an identifer.  Since runtime variables aren't allowed here, identifiers will be treated as quoted strings.  If no value is supplied, then omit the parentheses.
 
-You can add as many as you like to the target locations without creating annotation classes or boilerplate. The annotation's value is completely optional and can be a literal express, which can be a string, list, array, struct, JSON, etc.
+You can add as many as you like to the target locations without creating annotation classes or boilerplate. 
 
 ### Metadata: $bx
 
@@ -895,8 +898,8 @@ Extra metadata can be added to functions, properties, classes, or annotations.
 
 ```java
 @singleton
-@transientCache false
-@myMetadata "hello"
+@transientCache( false )
+@myMetadata( hello, "another value" )
 class{
 
 }
