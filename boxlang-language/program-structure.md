@@ -1,13 +1,13 @@
 ---
-description: This section covers the basics of the program structures of BoxLang
 icon: folder-tree
+description: This section covers the basics of the program structures of BoxLang
 ---
 
 # Program Structure
 
 ## File Types
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 BoxLang can be written in 3 types of files:
 
