@@ -339,15 +339,16 @@ Check out our [Scopes](../../../boxlang-language/variable-scopes.md) section to 
 
 ## CastAs Operator
 
-BoxLang has a natural casting operator that is fluent and readable: `castAs {expression}.`  It can be an expression since the right-hand side can be dynamic.  If not, use the name of what to cast to using quotes or no quotes.&#x20;
+BoxLang has a natural casting operator that is fluent and readable: `castAs {expression}.`  It can be an expression since the right-hand side can be dynamic. Unquoted identifers will be considered a string literal.  Any other expression will be evaluated at runtime. 
 
 ```java
-myJavaClass( value castAs "long" )
+myJavaClass( value castAs long )
 
 return {
-    age : value castAs "int",
-    tags : value castAs "String[]",
-    isActive : "#value#" castAs "Boolean"
+    age : value castAs int,
+    tags : value castAs String[],
+    isActive : "#value#" castAs Boolean
+    spam : value castas "#DynamicType#"
 }
 ```
 
