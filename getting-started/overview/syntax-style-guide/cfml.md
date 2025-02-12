@@ -83,8 +83,8 @@ BoxLang will allow for proper annotations before UDF declarations, properties, a
 
 ```jsx
 @foo
-@bar "value"
-@output true
+@bar( value )
+@output( true )
 function myFunc() {
 }
 ```
