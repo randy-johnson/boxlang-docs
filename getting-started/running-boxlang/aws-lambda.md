@@ -234,7 +234,11 @@ This makes it incredibly flexible where you can respond to that incoming header 
 
 ## Deploy to AWS
 
-You can deploy your lambda by uploading the build package manually or using our GitHub Actions included in your template..  Our template also includes the ability to do automatic deployments using GitHub Actions if you give your repository the right credentials and you activate the CI process.
+You can deploy your lambda by manually uploading the build package or using our GitHub Action in your template.  Below is the action that does an automatic update.
+
+{% hint style="danger" %}
+Please note that you MUST create the lambda function in the AWS console **FIRST** for this to work.  This does not create; it only updates.
+{% endhint %}
 
 ```yaml
 - name: Update AWS Lambda Function
@@ -243,12 +247,29 @@ You can deploy your lambda by uploading the build package manually or using our 
     zip-file: "./build/distributions/${{ env.PROJECT_NAME }}-${{ env.VERSION }}-all.zip"
     lambda-name: ${{ env.PROJECT_NAME }}-${{ env.DEPLOY_TIER }}
   env:
-    AWS_REGION: ${{ env.AWS_REGION }}
+    AWS_REGION: ${{ secrets.AWS_REGION }}
     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_PUBLISHER_KEY_ID }}
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_PUBLISHER_KEY }}
 ```
 
-Our automated approach will require for you to store your credentials in your repository's secrets.  Please also note that our build process allows you to have a `development`branch and a `master/main`production branch.  This allows you to have a deployment of a `staging`and a `production`tier.
+Our automated approach will require storing your credentials in your repository's secrets. &#x20;
+
+* `AWS_REGION`- The region to deploy to
+* `AWS_PUBLISHER_KEY_ID`- The AWS access key
+* `AWS_SECRET_PUBLISHER_KEY`- The AWS secret key
+
+When creating the lambdas, make sure you create two lambdas:
+
+* `{projectName}-staging` - A staging lambda based on the `development`branch
+* `{projectName}-production` - A production lambda based on the `main`branch
+
+Please also note that our build process allows you to have a `development`branch and a `master/main`production branch.  This will enable you to have a deployment of a `staging`and a `production`tier function in the lambdas console in AWS.
+
+{% hint style="success" %}
+The `{projectName}`comes from the `settings.gradle`file in your root project.
+{% endhint %}
+
+
 
 <figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
@@ -258,7 +279,7 @@ Log in to the Lambda Console and click on `Create function` button.
 
 Now let's add the basic information about our deployment:
 
-* Add a function name
+* Add a function name: `{projectName}-staging or production`
 * Choose `Java 21` as your runtime
 * Choose `x86_64` as your architecture
 

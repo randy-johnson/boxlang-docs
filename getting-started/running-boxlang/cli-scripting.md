@@ -227,17 +227,50 @@ Please note that executing templates is exactly the same as scripts but your tem
 
 
 
+## SheBang Scripts
+
+SheBang scripts are text files containing a sequence of commands for a computer operating system. The term "shebang" refers to the `#!` characters at the beginning of the script, which specify the interpreter that should be used to execute the script. These scripts are commonly used in Unix-like operating systems to automate tasks. By using a shebang line, you can run scripts directly from the command line without needing to invoke the interpreter explicitly.  BoxLang supports these types of scripts, so the OS sees them as just pure shell scripts, but you are really coding in BoxLang scripting.
+
+{% hint style="success" %}
+A SheBang script is just basically a `*.bxs`script.
+{% endhint %}
+
+{% code title="hola.sh" %}
+```bash
+#!/usr/bin/env boxlang
+
+println( "Hello World! #now()#" )
+println( CLIGetArgs() );
+```
+{% endcode %}
+
+As you can see from the sample above, the first line is what makes it a SheBang script the operating system can use.  It passes it to the `boxlang`binary for interpretation.  Also, note that you can pass arguments to these scripts like any other script and the `CLIGetArgs()`or the `server.cli.parsed` variables will be there for you to use.
+
+```bash
+# Execute the script
+./hola.sh
+
+# Execute it with a name argument and a simple option
+./hola.sh --name=luis -d
+```
+
+
+
 ## CLI Built-In Functions
 
-BoxLang also gives you several built in functions for interacting with the CLI:
+BoxLang also gives you several built-in functions for interacting with the CLI:
 
 * `CLIGetArgs():struct` - Return a structure of the parsed incoming arguments
 * `CLIRead( [prompt] ):any`- Read input from the CLI and return the value
-* `CLIExit( [exitCode=0] )`- Do a `System.exit()`with the passed in exit code
+* `CLIExit( [exitCode=0] )`- Do a `System.exit()`with the passed-in exit code
 
 {% hint style="warning" %}
-Please note that you have a wealth of built-in-functions and components that you can use to build your scripts.
+Please note that you have a wealth of built-in functions and components that you can use to build your scripts.
 {% endhint %}
+
+
+
+## Parsed Arguments
 
 
 
@@ -258,9 +291,9 @@ if( exit ){
 
 As you navigate all the built-in functions and capabilities of BoxLang, let's learn how to produce output to the system console.
 
-* `printLn()` - Print with a line break
-* `print()` - Print with no line break
-* `writeOutput()` - Writes to the output buffer (Each runtime decides what it's buffer is. The CLI is the system output, the Web is the HTML response buffer, etc)
+* `printLn()` - Print with a line break to System out
+* `print()` - Print with no line break to System out
+* `writeOutput(), echo()` - Writes to the output buffer (Each runtime decides what its buffer is. The CLI is the system output, the Web is the HTML response buffer, etc)
 * `writeDump()`- Takes any incoming output and will serialize to a nice string output representation.  This will also do complex objects deeply.
 
 ```groovy
@@ -274,7 +307,7 @@ I get the output:
 Time is {ts '2024-05-22 22:09:56'}
 ```
 
-Hooray! You have executed your first script using BoxLang. Now let's build a class with a `main( args=[] )` convention. This is simliar to Java or Groovy.
+Hooray! You have executed your first script using BoxLang. Now let's build a class with a `main( args=[] )` convention. This is similar to Java or Groovy.
 
 ```java
 class{
