@@ -8,7 +8,7 @@ description: BoxLang speaks O.O. and functional tongues.
 BoxLang is an Object-Oriented programming language which means that all the things we interact with inside the virtual machine are objects, which in our case we will call Classes (`.bx`). Objects can hold data, called **properties**, and they can perform actions, called **methods** or **functions,** they can inherit from other objects, they can implement interfaces, they can contain metadata, and even act as RESTFul web services.
 
 ```java
-@DisplayName "Cat"
+@DisplayName( "Cat" )
 class extends="Animal"{
 
     property boolean tail;
@@ -30,7 +30,7 @@ BoxLang supports not only the traditional avenues for object orientation but als
 In Object-Oriented programming, we define **classes** which are abstract descriptions of a category or type of thing; a blueprint. In our case, we will call them classes and it defines what properties and functions all objects (instances) of that type have. You can consider them to be a blueprint of your object representation. They should have a distinct job and a **single** responsibility (if possible), try to avoid creating God objects.
 
 {% hint style="info" %}
-In object-oriented programming, a God object is an object that knows too much or does too much. The God object is an example of an anti-pattern. A common programming technique is to separate a large problem into several smaller problems (a divide and conquer strategy) and create solutions for each of them. - [https://en.wikipedia.org/wiki/God\_object](https://en.wikipedia.org/wiki/God\_object)
+In object-oriented programming, a God object is an object that knows too much or does too much. The God object is an example of an anti-pattern. A common programming technique is to separate a large problem into several smaller problems (a divide and conquer strategy) and create solutions for each of them. - [https://en.wikipedia.org/wiki/God\_object](https://en.wikipedia.org/wiki/God_object)
 {% endhint %}
 
 Let's check out an example of a simple Component, `User.bx`
@@ -66,17 +66,16 @@ Let's check out an example of a simple Component, `User.bx`
 
 Please check out the following articles:
 
-* [https://en.wikipedia.org/wiki/Class\_(computer\_programming)](https://en.wikipedia.org/wiki/Class\_\(computer\_programming\))
-* [https://en.wikipedia.org/wiki/Instance\_(computer\_science)](https://en.wikipedia.org/wiki/Instance\_\(computer\_science\))
-* [https://en.wikipedia.org/wiki/Encapsulation\_(computer\_programming)](https://en.wikipedia.org/wiki/Encapsulation\_\(computer\_programming\))
-* [https://en.wikipedia.org/wiki/Abstraction\_(software\_engineering)](https://en.wikipedia.org/wiki/Abstraction\_\(software\_engineering\))
-* [https://en.wikipedia.org/wiki/God\_object](https://en.wikipedia.org/wiki/God\_object)
-* [http://www.learncfinaweek.com/week1/OOP/](http://www.learncfinaweek.com/week1/OOP/)
-* [https://en.wikipedia.org/wiki/Mutator\_method](https://en.wikipedia.org/wiki/Mutator\_method)
+* [https://en.wikipedia.org/wiki/Class\_(computer\_programming)](https://en.wikipedia.org/wiki/Class_\(computer_programming\))
+* [https://en.wikipedia.org/wiki/Instance\_(computer\_science)](https://en.wikipedia.org/wiki/Instance_\(computer_science\))
+* [https://en.wikipedia.org/wiki/Encapsulation\_(computer\_programming)](https://en.wikipedia.org/wiki/Encapsulation_\(computer_programming\))
+* [https://en.wikipedia.org/wiki/Abstraction\_(software\_engineering)](https://en.wikipedia.org/wiki/Abstraction_\(software_engineering\))
+* [https://en.wikipedia.org/wiki/God\_object](https://en.wikipedia.org/wiki/God_object)
+* [https://en.wikipedia.org/wiki/Mutator\_method](https://en.wikipedia.org/wiki/Mutator_method)
 
 ### Notes of Interest
 
-The attribute `accessors` in the class definition denotes that automatic **getters (**[**accessors**](https://en.wikipedia.org/wiki/Mutator\_method)**)** and **setters (**[**mutators**](https://en.wikipedia.org/wiki/Mutator\_method)**)** will be created for all defined properties in the object. Also notice that the class and each property can be documented using `/** **/` notation, which is great for automatic documentation generators like [DocBox](https://www.forgebox.io/view/docbox).
+The attribute `accessors` in the class definition denotes that automatic **getters (**[**accessors**](https://en.wikipedia.org/wiki/Mutator_method)**)** and **setters (**[**mutators**](https://en.wikipedia.org/wiki/Mutator_method)**)** will be created for all defined properties in the object. Also notice that the class and each property can be documented using `/** **/` notation, which is great for automatic documentation generators like [DocBox](https://www.forgebox.io/view/docbox).
 
 {% hint style="success" %}
 Get into the habit of inline documentation, it can go a long way for automatic generators and make you look like you can document like a machine!
@@ -84,7 +83,7 @@ Get into the habit of inline documentation, it can go a long way for automatic g
 
 ### Creating Instances
 
-The _User.bx_ class above is a representation of _any_ user or the _idea_ of a user. In order to bring it to life we will create an [**instance**](https://en.wikipedia.org/wiki/Instance\_\(computer\_science\)) of it, populate it with instance data and then use it.
+The _User.bx_ class above is a representation of _any_ user or the _idea_ of a user. In order to bring it to life we will create an [**instance**](https://en.wikipedia.org/wiki/Instance_\(computer_science\)) of it, populate it with instance data and then use it.
 
 An instance, is a copy of that blueprint that you are bringing to life that will be stored in memory and used by the language during a set of executions. Usually via a `new` or `createObject()` keyword operation from another file, which can be a template or yet another class.
 
@@ -105,12 +104,9 @@ user = createObject( "class", "User" ).init();
 
 In later chapters we will investigate the concept of [dependency injection](../../extra-credit/dependency-injection.md). Please also note that the `createObject()` function can also be used to create different types of objects in BoxLang like:
 
-* Classes
-* Webservices (WSDL based)
+* BoxLang Classes
 * Java Objects
-* .NET assemblies
-* COM Objects
-* Corba
+* Custom (Implemented by Modules)
 
 ## Constructors
 
@@ -167,7 +163,7 @@ class{
 }
 ```
 
-## Component Scopes
+## Class Scopes
 
 Every class has certain visibility scopes where properties, variables and functions are attached to.
 
@@ -175,7 +171,7 @@ Every class has certain visibility scopes where properties, variables and functi
 * `this` - Public scope, visible from the outside world (can break encapsulation) public function references are placed here.
 * `static` - Same as in Java, ability to staticly declare variables and functions at the blueprint level and not at the instance level.
 
-## Component Attributes
+## Class Attributes
 
 The `class` construct can also have many attributes or name-value pairs that will give it some extra functionality for SOAP/REST web services and for Hibernate ORM Persistence. Each BoxLang engine provides different capabilities. You can find all of them here: [https://cfdocs.org/cfcomponent](https://cfdocs.org/cfcomponent). Below are the most common ones:
 
@@ -193,7 +189,7 @@ class accessors="true" serializable="false" extends="BaseUser"{
 class implements="cachebox.system.cache.ICacheProvider"{}
 ```
 
-Please note that in BoxLang you can also declare these attributes via annotations in the comments section, weird, I know!
+Please note that in BoxLang you can also declare these attributes via annotations in the comments section, weird, I know!s
 
 ```java
 /**
@@ -207,4 +203,3 @@ class{
 }
 ```
 
-##

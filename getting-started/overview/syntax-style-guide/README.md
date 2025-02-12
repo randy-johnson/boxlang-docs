@@ -265,7 +265,9 @@ catch( foo.com | brad | com.luis.majano e ) {}
 
 ## No Semicolons
 
-As you can see, semicolons are completely optional. We prefer no semicolons unless you really, really need to demarcate a beginning and an end.
+As you can see, semicolons are completely optional. We prefer no semicolons unless you really, really need to demarcate a beginning and an end.  These are the special occasions in BoxLang where you need semi-colons:
+
+* `property` definitions in classes
 
 ## Scopes
 
@@ -339,7 +341,7 @@ Check out our [Scopes](../../../boxlang-language/variable-scopes.md) section to 
 
 ## CastAs Operator
 
-BoxLang has a natural casting operator that is fluent and readable: `castAs {expression}.`  It can be an expression since the right-hand side can be dynamic. Unquoted identifers will be considered a string literal.  Any other expression will be evaluated at runtime. 
+BoxLang has a natural casting operator that is fluent and readable: `castAs {expression}.` It can be an expression since the right-hand side can be dynamic. Unquoted identifers will be considered a string literal. Any other expression will be evaluated at runtime.
 
 ```java
 myJavaClass( value castAs long )
@@ -356,7 +358,7 @@ You can also use our handy [`javaCast`](../../../boxlang-language/reference/buil
 
 ## Human Operators
 
-You can see all the supported operators on our operator's page. We have several fluent operators using English instead of symbols, and some that are only English-based.  You can see all the supported [operators](../../../boxlang-language/operators.md) on our operator's page.
+You can see all the supported operators on our operator's page. We have several fluent operators using English instead of symbols, and some that are only English-based. You can see all the supported [operators](../../../boxlang-language/operators.md) on our operator's page.
 
 | Symbol Operator | Human Operator          | Hint                                                                                                  |
 | --------------- | ----------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -375,8 +377,6 @@ You can see all the supported operators on our operator's page. We have several 
 |                 | `EQV`                   | Equivalence                                                                                           |
 |                 | `IMP`                   | Implication                                                                                           |
 | `%`             | `mod`                   | Modulus                                                                                               |
-
-
 
 ## InstanceOf Operator
 
@@ -881,14 +881,41 @@ If you create your own `init()` then it's your job to initialize your class :)
 
 BoxLang annotations can be added to `properties`, `functions`, and `classes`. Using the following pattern:
 
-```
+```java
 @annonationName
 // or...
 @annonationName( value, value, value )
 ```
-The `value` is a litearl expression (string, boolean null, number, array, or struct) or an identifer.  Since runtime variables aren't allowed here, identifiers will be treated as quoted strings.  If no value is supplied, then omit the parentheses.
 
-You can add as many as you like to the target locations without creating annotation classes or boilerplate. 
+The `value` is a literal expression (string, boolean null, number, array, or struct) or an identifer. Since runtime variables aren't allowed here, identifiers will be treated as quoted strings. If no value is supplied, then omit the parentheses.
+
+{% hint style="success" %}
+**Tip:** Remember that string literals you can use quotes, single quotes or none.
+{% endhint %}
+
+```java
+@singleton
+class{
+
+    @inject
+    property name="wirebox";
+    
+    
+    @returnFormat( json )
+    function getData(){
+        return data
+    }
+    
+    @cache( true )
+    @returnFormat( "xml" )
+    function getXMLData(){
+    
+    }
+
+}
+```
+
+You can add as many as you like to the target locations without creating annotation classes or boilerplate.
 
 ### Metadata: $bx
 
