@@ -79,7 +79,7 @@ function hello( name ){
 
 ## High Precision Mathematics
 
-By deafult, BoxLang will use high-precision mathematics by evaluting your numbers and determining the right type for them. If the numbers whole and short enough, they will be stored in an `Integer` or `Long`. If they contain decimals they will be a `BigDecimal` and if you do math on them, the result will be the most precise of the two inputs. You don't have to be knowing or addressing the numerical types, we will do that for you.
+By default, BoxLang will use high-precision mathematics by evaluating your numbers and determining the right type for them. If the numbers are whole and short enough, they will be stored in an `Integer` or `Long`. If they contain decimals, they will be a `BigDecimal` and if you do math on them, the result will be the most precise of the two inputs. You don't have to be knowing or addressing the numerical types, we will do that for you.
 
 {% hint style="warning" %}
 You can change this [setting in the configuration to false](../../configuration.md#use-high-precision-math) and it will use basic Double mathematics and it will be up to you when to use high precision evaluations.
@@ -91,13 +91,13 @@ You can store a larger number like:
 123123123123123123123123123
 ```
 
-in a `Double`, but behind the scenes, not all of that is actually stored. All Java actually tracks is
+in a `Double`, but behind the scenes, not all of that is stored. All Java tracks is
 
 ```undefined
 1.2312312312312312 E 26
 ```
 
-which means some digits of the original number are gone. So if you run the math equation
+which means some digits of the original number are gone. So, if you run the math equation
 
 ```undefined
 11111111111111111111 + 22222222222222222222
@@ -108,11 +108,11 @@ you get:
 * Windows calculator: `33333333333333333333`
 * BoxLang: `33333333333333333333`
 
-You may not be too worried about the use case of very large numbers, but the floating point math has bitten every single developer who’s been around long enough, and can wreak havoc on the simplest of math calculations.
+You may not be too worried about the use case of very large numbers, but the floating point math has bitten every single developer who’s been around long enough and can wreak havoc on the simplest of math calculations.
 
 ### Level of Precision
 
-Furthermore, Java’s BigDecimal class allows you to choose the level of precision you want to use. Java 21 defaults to “unlimited” precision, but we’ve dialed that back to the IEEE 754-2019 decimal128 format, which has 34 digits of precision, and uses a rounding mode of HALF\_EVEN. You can change the amount of precision BoxLang uses for BigDecimal operations at any time like so:
+Furthermore, Java’s BigDecimal class allows you to choose the level of precision you want to use. Java 21 defaults to “unlimited” precision, but we’ve dialed that back to the IEEE 754-2019 decimal128 format, which has 34 digits of precision and uses a rounding mode of HALF\_EVEN. You can change the amount of precision BoxLang uses for BigDecimal operations at any time like so:
 
 ```cpp
 import ortus.boxlang.runtime.types.util.MathUtil;
@@ -121,7 +121,7 @@ MathUtil.setPrecision( 100 );
 
 ### Only When Needed
 
-BoxLang has a smart parser, which will always store a number in the smallest package possible, opting to promote the type only when actually necessary.
+BoxLang has a smart parser that will always store a number in the smallest package possible, opting to promote the type only when necessary.
 
 ```ini
 n = 1;  // smaller than 10 digits stores in an Integer
@@ -141,13 +141,13 @@ n = 1000000000
 ```
 
 That’s 1 billion. Or was it 1 million? Or maybe it was 100 million… _pauses to re-count_.\
-With numeric place holders, your code can look like this:
+With numeric placeholders, your code can look like this:
 
 ```ini
 n = 1_000_000_000
 ```
 
-Ahh, so it _was_ 1 billion! There’s no rules on where you can place the underscores, so long as they are INSIDE the number and not leading or trailing. You can also place numeric separators in decimals:
+Ahh, so it _was_ 1 billion! There are no rules on where you can place the underscores, so long as they are INSIDE the number and not leading or trailing. You can also place numeric separators in decimals:
 
 ```ini
 n = 3.141_592_653_59
@@ -159,7 +159,7 @@ and in the exponent of scientific notation
 1e2_345
 ```
 
-These underscores are simply thrown away at compile time. They are not represented in the bytecode and will not appear anywhere in your running app. They are purely for readability in your source code.
+These underscores are thrown away at compile time. They are not represented in the bytecode and will not appear anywhere in your running app. They are purely for readability in your source code.
 
 ## Case Insensitive Functionality
 
@@ -183,6 +183,110 @@ println( "My name is #mymap.NAME# and my age is #mymap.age#" )
 {% hint style="info" %}
 Internally we leverage a `Key` class that provides us with case insensitivity. Each map has a `Key` as the, well, key.
 {% endhint %}
+
+## BIFs = Built-In Functions
+
+BoxLang is inspired by many languages and offers [built-in functions](../../../boxlang-language/reference/built-in-functions/) you can call from anywhere in your code.  BoxLang ships with a plethora of functions that can be used headlessly or as member functions on different data types.  Modules can also collaborate functions globally.  There is no need to import them, they are automatically imported.
+
+{% hint style="info" %}
+Please check out the [reference section](../../../boxlang-language/reference/) for all the contributed core BIFs.
+{% endhint %}
+
+```cfscript
+// Runs the println() bif and the now() bif
+println( "Hola from #now()#" )
+```
+
+{% hint style="success" %}
+To get a sense of all the BIFs registered in your runtime, do a
+
+`writedump( getFunctionList() ) or println( getFunctionList() )`
+{% endhint %}
+
+### Member Functions
+
+Member functions are special functions attached to all data types in BoxLang, whether they are structs, arrays, strings, numbers, dates, Java objects, classes, etc. We provide tons of member functions, but developers can also contribute their own via BoxLang modules. All member functions map back to built-in functions (BIFs).
+
+```cfscript
+myArray = [1,2,3,4]
+println( myArray.count() )
+
+fruitArray = [
+    {'fruit'='apple', 'rating'=4},
+    {'fruit'='banana', 'rating'=1},
+    {'fruit'='orange', 'rating'=5},
+    {'fruit'='mango', 'rating'=2},
+    {'fruit'='kiwi', 'rating'=3}
+]
+favoriteFruites = fruitArray.filter( item -> item.rating >= 3 )
+```
+
+{% hint style="info" %}
+You can find all the collection of member functions in our [types](../../../boxlang-language/reference/types/) section.
+{% endhint %}
+
+## BoxLang Components
+
+Components are a special construct in BoxLang that allows the core and modules to contribute functionality that cannot be expressed in a simple BIF.  This is for more complex contributions to the language like HTTP frameworks, FTP, Email, PDF tooling, Image tooling, etc.  A simple BIF would not cut it.  [These components](../../../boxlang-language/reference/components/) can be called from anywhere in your source code, either in the script or in the templating language.  Components usually are statements and not expressions.  They also allow you to have bodies that can produce output if needed.
+
+```java
+bx:http url=apiURL result="result" {
+  bx:httpparam type="header" name="Accept" value="application/json";
+}
+
+bx:timer variable="myTimer"{
+  .. this code to time...
+}
+```
+
+As you can see, they all start with the prefix of `bx:`and the name of the registered component.  Each component can have attributes and nested components as well.  The cool thing about components, is that they translate incredibly well for templating so that you can create rich templating tags as well.
+
+```xml
+<bx:query name="getUser" datasource="myDatasource">
+    SELECT id, firstName, lastName, email
+    FROM users
+    WHERE email = <bx:queryparam value="#form.email#" cfsqltype="cf_sql_varchar">
+</bx:query>
+```
+
+We ship several components as core:
+
+* `Abort` - Abort the request
+* `Application` - Update/Configure the running virtual application
+* `Associate` - Associate variable data with a child or parent component
+* `Cache` - Caches content
+* `Directory` - Directory-based calls
+* `DBInfo` - Get database metadata and information
+* `Dump`- A cool UI/console dumper of data, simple or complex&#x20;
+* `Execute`- Execute OS binaries
+* `Exit`- Exit from nested executions of components
+* `File` - File-based calls
+* `Flush`- Force flush the output buffer in BoxLang either to Web or Console or whatever runtime you are on.
+* `HTTP` - HTTP Calls
+* `Include`- Include another template file into another template. Inception.
+* `Invoke`- Invoke dynamic methods on dynamic objects with dynamic arguments
+* `Lock`- Easy code locking and segmentation
+* `Log`- Write to our log files
+* `Loop`- Looping constructs for native or Java types
+* `Module`- Call custom templates in an isolated fashion
+* `Object`- Create BoxLang, Java, Custom objects
+* `Output`- Wrap code/HTML to produce output to the buffers
+* `Param`- Parameterize variables with default values if not defined
+* `Query` - Execute quick queries
+* `SaveContent`- Execute content and save it's output into a variable using template stylings
+* `Setting`- Set global BoxLang setting directives
+* `Silent`- Wrap code so it doesn't produce any output or whitespace
+* `Sleep`- Sleeps the thread for the requested amount of time
+* `StoredProc` - Execute stored procedures
+* `Transaction` - Start JDBC Transaction demarcations
+* `Timer` - Time code between it
+* `Thread` - Create threaded code
+* `Throw`- Throw an exception
+* `Trace`- Trace debugging messages to the console or debugging facilities
+* `XML`- Build or work with XML content
+* `Zip`- Allows you to compress/uncompress and manipulate zip/gzip files
+
+However, check out our [modules](../../../boxlang-framework/modularity/) section for more components, and you can also build your own.
 
 ## Expression Interpolation
 
@@ -768,41 +872,7 @@ function Boolean isAlive(){
 }
 ```
 
-### BIFs = Built-In Functions
 
-BoxLang is inspired by many languages, and it offers [built-in functions](../../../boxlang-language/reference/built-in-functions/) you can call from anywhere in your code. They are automatically registered by the core language and any collaborating module.
-
-```cfscript
-println( "Hola from #now()#" )
-```
-
-{% hint style="info" %}
-To get a sense of all the BIFs registered in your runtime, do a
-
-writedump( getFunctionList() ) or println( getFunctionList() )
-{% endhint %}
-
-### Member Functions
-
-Member functions are special functions attached to all data types in BoxLang, whether they are structs, arrays, strings, numbers, dates, Java objects, classes, etc. We provide tons of member functions, but developers can also contribute their own via BoxLang modules. All member functions map back to built-in functions.
-
-```cfscript
-myArray = [1,2,3,4]
-println( myArray.count() )
-
-fruitArray = [
-    {'fruit'='apple', 'rating'=4},
-    {'fruit'='banana', 'rating'=1},
-    {'fruit'='orange', 'rating'=5},
-    {'fruit'='mango', 'rating'=2},
-    {'fruit'='kiwi', 'rating'=3}
-]
-favoriteFruites = fruitArray.filter( item -> item.rating >= 3 )
-```
-
-{% hint style="info" %}
-You can find all the collection of member functions in our [types](../../../boxlang-language/reference/types/) section.
-{% endhint %}
 
 ## BoxLang Classes
 
