@@ -51,8 +51,6 @@ java -jar boxlang-1.0.0-all.jar /full/path/to/test.bxs
 {% endtab %}
 {% endtabs %}
 
-{% include "../../.gitbook/includes/server-scope.md" %}
-
 ## Other Scopes
 
 Please note that you have access to other persistent scopes when building CLI applications:
@@ -356,27 +354,25 @@ class{
     variables.apiURL = "https://icanhazdadjoke.com/";
 
     /**
-     * The first argument is the term in this scenario
-     * Example: DadJoke.bx dad
-     * Example: DadJoke.bx java
-     * Example: DadJoke.bx
+     * The first argument is a term to search dad jokes on, if not provided, a random dad joke will be fetched.
+     * Example: boxlang DadJoke.bx dad
+     * Example: boxlang DadJoke.bx
      */
     function main( args = [] ) {
-        var term = args[ 1 ] ?: "";
+        // Use elvis operator to check if a term was passed, else, use an empty string
+        var term = ( args[ 1 ] ?: "" ).trim();
 
         if( !term.isEmpty() ){
-            apiURL &= "search?term=" & urlEncodedFormat( term )
+            apiURL &= "search?term=" & term.urlEncodedFormat()
         }
 
         println( "Getting dad joke for term [#term#], please wait..." );
-        bx:http url=apiURL result="local.result" {
+        bx:http url=apiURL result="result" {
             bx:httpparam type="header" name="Accept" value="application/json";
-        };
-
+        }
         var data = JSONDeserialize( result.fileContent );
-        //println( data )
 
-         // possible none were found
+         // possible none were found, use safe navigation operator
          if( data?.results?.len() == 0 ){
             println( "No jokes found for term: #term#" );
             return cliExit();
@@ -398,4 +394,10 @@ boxlang DadJoke.bx
 
 // Term jokes
 boxlang DadJoke.bx ice
+```
+
+Let's modify it now so that we can prompt the user for the term using the `CLIRead()`BIF instead of passing it:
+
+```java
+var term = ( CLIRead( "What search term would you like to use? (Leave blank for random joke)") ).trim();
 ```
