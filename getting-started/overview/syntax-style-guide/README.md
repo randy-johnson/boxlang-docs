@@ -3,7 +3,7 @@ icon: vest
 description: Quickly learn what the BoxLang language offers.
 ---
 
-# Quick Syntax Style Guide
+# Quick Syntax Guide
 
 This guide provides a quick overview of BoxLang syntax styles, intricacies, operators, and features. It aims to assist developers from other languages in their BoxLang development journey. BoxLang has been heavily inspired by many different languages, including Java, CFML, Groovy, Kotlin, Ruby, PHP, and more.
 
@@ -263,11 +263,48 @@ In BoxLang you can catch multiple exceptions by using the pipe | operator. They 
 catch( foo.com | brad | com.luis.majano e ) {}
 ```
 
-## No Semicolons
+## No Semicolons, almost
 
-As you can see, semicolons are completely optional. We prefer no semicolons unless you really, really need to demarcate a beginning and an end.  These are the special occasions in BoxLang where you need semi-colons:
+Semicolons are almost always optional except in some situations:
 
 * `property` definitions in classes
+* Component calls with no body
+* Component child calls
+
+{% hint style="success" %}
+Components in BoxLang have contributed functionality that is not core language and can be used in a statement syntax. Examples are mail, http, ftp, etc.
+{% endhint %}
+
+```java
+// Properties
+class{
+
+    property name="hello";
+    property lastName;
+
+}
+```
+
+```java
+// Components
+
+// No body, requires ;
+bx:flush;
+
+// With inline body ; not needed
+bx:flush{}
+
+// With Body using {}, so no ; needed
+bx:savecontent variables="test"{
+    echo( "hello" )
+}
+
+// With child calls ; needed
+bx:http url=apiURL result="result" {
+    bx:httpparam type="header" name="Accept" value="application/json";
+    bx:httpparam type="header" name="x-test" value="test";
+}
+```
 
 ## Scopes
 
