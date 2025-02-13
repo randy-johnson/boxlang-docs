@@ -659,7 +659,6 @@
       * [Thread](boxlang-language/reference/components/async/Thread.md)
     * [cache](boxlang-language/reference/components/cache/README.md)
       * [Cache](boxlang-language/reference/components/cache/Cache.md)
-    * [components](boxlang-language/reference/components/components.md)
     * [debug](boxlang-language/reference/components/debug/README.md)
       * [Stopwatch](boxlang-language/reference/components/debug/Stopwatch.md)
       * [Timer](boxlang-language/reference/components/debug/Timer.md)
