@@ -51,6 +51,7 @@ You can see the code for the handler here: [https://github.com/ortus-boxlang/box
 
 The handler will look for a `Lambda.bx`in your package and execute the `run()`method by convention.
 
+{% code title="Lambda.bx" %}
 ```java
 class {
 
@@ -61,12 +62,13 @@ class {
 
 }
 ```
+{% endcode %}
 
 
 
 ## Environment Variables
 
-The following are the env variables available in the runtime:
+The following are all the environment variables the Lambda runtime can read and detect.  If they are set by you or the AWS Lambda runner, then it will use those values to alter operations.  This doesn't mean that they will exist at runtime, it just means you can set them to alter behavior.
 
 <table><thead><tr><th width="305">Environmeent</th><th>Description</th></tr></thead><tbody><tr><td><code>BOXLANG_LAMBDA_CLASS</code></td><td><p>Absolute path to the lambda to execute. The default path is:</p><pre><code>/var/task/Lambda.bx
 </code></pre><p>Which is your lambda deployed within your zip file.</p></td></tr><tr><td><code>BOXLANG_LAMBDA_DEBUGMODE</code></td><td>Turn runtime debug mode or not.</td></tr><tr><td><code>BOXLANG_LAMBDA_CONFIG</code></td><td>Absolute path to a custom <code>boxlang.json</code> configuration for the runtime.</td></tr></tbody></table>
