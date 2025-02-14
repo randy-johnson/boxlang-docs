@@ -2,7 +2,7 @@
 
 # Function: `Len`
 
-No description available.
+Returns the absolute value of a number
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Len(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` |  |  |
+| `value` | `any` | `true` | The number to return the absolute value of |  |
 
 ## Examples
 
@@ -28,4 +28,3 @@ Len(value=[any])
   * [NullValue](./NullValue.md)
   * [StringLen](./StringLen.md)
   * [StructCount](./StructCount.md)
-  * [TranspileCollectionKeySwap](./TranspileCollectionKeySwap.md)

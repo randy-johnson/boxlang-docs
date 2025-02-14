@@ -2,7 +2,7 @@
 
 # Function: `QueryColumnList`
 
-No description available.
+This function returns the delimited column list of a query.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ QueryColumnList(query=[query])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
+| `query` | `query` | `true` | The query to get the column names from |  |
 
 ## Examples
 

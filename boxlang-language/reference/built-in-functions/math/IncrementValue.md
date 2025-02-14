@@ -2,7 +2,7 @@
 
 # Function: `IncrementValue`
 
-No description available.
+Increment the integer part of a number
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IncrementValue(number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `numeric` | `true` |  |  |
+| `number` | `numeric` | `true` | The number to increment the integer part of. |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `BoxRegisterRequestInterceptor`
 
-No description available.
+Registers a request interceptor that can listen to application listener request runtime events.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ BoxRegisterRequestInterceptor(interceptor=[any], states=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `interceptor` | `any` | `true` |  |  |
+| `interceptor` | `any` | `true` | This can be a class or a closure/lambda that will listen to global events |  |
 | `states` | `any` | `false` |  | `[]` |
 
 ## Examples

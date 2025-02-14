@@ -2,7 +2,7 @@
 
 # Function: `QueryInsertAt`
 
-No description available.
+Inserts a query data into another query at a specific position
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ QueryInsertAt(query=[query], value=[query], position=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `value` | `query` | `true` |  |  |
-| `position` | `numeric` | `true` |  |  |
+| `query` | `query` | `true` | The source query to insert to |  |
+| `value` | `query` | `true` | The query that will be inserted |  |
+| `position` | `numeric` | `true` | The position where the query will be inserted |  |
 
 ## Examples
 

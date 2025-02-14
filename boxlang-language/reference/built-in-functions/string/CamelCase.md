@@ -2,7 +2,7 @@
 
 # Function: `CamelCase`
 
-No description available.
+Convert a string to camel case
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ CamelCase(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
+| `string` | `string` | `true` | The target string |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `DebugBoxContexts`
 
-No description available.
+A debug BIF that returns an array of information showing the current context hierarchy
 
 ## Method Signature
 

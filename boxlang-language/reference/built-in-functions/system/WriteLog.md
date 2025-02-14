@@ -2,7 +2,7 @@
 
 # Function: `WriteLog`
 
-No description available.
+Writes a log message out
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ WriteLog(text=[string], type=[string], application=[boolean], log=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `text` | `string` | `true` |  |  |
-| `type` | `string` | `false` |  | `info` |
-| `application` | `boolean` | `false` |  | `true` |
-| `log` | `string` | `false` |  |  |
+| `text` | `string` | `true` | The text of the log message |  |
+| `type` | `string` | `false` | The log level of the entry. One of "Information", "Warning", "Error", "Debug", "Trace" | `info` |
+| `application` | `boolean` | `false` | If true, it logs the application name alongside the message. Default is true. | `true` |
+| `log` | `string` | `false` | The destination logger to use. If not passed, we use the default logger (application.log).<br>               If the logger is a file appender and it doesn't exist it will create it for you.<br>               If the value is an absolue path, it will create a file appender for you at that location. |  |
 
 ## Examples
 

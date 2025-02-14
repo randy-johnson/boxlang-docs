@@ -2,7 +2,7 @@
 
 # Function: `QueryAppend`
 
-No description available.
+This function clears the query
 
 ## Method Signature
 

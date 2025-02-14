@@ -2,7 +2,7 @@
 
 # Function: `ParseCurrency`
 
-No description available.
+Parses a currency value in to a numeric using the specified or context locale
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ ParseCurrency(string=[string], locale=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
-| `locale` | `string` | `false` |  |  |
+| `string` | `string` | `true` | the value to be parsed |  |
+| `locale` | `string` | `false` | the optional locale to apply in parsing |  |
 
 ## Examples
 

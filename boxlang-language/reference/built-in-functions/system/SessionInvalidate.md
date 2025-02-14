@@ -2,7 +2,7 @@
 
 # Function: `SessionInvalidate`
 
-No description available.
+Clears session scope and makes the current session identifiers no longer valid.
 
 ## Method Signature
 

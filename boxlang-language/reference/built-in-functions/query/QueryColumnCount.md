@@ -2,7 +2,7 @@
 
 # Function: `QueryColumnCount`
 
-No description available.
+This function returns the number of columns in a query
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ QueryColumnCount(query=[query])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
+| `query` | `query` | `true` | The query to get the column count from |  |
 
 ## Examples
 

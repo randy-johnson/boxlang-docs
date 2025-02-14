@@ -2,7 +2,7 @@
 
 # Function: `QueryColumnArray`
 
-No description available.
+This function returns the column array of a query.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ QueryColumnArray(query=[query])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
+| `query` | `query` | `true` | The query to get the column names from |  |
 
 ## Examples
 

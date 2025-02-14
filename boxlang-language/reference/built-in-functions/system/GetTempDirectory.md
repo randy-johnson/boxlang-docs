@@ -2,7 +2,7 @@
 
 # Function: `GetTempDirectory`
 
-No description available.
+Get the system's temporary directory.
 
 ## Method Signature
 

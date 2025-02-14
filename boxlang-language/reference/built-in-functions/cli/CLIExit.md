@@ -2,7 +2,7 @@
 
 # Function: `CLIExit`
 
-No description available.
+Exits the CLI with the specified exit code.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ CLIExit(exitCode=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `exitCode` | `numeric` | `false` |  | `0` |
+| `exitCode` | `numeric` | `false` | By convention, a nonzero status code, indicates abnormal termination. Deault code is 0. | `0` |
 
 ## Examples
 

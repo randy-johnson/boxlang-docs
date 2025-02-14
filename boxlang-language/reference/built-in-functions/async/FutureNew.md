@@ -2,7 +2,7 @@
 
 # Function: `FutureNew`
 
-No description available.
+Create a new BoxFuture object.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ FutureNew(value=[any], executor=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `false` |  |  |
-| `executor` | `any` | `false` |  |  |
+| `value` | `any` | `false` | If passed, the value to set on the BoxFuture object as completed or it can be a lambda/closure<br>                 that will provide the value and it will be executed asynchronously, or it can be a native Java CompletableFuture |  |
+| `executor` | `any` | `false` | The executor to use for the BoxFuture object. By default, the BoxFuture object will use the<br>                    default executor (ForkJoinPool.commonPool()). This can be the name of a named executor or a<br>                    custom executor object. |  |
 
 ## Examples
 

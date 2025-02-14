@@ -2,7 +2,7 @@
 
 # Function: `GetCurrentTemplatePath`
 
-No description available.
+Gets the absolute server file system path of the file that calls this function.
 
 ## Method Signature
 

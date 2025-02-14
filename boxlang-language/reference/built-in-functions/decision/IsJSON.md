@@ -2,7 +2,7 @@
 
 # Function: `IsJSON`
 
-No description available.
+Evaluates whether a string is in valid JSON (JavaScript Object Notation) data interchange format.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsJSON(var=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `var` | `any` | `true` |  |  |
+| `var` | `any` | `true` | The value to test for JSON |  |
 
 ## Examples
 

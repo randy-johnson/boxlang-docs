@@ -2,7 +2,7 @@
 
 # Function: `QueryCurrentRow`
 
-No description available.
+Returns the current row number
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ QueryCurrentRow(query=[query])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
+| `query` | `query` | `true` | The query to get the current row number from |  |
 
 ## Examples
 

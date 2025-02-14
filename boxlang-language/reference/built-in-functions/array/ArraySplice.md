@@ -2,7 +2,10 @@
 
 # Function: `ArraySplice`
 
-No description available.
+Modifies an array by removing elements and adding new elements.
+
+It starts from the index, removes as many elements as specified by
+ elementCountForRemoval, and puts the replacements starting from index position.
 
 ## Method Signature
 
@@ -15,10 +18,10 @@ ArraySplice(array=[modifiablearray], index=[Integer], elementCountForRemoval=[In
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiablearray` | `true` |  |  |
-| `index` | `Integer` | `true` |  |  |
-| `elementCountForRemoval` | `Integer` | `false` |  | `0` |
-| `replacements` | `array` | `false` |  |  |
+| `array` | `modifiablearray` | `true` | The array to splice |  |
+| `index` | `Integer` | `true` | The initial position to remove or insert from |  |
+| `elementCountForRemoval` | `Integer` | `false` | The number of elemetns to remove | `0` |
+| `replacements` | `array` | `false` | An array of elements to insert |  |
 
 ## Examples
 

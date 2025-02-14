@@ -2,7 +2,7 @@
 
 # Function: `StringEach`
 
-No description available.
+Iterates all the elements in a string and runs the passed callback on each character
 
 ## Method Signature
 
@@ -16,7 +16,7 @@ StringEach(list=[string], callback=[function:Consumer], delimiter=[string], incl
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
 | `list` | `string` | `true` |  |  |
-| `callback` | `function:Consumer` | `true` |  |  |
+| `callback` | `function:Consumer` | `true` | The callback to execute |  |
 | `delimiter` | `string` | `false` |  | `,` |
 | `includeEmptyFields` | `boolean` | `false` |  | `false` |
 | `multiCharacterDelimiter` | `boolean` | `false` |  | `true` |

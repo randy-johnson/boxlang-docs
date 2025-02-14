@@ -2,7 +2,7 @@
 
 # Function: `RandRange`
 
-No description available.
+Return a random int between number1 and number 2
 
 ## Method Signature
 

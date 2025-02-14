@@ -2,7 +2,7 @@
 
 # Function: `QueryRowSwap`
 
-No description available.
+In a query object, swap the record in the sourceRow with the record from the destinationRow.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ QueryRowSwap(query=[query], source=[numeric], destination=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `source` | `numeric` | `true` |  |  |
-| `destination` | `numeric` | `true` |  |  |
+| `query` | `query` | `true` | The query to swap a row with |  |
+| `source` | `numeric` | `true` | The row to swap from |  |
+| `destination` | `numeric` | `true` | The row to swap to |  |
 
 ## Examples
 

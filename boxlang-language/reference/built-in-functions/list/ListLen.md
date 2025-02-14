@@ -2,7 +2,7 @@
 
 # Function: `ListLen`
 
-No description available.
+Calculates the length of a list separated by the specified delimiter
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ ListLen(list=[string], delimiter=[string], includeEmptyFields=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` |  |  |
-| `delimiter` | `string` | `false` |  | `,` |
-| `includeEmptyFields` | `boolean` | `false` |  | `false` |
+| `list` | `string` | `true` | string list to calculate the length |  |
+| `delimiter` | `string` | `false` | string the list delimiter | `,` |
+| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
 
 ## Examples
 

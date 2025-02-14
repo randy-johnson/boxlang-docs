@@ -2,7 +2,7 @@
 
 # Function: `QuerySort`
 
-No description available.
+Sorts array elements.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QuerySort(query=[query], sortFunc=[function:Comparator])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `sortFunc` | `function:Comparator` | `true` |  |  |
+| `query` | `query` | `true` | Query to sort |  |
+| `sortFunc` | `function:Comparator` | `true` | Sort function to use. You can alternatively pass a Java Comparator. |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `GetBoxContext`
 
-No description available.
+Get the current Box Context
 
 ## Method Signature
 

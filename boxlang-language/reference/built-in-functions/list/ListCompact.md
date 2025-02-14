@@ -2,7 +2,7 @@
 
 # Function: `ListCompact`
 
-No description available.
+Compacts a list by removing empty items from the start and end of the list
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ ListCompact(list=[string], delimiter=[string], multiCharacterDelimiter=[boolean]
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` |  |  |
-| `delimiter` | `string` | `false` |  | `,` |
-| `multiCharacterDelimiter` | `boolean` | `false` |  | `false` |
+| `list` | `string` | `true` | The list to compact |  |
+| `delimiter` | `string` | `false` | string the list delimiter | `,` |
+| `multiCharacterDelimiter` | `boolean` | `false` | boolean whether the delimiter is multi-character | `false` |
 
 ## Examples
 

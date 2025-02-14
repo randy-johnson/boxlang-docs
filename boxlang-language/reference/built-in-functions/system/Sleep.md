@@ -2,7 +2,7 @@
 
 # Function: `Sleep`
 
-No description available.
+Sleeps the current thread for the specified duration in millisecons
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Sleep(duration=[long])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `duration` | `long` | `true` |  |  |
+| `duration` | `long` | `true` | The amount of time, in milliseconds to sleep the thread |  |
 
 ## Examples
 

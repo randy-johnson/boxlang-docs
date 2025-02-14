@@ -2,7 +2,7 @@
 
 # Function: `PascalCase`
 
-No description available.
+Convert a string to pascal case
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ PascalCase(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
+| `string` | `string` | `true` | The target string |  |
 
 ## Examples
 

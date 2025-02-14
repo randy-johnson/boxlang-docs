@@ -2,7 +2,7 @@
 
 # Function: `QueryAddColumn`
 
-No description available.
+Adds a column to a query and populates its rows with the contents of a one-dimensional array.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ QueryAddColumn(query=[query], columnName=[string], datatype=[any], array=[array]
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `columnName` | `string` | `true` |  |  |
-| `datatype` | `any` | `false` |  | `object` |
+| `query` | `query` | `true` | The query object to which the column should be added. |  |
+| `columnName` | `string` | `true` | The name of the column to add. |  |
+| `datatype` | `any` | `false` | The column data type of the new column or the array to populate the column with a generic type of anything. | `object` |
 | `array` | `array` | `false` |  | `[]` |
 
 ## Examples

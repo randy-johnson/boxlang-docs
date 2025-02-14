@@ -2,7 +2,7 @@
 
 # Function: `ListRest`
 
-No description available.
+Returns the remainder of a list after removing the first item
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ ListRest(list=[string], delimiter=[string], includeEmptyFields=[boolean], offset
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` |  |  |
-| `delimiter` | `string` | `false` |  | `,` |
-| `includeEmptyFields` | `boolean` | `false` |  | `false` |
+| `list` | `string` | `true` | The delimited list to perform operations on |  |
+| `delimiter` | `string` | `false` | string the list delimiter | `,` |
+| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
 | `offset` | `integer` | `false` |  | `0` |
 
 ## Examples

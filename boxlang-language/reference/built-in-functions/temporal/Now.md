@@ -2,7 +2,7 @@
 
 # Function: `Now`
 
-No description available.
+Returns the current DateTimeObject representing the current zoned instance
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Now(timezone=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `timezone` | `string` | `false` |  |  |
+| `timezone` | `string` | `false` | A timezone to use for the DateTime object, defaults to the system default |  |
 
 ## Examples
 

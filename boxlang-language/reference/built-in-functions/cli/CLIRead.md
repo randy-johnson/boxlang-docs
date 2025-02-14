@@ -2,7 +2,7 @@
 
 # Function: `CLIRead`
 
-No description available.
+Reads a line of text from the CLI.
 
 ## Method Signature
 

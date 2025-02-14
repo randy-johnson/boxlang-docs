@@ -1,7 +1,7 @@
 [comment]: # (Note: This documentation is generated dynamically in the build process.  To modify the contents, change the javadoc on the _invoke method of the Component class)
 # Component: `HTTPParam`
 
-No description available.
+I add an HTTP param to an HTTP call.
 
 ## Component Signature
 

@@ -2,7 +2,7 @@
 
 # Function: `ArrayClear`
 
-No description available.
+Clear all items from array
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ArrayClear(array=[modifiableArray])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiableArray` | `true` |  |  |
+| `array` | `modifiableArray` | `true` | The array to clear. |  |
 
 ## Examples
 

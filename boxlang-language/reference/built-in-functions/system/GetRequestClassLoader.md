@@ -2,7 +2,12 @@
 
 # Function: `GetRequestClassLoader`
 
-No description available.
+This will retrieve the current request's class loader according to BoxLang loading hierarchy:
+
+<p>
+
+ - If you defined Java settings in your `Application`, it will use the class loader hierarchy defined by those settings.
+ - Else it uses the Global BoxRuntime class loader.
 
 ## Method Signature
 

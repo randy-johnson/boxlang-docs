@@ -2,7 +2,7 @@
 
 # Function: `DirectoryDelete`
 
-No description available.
+Deletes a directory
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ DirectoryDelete(path=[string], recursive=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `path` | `string` | `true` |  |  |
-| `recursive` | `boolean` | `true` |  | `false` |
+| `path` | `string` | `true` | the path of the directory to delete |  |
+| `recursive` | `boolean` | `true` | [default:false] whether to recursively delete the directory.<br>                     If falls and the directory is not empty, with throw a runtime exception | `false` |
 
 ## Examples
 

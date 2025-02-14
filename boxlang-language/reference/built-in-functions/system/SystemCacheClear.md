@@ -2,7 +2,61 @@
 
 # Function: `SystemCacheClear`
 
-No description available.
+Clears many of the caches in the runtime.
+
+By default with no arguments, it will clear all caches.
+
+ The following caches can be cleared:
+
+ 
+<ul>
+
+ 
+<li>
+<code>
+all
+</code>
+ - Clear everything
+</li>
+
+ 
+<li>
+<code>
+template
+</code>
+ or 
+<code>
+page
+</code>
+ - Clear the compiled class pools
+</li>
+
+ 
+<li>
+<code>
+class
+</code>
+ - Clear the class path resolvers
+</li>
+
+ 
+<li>
+<code>
+query
+</code>
+ - Clear the default cache region
+</li>
+
+ 
+<li>
+<code>
+object
+</code>
+ - Clear the default cache region
+</li>
+
+ 
+</ul>
 
 ## Method Signature
 

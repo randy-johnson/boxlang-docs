@@ -2,7 +2,7 @@
 
 # Function: `ApplicationStartTime`
 
-No description available.
+Get the start date/time of the running application
 
 ## Method Signature
 

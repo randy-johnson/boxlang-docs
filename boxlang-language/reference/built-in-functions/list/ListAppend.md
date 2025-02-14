@@ -2,7 +2,7 @@
 
 # Function: `ListAppend`
 
-No description available.
+Appends an element to a list
 
 ## Method Signature
 
@@ -15,11 +15,11 @@ ListAppend(list=[string], value=[string], delimiter=[string], includeEmptyFields
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` |  |  |
-| `value` | `string` | `true` |  |  |
-| `delimiter` | `string` | `false` |  | `,` |
-| `includeEmptyFields` | `boolean` | `false` |  | `false` |
-| `multiCharacterDelimiter` | `boolean` | `false` |  | `true` |
+| `list` | `string` | `true` | string list to filter entries from |  |
+| `value` | `string` | `true` | The value to append |  |
+| `delimiter` | `string` | `false` | string the list delimiter | `,` |
+| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
+| `multiCharacterDelimiter` | `boolean` | `false` | boolean whether the delimiter is multi-character | `true` |
 
 ## Examples
 

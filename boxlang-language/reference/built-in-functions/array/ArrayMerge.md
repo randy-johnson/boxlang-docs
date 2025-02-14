@@ -2,7 +2,10 @@
 
 # Function: `ArrayMerge`
 
-No description available.
+This function creates a new array with data from the two passed arrays.
+
+To add all the data from one array into another without creating a new
+ array see the built in function ArrayAppend(arr1, arr2, true).
 
 ## Method Signature
 
@@ -15,9 +18,9 @@ ArrayMerge(array1=[array], array2=[array], leaveIndex=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array1` | `array` | `true` |  |  |
-| `array2` | `array` | `true` |  |  |
-| `leaveIndex` | `boolean` | `true` |  | `false` |
+| `array1` | `array` | `true` | The first array to merge |  |
+| `array2` | `array` | `true` | The second array to merge |  |
+| `leaveIndex` | `boolean` | `true` | Set to true maintain value indexes - if two values have the same index it will keep values from array1 | `false` |
 
 ## Examples
 

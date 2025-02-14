@@ -2,7 +2,7 @@
 
 # Function: `IsXMLRoot`
 
-No description available.
+Determines whether the function parameter is a root element node of an XML doc.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsXMLRoot(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` |  |  |
+| `value` | `any` | `true` | Value to test |  |
 
 ## Examples
 

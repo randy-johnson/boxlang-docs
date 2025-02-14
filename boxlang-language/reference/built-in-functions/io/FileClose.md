@@ -2,7 +2,7 @@
 
 # Function: `FileClose`
 
-No description available.
+Closes an on-disk or in-memory file that is open.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ FileClose(file=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `file` | `any` | `true` |  |  |
+| `file` | `any` | `true` | The file to close. |  |
 
 ## Examples
 

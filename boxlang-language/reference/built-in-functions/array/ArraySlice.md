@@ -2,7 +2,7 @@
 
 # Function: `ArraySlice`
 
-No description available.
+Extracts a sub array from an existing array.
 
 ## Method Signature
 

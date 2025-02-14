@@ -2,7 +2,7 @@
 
 # Function: `GetModuleList`
 
-No description available.
+Get a collection of all the registered global functions in the runtime.
 
 ## Method Signature
 

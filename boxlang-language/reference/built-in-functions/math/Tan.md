@@ -2,7 +2,7 @@
 
 # Function: `Tan`
 
-No description available.
+Returns the tangent of an angle that is entered in radians.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Tan(number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `numeric` | `true` |  |  |
+| `number` | `numeric` | `true` | The angle in radians to calculate the tangent of |  |
 
 ## Examples
 

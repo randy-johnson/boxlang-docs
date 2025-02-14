@@ -2,7 +2,7 @@
 
 # Function: `XMLTransform`
 
-No description available.
+Get XML values according to given xPath query
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ XMLTransform(XML=[any], XSL=[String], parameters=[Struct])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `XML` | `any` | `true` |  |  |
-| `XSL` | `String` | `true` |  |  |
-| `parameters` | `Struct` | `false` |  | `{}` |
+| `XML` | `any` | `true` | The XML to transform |  |
+| `XSL` | `String` | `true` | The XSL to use for the transformation |  |
+| `parameters` | `Struct` | `false` | The parameters to pass to the xsl transformation | `{}` |
 
 ## Examples
 

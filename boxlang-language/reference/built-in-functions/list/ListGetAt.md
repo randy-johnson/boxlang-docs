@@ -2,7 +2,7 @@
 
 # Function: `ListGetAt`
 
-No description available.
+Retrieves an item from a delimited list at the specified position
 
 ## Method Signature
 
@@ -15,11 +15,11 @@ ListGetAt(list=[string], position=[integer], delimiter=[string], includeEmptyFie
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` |  |  |
-| `position` | `integer` | `true` |  |  |
-| `delimiter` | `string` | `false` |  | `,` |
-| `includeEmptyFields` | `boolean` | `false` |  | `false` |
-| `multiCharacterDelimiter` | `boolean` | `false` |  | `false` |
+| `list` | `string` | `true` | string list to filter entries from |  |
+| `position` | `integer` | `true` | numeric the one-based index position to retrieve the value at |  |
+| `delimiter` | `string` | `false` | string the list delimiter | `,` |
+| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
+| `multiCharacterDelimiter` | `boolean` | `false` | boolean whether the delimiter is multi-character | `false` |
 
 ## Examples
 

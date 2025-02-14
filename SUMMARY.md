@@ -639,7 +639,6 @@
       * [NullValue](boxlang-language/reference/built-in-functions/type/NullValue.md)
       * [StringLen](boxlang-language/reference/built-in-functions/type/StringLen.md)
       * [StructCount](boxlang-language/reference/built-in-functions/type/StructCount.md)
-      * [TranspileCollectionKeySwap](boxlang-language/reference/built-in-functions/type/TranspileCollectionKeySwap.md)
     * [xml](boxlang-language/reference/built-in-functions/xml/README.md)
       * [XMLChildPos](boxlang-language/reference/built-in-functions/xml/XMLChildPos.md)
       * [XMLElemNew](boxlang-language/reference/built-in-functions/xml/XMLElemNew.md)
@@ -704,8 +703,7 @@
     * [xml](boxlang-language/reference/components/xml/README.md)
       * [XML](boxlang-language/reference/components/xml/XML.md)
     * [zip](boxlang-language/reference/components/zip/README.md)
-      * [Zip](boxlang-language/reference/components/zip/Zip.md)
-  * [Exceptions](boxlang-language/reference/Exceptions.md)
+      * [Zip](boxlang-language/reference/components/zip/Zip.md)  * [Exceptions](boxlang-language/reference/Exceptions.md)
 
 ## BoxLang Framework
 

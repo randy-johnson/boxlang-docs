@@ -2,7 +2,7 @@
 
 # Function: `ObjectDeserialize`
 
-No description available.
+Loads an object serialized in a binary form from a file or as binary input
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ObjectDeserialize(input=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `input` | `any` | `true` |  |  |
+| `input` | `any` | `true` | The binary representation of the object to load, or the file path to load the object from. |  |
 
 ## Examples
 

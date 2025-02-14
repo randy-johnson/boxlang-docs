@@ -2,7 +2,7 @@
 
 # Function: `LTrim`
 
-No description available.
+Trim leading whitespace from a string
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ LTrim(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
+| `string` | `string` | `true` | The string to trim |  |
 
 ## Examples
 

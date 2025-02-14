@@ -2,7 +2,7 @@
 
 # Function: `QueryColumnData`
 
-No description available.
+Returns the data in a query column.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryColumnData(query=[query], columnName=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `columnName` | `string` | `true` |  |  |
+| `query` | `query` | `true` | The query to get the column data from. |  |
+| `columnName` | `string` | `true` | The name of the column to get the data from. |  |
 
 ## Examples
 

@@ -2,7 +2,10 @@
 
 # Function: `CallStackGet`
 
-No description available.
+Returns an array of structs by default of the current tag context.
+
+Each struct contains template name, line number, and function name (if applicable).
+ This is a snapshot of all function calls or invocations.
 
 ## Method Signature
 

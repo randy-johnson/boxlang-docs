@@ -2,7 +2,7 @@
 
 # Function: `IsXMLDoc`
 
-No description available.
+Determines whether the function parameter is an Extended Markup language (XML) document object.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsXMLDoc(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` |  |  |
+| `value` | `any` | `true` | Value to test |  |
 
 ## Examples
 

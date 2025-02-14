@@ -2,7 +2,7 @@
 
 # Function: `StringEvery`
 
-No description available.
+Tests a string that all elements meet the specified criteria
 
 ## Method Signature
 
@@ -16,7 +16,7 @@ StringEvery(list=[string], callback=[function:Predicate], delimiter=[string], in
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
 | `list` | `string` | `true` |  |  |
-| `callback` | `function:Predicate` | `true` |  |  |
+| `callback` | `function:Predicate` | `true` | The callback to use for the test |  |
 | `delimiter` | `string` | `false` |  | `,` |
 | `includeEmptyFields` | `boolean` | `false` |  | `false` |
 | `multiCharacterDelimiter` | `boolean` | `false` |  | `true` |

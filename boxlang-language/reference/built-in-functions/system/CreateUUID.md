@@ -2,7 +2,7 @@
 
 # Function: `CreateUUID`
 
-No description available.
+Create a Universally Unique Identifier (UUID).
 
 ## Method Signature
 

@@ -2,7 +2,7 @@
 
 # Function: `PreserveSingleQuotes`
 
-No description available.
+Prevents from automatically escaping single quotation mark characters that are contained in a variable.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ PreserveSingleQuotes(variable=[String])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `variable` | `String` | `true` |  |  |
+| `variable` | `String` | `true` | The expression that needs to have its single quotes preserved. |  |
 
 ## Examples
 

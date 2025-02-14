@@ -2,7 +2,8 @@
 
 # Function: `IsSimpleValue`
 
-No description available.
+Determine whether the given value is a string, numeric, or date.Arrays, structs, queries, closures, classes and components, and other complex
+ structures will return false.
 
 ## Method Signature
 
@@ -15,7 +16,7 @@ IsSimpleValue(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `false` |  |  |
+| `value` | `any` | `false` | Value to test for simple-ness. |  |
 
 ## Examples
 

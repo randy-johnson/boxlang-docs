@@ -2,7 +2,7 @@
 
 # Function: `QueryGetResult`
 
-No description available.
+Returns the metadata of a query.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ QueryGetResult(query=[query])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
+| `query` | `query` | `true` | The query to get the result from |  |
 
 ## Examples
 

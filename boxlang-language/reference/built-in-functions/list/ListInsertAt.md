@@ -2,7 +2,7 @@
 
 # Function: `ListInsertAt`
 
-No description available.
+Filters a delimted list and returns the values from the callback test
 
 ## Method Signature
 
@@ -15,12 +15,12 @@ ListInsertAt(list=[string], position=[integer], value=[string], delimiter=[strin
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` |  |  |
+| `list` | `string` | `true` | string list to filter entries from |  |
 | `position` | `integer` | `true` |  |  |
 | `value` | `string` | `true` |  |  |
-| `delimiter` | `string` | `false` |  | `,` |
-| `includeEmptyFields` | `boolean` | `false` |  | `false` |
-| `multiCharacterDelimiter` | `boolean` | `false` |  | `true` |
+| `delimiter` | `string` | `false` | string the list delimiter | `,` |
+| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
+| `multiCharacterDelimiter` | `boolean` | `false` | boolean whether the delimiter is multi-character | `true` |
 
 ## Examples
 

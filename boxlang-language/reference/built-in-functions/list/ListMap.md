@@ -2,7 +2,7 @@
 
 # Function: `ListMap`
 
-No description available.
+Used to iterate over a delimited list and run the function closure for each item in the list and create a new list from the returned values.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ ListMap(list=[string], callback=[function:Function], delimiter=[string], include
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` |  |  |
-| `callback` | `function:Function` | `true` |  |  |
-| `delimiter` | `string` | `false` |  | `,` |
-| `includeEmptyFields` | `boolean` | `false` |  | `false` |
+| `list` | `string` | `true` | The delimited list to perform operations on |  |
+| `callback` | `function:Function` | `true` | The function to invoke for each item. The function will be passed 3 arguments: the value, the index, the array. You can alternatively pass a Java Function which will only receive the 1st arg. |  |
+| `delimiter` | `string` | `false` | string the list delimiter | `,` |
+| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
 | `parallel` | `boolean` | `false` |  | `false` |
 | `maxThreads` | `integer` | `false` |  |  |
 

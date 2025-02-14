@@ -2,7 +2,12 @@
 
 # Function: `StructToQueryString`
 
-No description available.
+Converts a struct to a query string using the specified delimiter.
+
+<p>
+
+ The default delimiter is 
+{@code "&"}
 
 ## Method Signature
 
@@ -15,8 +20,8 @@ StructToQueryString(struct=[structloose], delimiter=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` |  |  |
-| `delimiter` | `string` | `false` |  | `&` |
+| `struct` | `struct` | `true` | The struct to convert |  |
+| `delimiter` | `string` | `false` | The delimiter to use in the query string. Default is "&" | `&` |
 
 ## Examples
 

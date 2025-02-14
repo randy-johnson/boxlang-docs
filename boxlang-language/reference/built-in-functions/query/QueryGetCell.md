@@ -2,7 +2,7 @@
 
 # Function: `QueryGetCell`
 
-No description available.
+This function maps the query to a new query.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ QueryGetCell(query=[query], column_name=[string], row_number=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
+| `query` | `query` | `true` | The query to iterate over |  |
 | `column_name` | `string` | `true` |  |  |
 | `row_number` | `integer` | `false` |  |  |
 

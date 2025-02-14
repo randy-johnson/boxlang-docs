@@ -2,7 +2,7 @@
 
 # Function: `IsXMLNode`
 
-No description available.
+Determines whether the function parameter is a ANY node of an XML doc.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsXMLNode(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` |  |  |
+| `value` | `any` | `true` | Value to test |  |
 
 ## Examples
 

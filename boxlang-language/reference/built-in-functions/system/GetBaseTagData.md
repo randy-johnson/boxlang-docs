@@ -2,7 +2,9 @@
 
 # Function: `GetBaseTagData`
 
-No description available.
+Used within a custom tag.
+
+Finds calling (ancestor) tag by name and accesses its data.
 
 ## Method Signature
 

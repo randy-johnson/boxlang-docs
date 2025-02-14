@@ -2,7 +2,7 @@
 
 # Function: `FileSeek`
 
-No description available.
+Moves the buffer cursor position forward the number of characters specified by the position argument
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ FileSeek(file=[any], position=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `file` | `any` | `true` |  |  |
-| `position` | `integer` | `true` |  |  |
+| `file` | `any` | `true` | The File instance |  |
+| `position` | `integer` | `true` | The cursor position to move forward in the file |  |
 
 ## Examples
 

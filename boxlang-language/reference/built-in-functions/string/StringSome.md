@@ -2,7 +2,7 @@
 
 # Function: `StringSome`
 
-No description available.
+Tests whether any item in a string meets the specified callback
 
 ## Method Signature
 

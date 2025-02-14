@@ -2,7 +2,7 @@
 
 # Function: `ObjectSerialize`
 
-No description available.
+Serialize an object to file or convert it to binary format using Java Serialization
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ ObjectSerialize(object=[any], file=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `object` | `any` | `true` |  |  |
-| `file` | `string` | `false` |  |  |
+| `object` | `any` | `true` | The object to serialize |  |
+| `file` | `string` | `false` | The file path to save the serialized object to, if not provided, the binary representation of the object is returned |  |
 
 ## Examples
 

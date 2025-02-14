@@ -2,7 +2,11 @@
 
 # Function: `ArrayResize`
 
-No description available.
+Resets an array to a specified minimum number of elements.
+
+This can improve performance, if used to size an array to its
+ expected maximum. For more than 500 elements, use arrayResize
+ immediately after using the ArrayNew BIF.
 
 ## Method Signature
 
@@ -15,8 +19,8 @@ ArrayResize(array=[modifiablearray], size=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiablearray` | `true` |  |  |
-| `size` | `any` | `true` |  |  |
+| `array` | `modifiablearray` | `true` | The array to resize |  |
+| `size` | `any` | `true` | The new minimum size of the array |  |
 
 ## Examples
 

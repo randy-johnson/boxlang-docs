@@ -2,7 +2,7 @@
 
 # Function: `Duplicate`
 
-No description available.
+Duplicates an object - either shallow or deep
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ Duplicate(object=[any], deep=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `object` | `any` | `true` |  |  |
-| `deep` | `boolean` | `false` |  | `true` |
+| `object` | `any` | `true` | Any object to duplicate |  |
+| `deep` | `boolean` | `false` | Whether to deep copy the object or make a shallow copy (e.g. only the top level keys in a struct) | `true` |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `InputBaseN`
 
-No description available.
+Converts a string, using the base specified by radix, to an integer.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ InputBaseN(string=[string], radix=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
-| `radix` | `integer` | `true` |  |  |
+| `string` | `string` | `true` | The string to convert to an integer. |  |
+| `radix` | `integer` | `true` | Base of the number represented by string, in the range 2-36. |  |
 
 ## Examples
 

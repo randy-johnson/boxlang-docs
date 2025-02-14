@@ -2,7 +2,7 @@
 
 # Function: `XMLFormat`
 
-No description available.
+Formats a string so that special XML characters can be used as text in XML
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ XMLFormat(string=[string], escapeChars=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
-| `escapeChars` | `boolean` | `false` |  | `false` |
+| `string` | `string` | `true` | The string to format |  |
+| `escapeChars` | `boolean` | `false` | whether to escape additional characters restricted as per XML standards. For details, see<br>                       http://www.w3.org/TR/2006/REC-xml11-20060816/#NT-RestrictedChar. | `false` |
 
 ## Examples
 

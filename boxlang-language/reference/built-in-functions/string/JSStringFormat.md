@@ -2,7 +2,7 @@
 
 # Function: `JSStringFormat`
 
-No description available.
+Escapes special JavaScript characters, such as single quotation mark, double quotation mark, and newline
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ JSStringFormat(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
+| `string` | `string` | `true` | The string to escape. |  |
 
 ## Examples
 

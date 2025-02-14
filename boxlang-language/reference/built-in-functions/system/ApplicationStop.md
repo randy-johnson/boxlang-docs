@@ -2,7 +2,7 @@
 
 # Function: `ApplicationStop`
 
-No description available.
+Stops the currently running application
 
 ## Method Signature
 

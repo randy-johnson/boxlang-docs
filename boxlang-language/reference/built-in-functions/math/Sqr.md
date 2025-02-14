@@ -2,7 +2,7 @@
 
 # Function: `Sqr`
 
-No description available.
+Returns the square root of a number
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Sqr(value=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `numeric` | `true` |  |  |
+| `value` | `numeric` | `true` | The number to return the square root of |  |
 
 ## Examples
 

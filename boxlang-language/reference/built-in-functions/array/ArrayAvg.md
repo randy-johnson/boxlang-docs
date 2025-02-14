@@ -2,7 +2,7 @@
 
 # Function: `ArrayAvg`
 
-No description available.
+Return length of array
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ArrayAvg(array=[Array])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `Array` | `true` |  |  |
+| `array` | `Array` | `true` | The array whose elements will be averaged. |  |
 
 ## Examples
 

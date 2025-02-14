@@ -2,7 +2,7 @@
 
 # Function: `XMLGetNodeType`
 
-No description available.
+Get XML values according to given xPath query
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ XMLGetNodeType(XMLNode=[XML])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `XMLNode` | `XML` | `true` |  |  |
+| `XMLNode` | `XML` | `true` | An XML DOM object node. |  |
 
 ## Examples
 

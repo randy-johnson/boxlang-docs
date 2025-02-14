@@ -2,7 +2,7 @@
 
 # Function: `FileCopy`
 
-No description available.
+Copies a file from one location to another
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ FileCopy(source=[string], destination=[string], createPath=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `source` | `string` | `true` |  |  |
-| `destination` | `string` | `true` |  |  |
-| `createPath` | `boolean` | `false` |  | `true` |
+| `source` | `string` | `true` | The source file |  |
+| `destination` | `string` | `true` | The destination file |  |
+| `createPath` | `boolean` | `false` | [ true ] whether to create any nested paths required to the new file | `true` |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `Find`
 
-No description available.
+Finds the first occurrence of a substring in a string, from a specified start position.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ Find(substring=[string], string=[string], start=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `substring` | `string` | `true` |  |  |
-| `string` | `string` | `true` |  |  |
-| `start` | `integer` | `false` |  | `1` |
+| `substring` | `string` | `true` | The string you are looking for. |  |
+| `string` | `string` | `true` | The string to search in. |  |
+| `start` | `integer` | `false` | The position from which to start searching in the string. Default is 1. | `1` |
 
 ## Examples
 

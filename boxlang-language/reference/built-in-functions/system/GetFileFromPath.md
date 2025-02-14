@@ -2,7 +2,7 @@
 
 # Function: `GetFileFromPath`
 
-No description available.
+Extracts a filename from an absolute path.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ GetFileFromPath(path=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `path` | `string` | `true` |  |  |
+| `path` | `string` | `true` | The absolute path to extract the filename from |  |
 
 ## Examples
 

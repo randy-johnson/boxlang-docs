@@ -2,7 +2,16 @@
 
 # Function: `StructNew`
 
-No description available.
+Creates a new struct of the specified type.
+
+The available types are:
+ - casesensitive
+ - default
+ - ordered-casesensitive
+ - ordered
+ - soft
+ - sorted
+ - weak
 
 ## Method Signature
 
@@ -15,11 +24,11 @@ StructNew(type=[string], sortType=[any], sortOrder=[string], localeSensitive=[an
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `type` | `string` | `false` |  | `default` |
-| `sortType` | `any` | `false` |  |  |
-| `sortOrder` | `string` | `false` |  | `asc` |
+| `type` | `string` | `false` | The struct type | `default` |
+| `sortType` | `any` | `false` | An optional sort type to apply to that type |  |
+| `sortOrder` | `string` | `false` | The sort order applicable to the sortType argument | `asc` |
 | `localeSensitive` | `any` | `false` |  | `false` |
-| `callback` | `function:Comparator` | `false` |  |  |
+| `callback` | `function:Comparator` | `false` | An optional callback to use as the sorting function. You can alternatively pass a Java Comparator. |  |
 
 ## Examples
 

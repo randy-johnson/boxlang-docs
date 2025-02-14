@@ -2,7 +2,7 @@
 
 # Function: `Ascii`
 
-No description available.
+Determine the ASCII value of a character
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Ascii(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
+| `string` | `string` | `true` | The string containing a single character to determine the ASCII value. |  |
 
 ## Examples
 

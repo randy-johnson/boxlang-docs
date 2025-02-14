@@ -2,7 +2,7 @@
 
 # Function: `ListQualify`
 
-No description available.
+Inserts a string at the beginning and end of list elements.
 
 ## Method Signature
 
@@ -15,11 +15,11 @@ ListQualify(list=[string], qualifier=[string], delimiter=[string], elements=[str
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` |  |  |
-| `qualifier` | `string` | `true` |  |  |
-| `delimiter` | `string` | `false` |  | `,` |
-| `elements` | `string` | `false` |  | `all` |
-| `includeEmptyFields` | `boolean` | `false` |  | `false` |
+| `list` | `string` | `true` | The list to qualify. |  |
+| `qualifier` | `string` | `true` | The string to insert at the beginning and end of each element. |  |
+| `delimiter` | `string` | `false` | The delimiter used in the list. | `,` |
+| `elements` | `string` | `false` | The elements to qualify. If set to "char", only elements that are all alphabetic characters will be qualified. | `all` |
+| `includeEmptyFields` | `boolean` | `false` | If true, empty fields will be qualified. | `false` |
 
 ## Examples
 

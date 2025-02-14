@@ -2,7 +2,7 @@
 
 # Function: `IsIPv6`
 
-No description available.
+Determine whether the given hostname supports IPv6.
 
 ## Method Signature
 

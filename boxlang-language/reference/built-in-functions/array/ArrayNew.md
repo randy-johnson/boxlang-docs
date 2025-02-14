@@ -2,7 +2,7 @@
 
 # Function: `ArrayNew`
 
-No description available.
+Return new array
 
 ## Method Signature
 

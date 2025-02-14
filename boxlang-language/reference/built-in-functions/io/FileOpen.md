@@ -2,7 +2,7 @@
 
 # Function: `FileOpen`
 
-No description available.
+Opens a file for reading or writing and returns a file object for future operations
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ FileOpen(file=[string], mode=[string], charset=[string], seekable=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `file` | `string` | `true` |  |  |
-| `mode` | `string` | `false` |  | `read` |
-| `charset` | `string` | `false` |  | `utf-8` |
-| `seekable` | `boolean` | `false` |  |  |
+| `file` | `string` | `true` | The file to open. |  |
+| `mode` | `string` | `false` | The mode to open the file in. Defaults to "read". | `read` |
+| `charset` | `string` | `false` | The character set to use when reading or writing the file. Defaults to "utf-8". | `utf-8` |
+| `seekable` | `boolean` | `false` | Whether the file should be opened as seekable. Defaults to false. |  |
 
 ## Examples
 

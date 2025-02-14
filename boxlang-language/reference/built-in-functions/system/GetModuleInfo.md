@@ -2,7 +2,10 @@
 
 # Function: `GetModuleInfo`
 
-No description available.
+Get the module record for a loaded module in BoxLang.
+
+If the module
+ doesn't exist, an empty struct is returned.
 
 ## Method Signature
 
@@ -15,7 +18,7 @@ GetModuleInfo(module=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `module` | `string` | `true` |  |  |
+| `module` | `string` | `true` | The name of the module to get the record for. |  |
 
 ## Examples
 

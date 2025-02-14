@@ -2,7 +2,10 @@
 
 # Function: `IsDateObject`
 
-No description available.
+Determine whether a given value or variable reference is a date or dateTime object.
+
+Note that date strings, such as `2021-01-01` and timespans returned from `createTimespan()` are NOT date objects. The former are strings and the
+ latter are numeric values.
 
 ## Method Signature
 
@@ -15,7 +18,7 @@ IsDateObject(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` |  |  |
+| `value` | `any` | `true` | Value to test for date object-ness |  |
 
 ## Examples
 

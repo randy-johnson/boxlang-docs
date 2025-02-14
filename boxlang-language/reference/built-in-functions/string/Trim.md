@@ -2,7 +2,7 @@
 
 # Function: `Trim`
 
-No description available.
+Trim whitespace from the beginning and end of a string
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Trim(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
+| `string` | `string` | `true` | The string to trim |  |
 
 ## Examples
 

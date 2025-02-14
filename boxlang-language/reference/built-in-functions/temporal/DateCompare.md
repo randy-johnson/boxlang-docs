@@ -2,7 +2,7 @@
 
 # Function: `DateCompare`
 
-No description available.
+Compares the difference between two dates - returning 0 if equal, -1 if date2 is less than date1 and 1 if the inverse
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ DateCompare(date1=[any], date2=[any], datepart=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `date1` | `any` | `true` |  |  |
-| `date2` | `any` | `true` |  |  |
+| `date1` | `any` | `true` | The reference date object |  |
+| `date2` | `any` | `true` | The date which to compare against date1 |  |
 | `datepart` | `string` | `false` |  |  |
 
 ## Examples

@@ -2,7 +2,7 @@
 
 # Function: `GetBoxRuntime`
 
-No description available.
+Get the current Box Runtime
 
 ## Method Signature
 

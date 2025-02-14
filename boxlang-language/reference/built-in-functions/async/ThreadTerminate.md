@@ -2,7 +2,7 @@
 
 # Function: `ThreadTerminate`
 
-No description available.
+Terminates the thread specified by the threadName parameter.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ThreadTerminate(threadName=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `threadName` | `string` | `true` |  |  |
+| `threadName` | `string` | `true` | The name of the thread to terminate. |  |
 
 ## Examples
 

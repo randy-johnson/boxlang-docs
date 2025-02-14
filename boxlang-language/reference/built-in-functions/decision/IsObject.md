@@ -2,7 +2,10 @@
 
 # Function: `IsObject`
 
-No description available.
+Determines whether a value is an object.
+
+True, if the value represents a object. False if the value is any other type of data, such as an
+ integer, string, date, or struct.
 
 ## Method Signature
 
@@ -15,7 +18,7 @@ IsObject(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` |  |  |
+| `value` | `any` | `true` | The value to test |  |
 
 ## Examples
 

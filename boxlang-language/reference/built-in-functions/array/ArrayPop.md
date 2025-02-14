@@ -2,7 +2,7 @@
 
 # Function: `ArrayPop`
 
-No description available.
+Remove last item in array and return it
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ArrayPop(array=[modifiablearray], defaultValue=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiablearray` | `true` |  |  |
+| `array` | `modifiablearray` | `true` | The array to get the last |  |
 | `defaultValue` | `any` | `false` |  |  |
 
 ## Examples

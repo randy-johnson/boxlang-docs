@@ -2,7 +2,7 @@
 
 # Function: `StructGet`
 
-No description available.
+Retrieves the value from a struct using a path based expression
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ StructGet(path=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `path` | `string` | `true` |  |  |
+| `path` | `string` | `true` | The string path to the object requested in the struct |  |
 
 ## Examples
 

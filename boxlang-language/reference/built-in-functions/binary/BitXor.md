@@ -2,7 +2,7 @@
 
 # Function: `BitXor`
 
-No description available.
+Performs a bitwise logical XOR operation.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ BitXor(number1=[integer], number2=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number1` | `integer` | `true` |  |  |
-| `number2` | `integer` | `true` |  |  |
+| `number1` | `integer` | `true` | Numeric value for bitwise XOR. |  |
+| `number2` | `integer` | `true` | Numeric value for bitwise XOR. |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `QuerySetRow`
 
-No description available.
+Adds or updates a row in a query based on the provided row data and position.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ QuerySetRow(query=[query], rowNumber=[integer], rowData=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `rowNumber` | `integer` | `false` |  | `0` |
-| `rowData` | `any` | `true` |  |  |
+| `query` | `query` | `true` | The query object to which the row should be added or updated. |  |
+| `rowNumber` | `integer` | `false` | Optional position of the row to update; if omitted or zero, a new row will be added. | `0` |
+| `rowData` | `any` | `true` | A struct or array containing data for the row. |  |
 
 ## Examples
 

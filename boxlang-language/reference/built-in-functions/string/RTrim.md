@@ -2,7 +2,7 @@
 
 # Function: `RTrim`
 
-No description available.
+Trim trailing whitespace from a string
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ RTrim(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
+| `string` | `string` | `true` | The string to trim |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `FileSetLastModified`
 
-No description available.
+Sets the last modified time of a file
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ FileSetLastModified(file=[any], date=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `file` | `any` | `true` |  |  |
-| `date` | `any` | `true` |  |  |
+| `file` | `any` | `true` | A file path or object |  |
+| `date` | `any` | `true` | A date time object or string |  |
 
 ## Examples
 

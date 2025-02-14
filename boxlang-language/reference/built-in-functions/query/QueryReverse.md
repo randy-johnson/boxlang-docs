@@ -2,7 +2,7 @@
 
 # Function: `QueryReverse`
 
-No description available.
+This function reverses the query data
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ QueryReverse(query=[query])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
+| `query` | `query` | `true` | The query to reverse |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `ArrayInsertAt`
 
-No description available.
+Append a value to an array
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ ArrayInsertAt(array=[modifiableArray], position=[integer], value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiableArray` | `true` |  |  |
-| `position` | `integer` | `true` |  |  |
-| `value` | `any` | `true` |  |  |
+| `array` | `modifiableArray` | `true` | The array to be inserted into |  |
+| `position` | `integer` | `true` | The position to insert at |  |
+| `value` | `any` | `true` | The value to insert |  |
 
 ## Examples
 

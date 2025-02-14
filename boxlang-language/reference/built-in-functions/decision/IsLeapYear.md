@@ -2,7 +2,7 @@
 
 # Function: `IsLeapYear`
 
-No description available.
+Determine whether a given integer value represents a leap year.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsLeapYear(year=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `year` | `numeric` | `true` |  |  |
+| `year` | `numeric` | `true` | Number representing the year to test. |  |
 
 ## Examples
 

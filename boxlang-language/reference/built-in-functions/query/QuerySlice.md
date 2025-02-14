@@ -2,7 +2,7 @@
 
 # Function: `QuerySlice`
 
-No description available.
+Returns a subset of rows from an existing query
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ QuerySlice(query=[query], offset=[integer], length=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `offset` | `integer` | `true` |  |  |
-| `length` | `integer` | `false` |  | `0` |
+| `query` | `query` | `true` | The query object to which the rows should be returned. |  |
+| `offset` | `integer` | `true` | The first row to include in the new query. |  |
+| `length` | `integer` | `false` | The number of rows to include, defaults to all remaining rows. | `0` |
 
 ## Examples
 

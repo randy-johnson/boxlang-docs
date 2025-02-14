@@ -2,7 +2,7 @@
 
 # Function: `GetComponentList`
 
-No description available.
+Get a collection of all the registered global components in the runtime.
 
 ## Method Signature
 

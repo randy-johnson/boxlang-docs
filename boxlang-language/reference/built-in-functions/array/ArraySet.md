@@ -2,7 +2,11 @@
 
 # Function: `ArraySet`
 
-No description available.
+In a one-dimensional array, sets the elements in a specified
+ index range to a value.
+
+Useful for initializing an array after
+ a call to arrayNew.
 
 ## Method Signature
 
@@ -15,9 +19,9 @@ ArraySet(array=[modifiablearray], start=[any], end=[any], value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiablearray` | `true` |  |  |
-| `start` | `any` | `true` |  |  |
-| `end` | `any` | `true` |  |  |
+| `array` | `modifiablearray` | `true` | The array to modify |  |
+| `start` | `any` | `true` | The starting index |  |
+| `end` | `any` | `true` | The ending index |  |
 | `value` | `any` | `true` |  |  |
 
 ## Examples

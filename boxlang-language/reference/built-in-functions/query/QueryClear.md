@@ -2,7 +2,7 @@
 
 # Function: `QueryClear`
 
-No description available.
+This function clears the query
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ QueryClear(query=[query])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
+| `query` | `query` | `true` | The query to clear |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `QueryColumnExists`
 
-No description available.
+This function returns true if the column exists in the query
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryColumnExists(query=[query], column=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `column` | `string` | `true` |  |  |
+| `query` | `query` | `true` | The query to check for the column |  |
+| `column` | `string` | `true` | The column to check for |  |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `PagePoolClear`
 
-No description available.
+Clears all the compiled classes from the Boxpiler's page pool.
 
 ## Method Signature
 

@@ -2,7 +2,7 @@
 
 # Function: `ToUnmodifiable`
 
-No description available.
+Convert an array, struct or query to its Unmodifiable counterpart.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ToUnmodifiable(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` |  |  |
+| `value` | `any` | `true` | The array, struct or query to convert. |  |
 
 ## Examples
 

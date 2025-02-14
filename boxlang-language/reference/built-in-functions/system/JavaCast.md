@@ -2,7 +2,7 @@
 
 # Function: `JavaCast`
 
-No description available.
+Cast a variable to a specified Java type
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ JavaCast(type=[string], variable=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `type` | `string` | `true` |  |  |
-| `variable` | `any` | `true` |  |  |
+| `type` | `string` | `true` | The name of a Java primitive or a Java class name. |  |
+| `variable` | `any` | `true` | The variable, Java object, or array to cast. |  |
 
 ## Examples
 

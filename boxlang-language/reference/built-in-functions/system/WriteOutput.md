@@ -2,7 +2,7 @@
 
 # Function: `WriteOutput`
 
-No description available.
+Print a message with line break to the buffer
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ WriteOutput(message=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `message` | `any` | `true` |  |  |
+| `message` | `any` | `true` | The message to print |  |
 
 ## Examples
 

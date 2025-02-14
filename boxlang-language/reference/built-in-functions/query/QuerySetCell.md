@@ -2,7 +2,7 @@
 
 # Function: `QuerySetCell`
 
-No description available.
+Sets a cell to a value.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ QuerySetCell(query=[query], column=[string], value=[any], row=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `column` | `string` | `true` |  |  |
-| `value` | `any` | `true` |  |  |
-| `row` | `integer` | `false` |  |  |
+| `query` | `query` | `true` | The query to set the cell in |  |
+| `column` | `string` | `true` | The column name to set the cell in |  |
+| `value` | `any` | `true` | The value to set the cell to |  |
+| `row` | `integer` | `false` | The row number to set the cell in. If no row number is specified, the cell on the last row is set. |  |
 
 ## Examples
 

@@ -2,7 +2,9 @@
 
 # Function: `ArrayMedian`
 
-No description available.
+Return the median value of an array.
+
+Will only work on arrays that contain only numeric values.
 
 ## Method Signature
 
@@ -15,7 +17,7 @@ ArrayMedian(array=[array])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` |  |  |
+| `array` | `array` | `true` | The array to get median value from |  |
 
 ## Examples
 

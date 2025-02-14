@@ -2,7 +2,7 @@
 
 # Function: `GetTickCount`
 
-No description available.
+Returns the current value of an internal millisecond timer.
 
 ## Method Signature
 

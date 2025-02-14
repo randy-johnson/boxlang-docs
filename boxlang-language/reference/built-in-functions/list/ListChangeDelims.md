@@ -2,7 +2,7 @@
 
 # Function: `ListChangeDelims`
 
-No description available.
+Converts the delimiters of a list to the new delimiter.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ ListChangeDelims(list=[string], newDelimiter=[string], delimiter=[string], inclu
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` |  |  |
-| `newDelimiter` | `string` | `true` |  |  |
-| `delimiter` | `string` | `false` |  | `,` |
-| `includeEmptyFields` | `boolean` | `false` |  | `false` |
+| `list` | `string` | `true` | string list to convert the delimiters. |  |
+| `newDelimiter` | `string` | `true` | string the new list delimiter |  |
+| `delimiter` | `string` | `false` | string the old list delimiter | `,` |
+| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
 
 ## Examples
 

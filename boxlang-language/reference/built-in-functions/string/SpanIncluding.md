@@ -2,7 +2,9 @@
 
 # Function: `SpanIncluding`
 
-No description available.
+Gets characters from a string, from the beginning to a character that is NOT in a specified set of characters.
+
+The search is case-sensitive.
 
 ## Method Signature
 
@@ -15,8 +17,8 @@ SpanIncluding(string=[string], set=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
-| `set` | `string` | `true` |  |  |
+| `string` | `string` | `true` | The string to extract from |  |
+| `set` | `string` | `true` | The set of chracters to exclude from the span. |  |
 
 ## Examples
 

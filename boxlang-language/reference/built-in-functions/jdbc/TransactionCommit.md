@@ -2,7 +2,10 @@
 
 # Function: `TransactionCommit`
 
-No description available.
+Commit the current transaction and persist all stored queries.
+
+You can continue to use the transaction after a `transactionCommit()` call, but you will not be able to roll back past (before) this
+ point since the changes are fully persisted to the database.
 
 ## Method Signature
 

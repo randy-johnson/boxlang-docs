@@ -2,7 +2,7 @@
 
 # Function: `FindOneOf`
 
-No description available.
+Finds the first occurrence of any character in a set of characters, from a specified start position.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ FindOneOf(set=[string], string=[string], start=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `set` | `string` | `true` |  |  |
-| `string` | `string` | `true` |  |  |
-| `start` | `integer` | `false` |  | `1` |
+| `set` | `string` | `true` | The set of characters to search for the first occurrence of. |  |
+| `string` | `string` | `true` | The string to search in. |  |
+| `start` | `integer` | `false` | The position from which to start searching in the string. Default is 1. | `1` |
 
 ## Examples
 

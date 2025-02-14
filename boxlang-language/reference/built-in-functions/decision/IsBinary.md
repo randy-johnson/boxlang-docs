@@ -2,7 +2,7 @@
 
 # Function: `IsBinary`
 
-No description available.
+Determines whether a value is stored as binary data.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsBinary(value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `value` | `any` | `true` |  |  |
+| `value` | `any` | `true` | The value to test |  |
 
 ## Examples
 

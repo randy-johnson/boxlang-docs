@@ -2,7 +2,7 @@
 
 # Function: `QuerySome`
 
-No description available.
+This function calls a given closure/function with every element in a given query and returns true, if one of the closure calls returns true
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ QuerySome(query=[query], callback=[function:Predicate], parallel=[boolean], maxT
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `callback` | `function:Predicate` | `true` |  |  |
-| `parallel` | `boolean` | `false` |  | `false` |
-| `maxThreads` | `integer` | `false` |  |  |
+| `query` | `query` | `true` | The query to iterate over |  |
+| `callback` | `function:Predicate` | `true` | The function to invoke for each item. The function will be passed 3 arguments: the row, the currentRow, the query. |  |
+| `parallel` | `boolean` | `false` | Specifies whether the items can be executed in parallel | `false` |
+| `maxThreads` | `integer` | `false` | The maximum number of threads to use when parallel = true |  |
 | `initialValue` | `any` | `false` |  |  |
 
 ## Examples

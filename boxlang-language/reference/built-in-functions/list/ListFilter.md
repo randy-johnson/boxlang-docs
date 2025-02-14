@@ -2,7 +2,7 @@
 
 # Function: `ListFilter`
 
-No description available.
+Filters a delimted list and returns the values from the callback test
 
 ## Method Signature
 
@@ -15,13 +15,13 @@ ListFilter(list=[string], filter=[function:Predicate], delimiter=[string], inclu
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` |  |  |
-| `filter` | `function:Predicate` | `true` |  |  |
-| `delimiter` | `string` | `false` |  | `,` |
-| `includeEmptyFields` | `boolean` | `false` |  | `false` |
-| `multiCharacterDelimiter` | `boolean` | `false` |  | `true` |
-| `parallel` | `boolean` | `false` |  | `false` |
-| `maxThreads` | `integer` | `false` |  |  |
+| `list` | `string` | `true` | string list to filter entries from |  |
+| `filter` | `function:Predicate` | `true` | function closure filter test. You can alternatively pass a Java Predicate which will only receive the 1st arg. |  |
+| `delimiter` | `string` | `false` | string the list delimiter | `,` |
+| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
+| `multiCharacterDelimiter` | `boolean` | `false` | boolean whether the delimiter is multi-character | `true` |
+| `parallel` | `boolean` | `false` | boolean whether to execute the filter in parallel | `false` |
+| `maxThreads` | `integer` | `false` | number the maximum number of threads to use in the parallel filter |  |
 
 ## Examples
 

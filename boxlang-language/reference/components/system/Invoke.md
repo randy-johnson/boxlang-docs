@@ -1,7 +1,7 @@
 [comment]: # (Note: This documentation is generated dynamically in the build process.  To modify the contents, change the javadoc on the _invoke method of the Component class)
 # Component: `Invoke`
 
-No description available.
+Invokes a method from within a template or class.
 
 ## Component Signature
 
@@ -17,10 +17,10 @@ argumentCollection=[any] />
 
 | Atrribute | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `class` | `any` | `false` |  |  |
-| `method` | `string` | `true` |  |  |
-| `returnVariable` | `string` | `false` |  |  |
-| `argumentCollection` | `any` | `false` |  |  |
+| `class` | `any` | `false` | The Box Class instance or the name of the Box Class to instantiate. |  |
+| `method` | `string` | `true` | The name of the method to invoke. |  |
+| `returnVariable` | `string` | `false` | The variable to store the result of the method invocation. |  |
+| `argumentCollection` | `any` | `false` | An array or struct of arguments to pass to the method. |  |
 
 ## Examples
 

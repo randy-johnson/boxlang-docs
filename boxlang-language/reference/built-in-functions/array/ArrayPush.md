@@ -2,7 +2,7 @@
 
 # Function: `ArrayPush`
 
-No description available.
+Adds an element or an object to the end of an array, then returns the size of the modified array.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ ArrayPush(array=[modifiableArray], value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiableArray` | `true` |  |  |
-| `value` | `any` | `true` |  |  |
+| `array` | `modifiableArray` | `true` | The array to which the element should be appended. |  |
+| `value` | `any` | `true` | The element to append. Can be any type. |  |
 
 ## Examples
 

@@ -2,7 +2,10 @@
 
 # Function: `ExpandPath`
 
-No description available.
+Creates an absolute, platform-appropriate path that is equivalent to the value of 'path', appended to the base path.
+
+This function (despite its
+ name) can accept an absolute or relative path in the 'path' attribute.
 
 ## Method Signature
 
@@ -15,7 +18,7 @@ ExpandPath(path=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `path` | `string` | `true` |  |  |
+| `path` | `string` | `true` | Relative or absolute directory reference or filename, to convert to an absolute path. Can include forward or backward slashes. |  |
 
 ## Examples
 

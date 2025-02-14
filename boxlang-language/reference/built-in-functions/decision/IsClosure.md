@@ -2,7 +2,7 @@
 
 # Function: `IsClosure`
 
-No description available.
+Determine whether a given object is a closure
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsClosure(object=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `object` | `any` | `true` |  |  |
+| `object` | `any` | `true` | The value to test for closure-ness. |  |
 
 ## Examples
 

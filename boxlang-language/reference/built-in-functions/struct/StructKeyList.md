@@ -2,7 +2,7 @@
 
 # Function: `StructKeyList`
 
-No description available.
+Get keys of a struct as a string list
 
 ## Method Signature
 

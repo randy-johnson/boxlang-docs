@@ -2,7 +2,7 @@
 
 # Function: `DirectoryCreate`
 
-No description available.
+Creates a directory
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ DirectoryCreate(path=[string], createPath=[boolean], ignoreExists=[boolean], mod
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `path` | `string` | `true` |  |  |
-| `createPath` | `boolean` | `false` |  | `true` |
-| `ignoreExists` | `boolean` | `false` |  | `false` |
-| `mode` | `string` | `false` |  |  |
+| `path` | `string` | `true` | The directory path to create |  |
+| `createPath` | `boolean` | `false` | [true] Whether to create all paths necessary to create the directory path | `true` |
+| `ignoreExists` | `boolean` | `false` | [false] Whether to ignore if a directory already exists | `false` |
+| `mode` | `string` | `false` | When provided will attempt to set the posix permissions on the directory |  |
 
 ## Examples
 

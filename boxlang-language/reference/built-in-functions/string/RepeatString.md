@@ -2,7 +2,7 @@
 
 # Function: `RepeatString`
 
-No description available.
+Create a string that contains a specified number of repetitions of the specified string.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ RepeatString(string=[string], count=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
-| `count` | `integer` | `true` |  |  |
+| `string` | `string` | `true` | The string to repeat. |  |
+| `count` | `integer` | `true` | The number of times to repeat the string. |  |
 
 ## Examples
 

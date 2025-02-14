@@ -2,7 +2,7 @@
 
 # Function: `QueryFilter`
 
-No description available.
+Filters query rows specified in filter criteria
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryFilter(query=[query], callback=[function:Predicate], parallel=[boolean], ma
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `callback` | `function:Predicate` | `true` |  |  |
+| `query` | `query` | `true` | The query to get filtered |  |
+| `callback` | `function:Predicate` | `true` | The function to invoke for each item. The function will be passed 3 arguments: the query row as a struct, the row number, the query. You can alternatively pass a Java Predicate which will only receive the 1st arg. |  |
 | `parallel` | `boolean` | `false` |  | `false` |
 | `maxThreads` | `integer` | `false` |  |  |
 

@@ -2,7 +2,7 @@
 
 # Function: `Max`
 
-No description available.
+Return larger of two numbers
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ Max(number1=[numeric], number2=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number1` | `numeric` | `true` |  |  |
-| `number2` | `numeric` | `true` |  |  |
+| `number1` | `numeric` | `true` | The first number |  |
+| `number2` | `numeric` | `true` | The second number |  |
 
 ## Examples
 

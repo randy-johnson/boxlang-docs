@@ -2,7 +2,7 @@
 
 # Function: `QueryReduce`
 
-No description available.
+This function reduces the query to a single value.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ QueryReduce(query=[query], callback=[function:BiFunction], initialValue=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `callback` | `function:BiFunction` | `true` |  |  |
-| `initialValue` | `any` | `true` |  |  |
+| `query` | `query` | `true` | The query to iterate over |  |
+| `callback` | `function:BiFunction` | `true` | The function to invoke for each item. The function will be passed 4 arguments: the accumulator, the current item, the current index, and the query. You can alternatively pass a Java Predicate which will only receive the first 2<br>                    args. |  |
+| `initialValue` | `any` | `true` | The initial value to use for the reduction |  |
 
 ## Examples
 

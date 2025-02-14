@@ -2,7 +2,7 @@
 
 # Function: `IsDebugMode`
 
-No description available.
+Determine whether the current BoxLang instance is running in debug mode.
 
 ## Method Signature
 

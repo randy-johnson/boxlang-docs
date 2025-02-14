@@ -2,7 +2,7 @@
 
 # Function: `QueryDeleteColumn`
 
-No description available.
+Deletes a column within a query object.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryDeleteColumn(query=[query], column=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `column` | `string` | `true` |  |  |
+| `query` | `query` | `true` | The query object to which the column should be deleted. |  |
+| `column` | `string` | `true` | The name of the column to delete. |  |
 
 ## Examples
 

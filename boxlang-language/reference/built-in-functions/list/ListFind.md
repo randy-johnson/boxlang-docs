@@ -2,7 +2,7 @@
 
 # Function: `ListFind`
 
-No description available.
+Return int position of value in delimited list, case sensitive or case-insenstive variations
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ ListFind(list=[string], value=[string], delimiter=[string], includeEmptyFields=[
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` |  |  |
-| `value` | `string` | `true` |  |  |
-| `delimiter` | `string` | `false` |  | `,` |
-| `includeEmptyFields` | `boolean` | `false` |  | `false` |
+| `list` | `string` | `true` | The list to be searched. |  |
+| `value` | `string` | `true` | The value to locate in the list or a function to filter the list |  |
+| `delimiter` | `string` | `false` | The list delimiter(s) | `,` |
+| `includeEmptyFields` | `boolean` | `false` | Whether to include empty fields in the search | `false` |
 | `multiCharacterDelimiter` | `boolean` | `false` |  | `false` |
 
 ## Examples

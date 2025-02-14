@@ -2,7 +2,10 @@
 
 # Function: `ArrayMap`
 
-No description available.
+Iterates over every entry of the array and calls the closure function to work on the element of the array.
+
+The returned value will be set at the
+ same index in a new array and the new array will be returned
 
 ## Method Signature
 
@@ -15,8 +18,8 @@ ArrayMap(array=[array], callback=[function:Function], parallel=[boolean], maxThr
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` |  |  |
-| `callback` | `function:Function` | `true` |  |  |
+| `array` | `array` | `true` | The array to reduce |  |
+| `callback` | `function:Function` | `true` | The function to invoke for each item. The function will be passed 3 arguments: the current item, and the<br>                    current index, and the original array. You can alternatively pass a Java Function which will only receive the 1st arg. The function should return the value that will be set at the same index in the new array. |  |
 | `parallel` | `boolean` | `false` |  | `false` |
 | `maxThreads` | `integer` | `false` |  |  |
 | `initialValue` | `any` | `false` |  |  |

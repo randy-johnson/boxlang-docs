@@ -2,7 +2,9 @@
 
 # Function: `XMLChildPos`
 
-No description available.
+Gets the position of a child element within an XML document object.
+
+The position, in an XmlChildren array, of the Nth child that has the specified name.
 
 ## Method Signature
 
@@ -15,9 +17,9 @@ XMLChildPos(elem=[XML], childname=[string], n=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `elem` | `XML` | `true` |  |  |
-| `childname` | `string` | `true` |  |  |
-| `n` | `integer` | `true` |  |  |
+| `elem` | `XML` | `true` | The XML DOM object. |  |
+| `childname` | `string` | `true` | The name of the child element. |  |
+| `n` | `integer` | `true` | The position of the child element. 1-based. |  |
 
 ## Examples
 

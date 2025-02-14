@@ -2,7 +2,9 @@
 
 # Function: `ArraySwap`
 
-No description available.
+Swaps array values of an array at specified positions.
+
+This function is more efficient than multiple assignment statements
 
 ## Method Signature
 
@@ -16,8 +18,8 @@ ArraySwap(array=[array], position1=[any], position2=[any])
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
 | `array` | `array` | `true` |  |  |
-| `position1` | `any` | `true` |  |  |
-| `position2` | `any` | `true` |  |  |
+| `position1` | `any` | `true` | The first position to swap |  |
+| `position2` | `any` | `true` | The second position to swap |  |
 
 ## Examples
 

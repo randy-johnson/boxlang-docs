@@ -2,7 +2,9 @@
 
 # Function: `DateConvert`
 
-No description available.
+Converts local time to Coordinated Universal Time (UTC), or UTC to local time.
+
+The function uses the daylight savings settings in the executing computer to compute daylight savings time, if required.
 
 ## Method Signature
 
@@ -15,8 +17,8 @@ DateConvert(conversionType=[string], date=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `conversionType` | `string` | `true` |  |  |
-| `date` | `any` | `true` |  |  |
+| `conversionType` | `string` | `true` | The conversion type. Valid values are "utc2Local" and "local2Utc". |  |
+| `date` | `any` | `true` | The date to convert. |  |
 
 ## Examples
 

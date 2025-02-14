@@ -2,7 +2,7 @@
 
 # Function: `IsInTransaction`
 
-No description available.
+Detect whether the current context is executing within a transaction.
 
 ## Method Signature
 

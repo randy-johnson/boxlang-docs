@@ -2,7 +2,7 @@
 
 # Function: `GetApplicationMetadata`
 
-No description available.
+Print a message with line break to the console
 
 ## Method Signature
 

@@ -2,7 +2,7 @@
 
 # Function: `ArrayDeleteAt`
 
-No description available.
+Delete item at specified index in array
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ ArrayDeleteAt(array=[modifiableArray], index=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiableArray` | `true` |  |  |
-| `index` | `integer` | `true` |  |  |
+| `array` | `modifiableArray` | `true` | The array to be deleted from. |  |
+| `index` | `integer` | `true` | The index to deleted. |  |
 
 ## Examples
 

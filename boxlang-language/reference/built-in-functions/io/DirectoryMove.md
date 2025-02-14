@@ -2,7 +2,7 @@
 
 # Function: `DirectoryMove`
 
-No description available.
+Moves a directory from one location to another
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ DirectoryMove(oldPath=[string], newPath=[string], createPath=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `oldPath` | `string` | `true` |  |  |
-| `newPath` | `string` | `true` |  |  |
-| `createPath` | `boolean` | `false` |  | `true` |
+| `oldPath` | `string` | `true` | The previous directory path |  |
+| `newPath` | `string` | `true` | The new directory path |  |
+| `createPath` | `boolean` | `false` | [true] Whether to create all necessary paths to the new path | `true` |
 
 ## Examples
 

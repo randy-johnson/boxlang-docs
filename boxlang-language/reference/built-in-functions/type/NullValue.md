@@ -2,7 +2,7 @@
 
 # Function: `NullValue`
 
-No description available.
+Returns a null value.
 
 ## Method Signature
 
@@ -25,4 +25,3 @@ This function does not accept any arguments
   * [Len](./Len.md)
   * [StringLen](./StringLen.md)
   * [StructCount](./StructCount.md)
-  * [TranspileCollectionKeySwap](./TranspileCollectionKeySwap.md)

@@ -2,7 +2,7 @@
 
 # Function: `StructKeyTranslate`
 
-No description available.
+Converts a struct with dot-notated keys in to an unflattened version
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ StructKeyTranslate(struct=[structloose], deep=[boolean], retainKeys=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` |  |  |
-| `deep` | `boolean` | `false` |  | `false` |
-| `retainKeys` | `boolean` | `false` |  | `false` |
+| `struct` | `struct` | `true` | The struct to unflatten |  |
+| `deep` | `boolean` | `false` | Whether to recurse in to nested keys - default false | `false` |
+| `retainKeys` | `boolean` | `false` | Whether to retain the original dot-notated keys - default false | `false` |
 
 ## Examples
 

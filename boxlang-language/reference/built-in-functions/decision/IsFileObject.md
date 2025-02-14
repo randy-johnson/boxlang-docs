@@ -2,7 +2,7 @@
 
 # Function: `IsFileObject`
 
-No description available.
+Determine whether the given object is a BoxLang File object.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsFileObject(object=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `object` | `any` | `true` |  |  |
+| `object` | `any` | `true` | Object to test. |  |
 
 ## Examples
 

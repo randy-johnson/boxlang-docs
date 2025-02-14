@@ -2,7 +2,10 @@
 
 # Function: `RunThreadInContext`
 
-No description available.
+Executes the code in the callback with a specific parent context so a specific application name
+ is visible and an optional sessionID, or a specific context can be provided from another request.
+
+If context is provided, application name and sessionID are not allowed.
 
 ## Method Signature
 
@@ -15,10 +18,10 @@ RunThreadInContext(applicationName=[string], sessionId=[string], context=[any], 
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `applicationName` | `string` | `false` |  |  |
-| `sessionId` | `string` | `false` |  |  |
-| `context` | `any` | `false` |  |  |
-| `callback` | `function` | `true` |  |  |
+| `applicationName` | `string` | `false` | The application name to use run the code in. |  |
+| `sessionId` | `string` | `false` | The sessionID to use to run the code in (requires application name). |  |
+| `context` | `any` | `false` | The context to use to run the code in. Mututally exclusive with applicationName and sessionId. |  |
+| `callback` | `function` | `true` | The function to run in the new context. |  |
 
 ## Examples
 

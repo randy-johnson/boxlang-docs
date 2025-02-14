@@ -2,7 +2,7 @@
 
 # Function: `FileWrite`
 
-No description available.
+Writes the contents of a string or binary data to a file
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ FileWrite(file=[string], data=[any], charset=[string], createPath=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `file` | `string` | `true` |  |  |
-| `data` | `any` | `true` |  |  |
-| `charset` | `string` | `false` |  | `utf-8` |
+| `file` | `string` | `true` | The string path of the file - either root relative or absolute |  |
+| `data` | `any` | `true` | The string or binary byte array of the file content |  |
+| `charset` | `string` | `false` | The charset encoding ( ignored for binary data ) | `utf-8` |
 | `createPath` | `boolean` | `false` |  | `false` |
 
 ## Examples

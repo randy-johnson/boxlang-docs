@@ -2,7 +2,23 @@
 
 # Function: `TransactionRollback`
 
-No description available.
+Rollback the current transaction and discard all unpersisted queries.
+
+<p>
+
+ Only the changes made since the last 
+<code>
+transactionSetSavepoint()
+</code>
+ or 
+<code>
+transactionCommit()
+</code>
+ call will be discarded.
+ 
+<p>
+
+ If no transaction is found in the current context, this method will throw an exception.
 
 ## Method Signature
 
@@ -15,7 +31,7 @@ TransactionRollback(savepoint=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `savepoint` | `string` | `false` |  |  |
+| `savepoint` | `string` | `false` | String name of the savepoint to rollback to. If not provided, the entire transaction will be rolled back. |  |
 
 ## Examples
 

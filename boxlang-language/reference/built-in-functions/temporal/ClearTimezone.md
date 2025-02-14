@@ -2,7 +2,7 @@
 
 # Function: `ClearTimezone`
 
-No description available.
+Clears the current timezone in the request
 
 ## Method Signature
 

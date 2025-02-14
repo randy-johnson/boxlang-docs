@@ -2,7 +2,7 @@
 
 # Function: `QueryPrepend`
 
-No description available.
+Adds a query to the beginning of another query
 
 ## Method Signature
 

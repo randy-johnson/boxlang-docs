@@ -2,7 +2,7 @@
 
 # Function: `ArrayIndexExists`
 
-No description available.
+Returns whether there exists an item in the array at the selected index.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ ArrayIndexExists(array=[array], index=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` |  |  |
-| `index` | `any` | `true` |  |  |
+| `array` | `array` | `true` | The array to be searched. |  |
+| `index` | `any` | `true` | The index to check. |  |
 
 ## Examples
 

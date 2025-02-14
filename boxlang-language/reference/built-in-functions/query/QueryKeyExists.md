@@ -2,7 +2,7 @@
 
 # Function: `QueryKeyExists`
 
-No description available.
+This function returns true if the key exists in the query
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryKeyExists(query=[query], key=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `key` | `string` | `true` |  |  |
+| `query` | `query` | `true` | The query to check for the key |  |
+| `key` | `string` | `true` | The key to check for |  |
 
 ## Examples
 

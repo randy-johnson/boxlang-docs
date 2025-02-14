@@ -2,7 +2,19 @@
 
 # Function: `GetSystemSetting`
 
-No description available.
+Retrieve a Java System property or environment value by name.
+
+<p>
+
+ It looks at properties first then environment variables second.
+ 
+<p>
+
+ Please note that the property or environment variable name is case-sensitive.
+ 
+<p>
+
+ You can also pass a default value to return if the property or environment variable is not found.
 
 ## Method Signature
 
@@ -15,8 +27,8 @@ GetSystemSetting(key=[String], defaultValue=[String])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `key` | `String` | `true` |  |  |
-| `defaultValue` | `String` | `false` |  |  |
+| `key` | `String` | `true` | The name of the system property or environment variable to retrieve |  |
+| `defaultValue` | `String` | `false` | The default value to return if the property or environment variable is not found |  |
 
 ## Examples
 

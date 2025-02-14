@@ -2,7 +2,7 @@
 
 # Function: `IsDate`
 
-No description available.
+Determine whether a given value is a date object or a date string.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ IsDate(date=[any], locale=[string], timezone=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `date` | `any` | `true` |  |  |
-| `locale` | `string` | `false` |  |  |
-| `timezone` | `string` | `false` |  |  |
+| `date` | `any` | `true` | Value to test for date-ness |  |
+| `locale` | `string` | `false` | Optional ISO locale string to use for parsing the date/time string. |  |
+| `timezone` | `string` | `false` | Optional timezone to use for parsing the date/time string. |  |
 
 ## Examples
 

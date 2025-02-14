@@ -2,7 +2,7 @@
 
 # Function: `Reverse`
 
-No description available.
+Reverse the order of characters in a string
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Reverse(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
+| `string` | `string` | `true` | The string to reverse. |  |
 
 ## Examples
 

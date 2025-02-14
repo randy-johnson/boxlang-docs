@@ -2,7 +2,7 @@
 
 # Function: `GetBaseTemplatePath`
 
-No description available.
+Gets the absolute server file system path of the requested file.
 
 ## Method Signature
 

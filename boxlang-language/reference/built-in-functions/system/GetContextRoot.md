@@ -2,7 +2,9 @@
 
 # Function: `GetContextRoot`
 
-No description available.
+Gets the context root.
+
+If BoxLang is not running as a servlet-based web server, this always returns "/".
 
 ## Method Signature
 

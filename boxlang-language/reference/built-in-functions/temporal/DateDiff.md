@@ -2,7 +2,7 @@
 
 # Function: `DateDiff`
 
-No description available.
+Returns the numeric difference in the requested date part between two dates
 
 ## Method Signature
 
@@ -16,8 +16,8 @@ DateDiff(datepart=[string], date1=[any], date2=[any])
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
 | `datepart` | `string` | `true` |  |  |
-| `date1` | `any` | `true` |  |  |
-| `date2` | `any` | `true` |  |  |
+| `date1` | `any` | `true` | The reference date object |  |
+| `date2` | `any` | `true` | The date which to compare against date1 |  |
 
 ## Examples
 

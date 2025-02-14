@@ -2,7 +2,7 @@
 
 # Function: `ArrayEach`
 
-No description available.
+Used to iterate over an array and run the function closure for each item in the array.
 
 ## Method Signature
 
@@ -15,11 +15,11 @@ ArrayEach(array=[array], callback=[function:Consumer], parallel=[boolean], maxTh
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` |  |  |
-| `callback` | `function:Consumer` | `true` |  |  |
-| `parallel` | `boolean` | `false` |  | `false` |
-| `maxThreads` | `integer` | `false` |  |  |
-| `ordered` | `boolean` | `false` |  | `false` |
+| `array` | `array` | `true` | The array to reduce |  |
+| `callback` | `function:Consumer` | `true` | The function to invoke for each item. The function will be passed 3 arguments: the value, the index, the array. You can alternatively pass a Java Comparator which will only receive the 1st arg. |  |
+| `parallel` | `boolean` | `false` | Specifies whether the items can be executed in parallel | `false` |
+| `maxThreads` | `integer` | `false` | The maximum number of threads to use when parallel = true |  |
+| `ordered` | `boolean` | `false` | (BoxLang only) whether parallel operations should execute and maintain order | `false` |
 | `initialValue` | `any` | `false` |  |  |
 
 ## Examples

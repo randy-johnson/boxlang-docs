@@ -2,7 +2,7 @@
 
 # Function: `ExecutorHas`
 
-No description available.
+Verify if an executor exists
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ExecutorHas(name=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `name` | `string` | `true` |  |  |
+| `name` | `string` | `true` | The name of the executor to verify. |  |
 
 ## Examples
 

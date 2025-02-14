@@ -2,7 +2,7 @@
 
 # Function: `XMLParse`
 
-No description available.
+Return new array
 
 ## Method Signature
 

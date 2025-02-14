@@ -2,7 +2,7 @@
 
 # Function: `CacheNames`
 
-No description available.
+Get an array of all the registered caches in BoxLang
 
 ## Method Signature
 

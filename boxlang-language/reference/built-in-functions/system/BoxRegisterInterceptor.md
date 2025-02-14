@@ -2,7 +2,7 @@
 
 # Function: `BoxRegisterInterceptor`
 
-No description available.
+Registers a global interceptor that can listen to global runtime events.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ BoxRegisterInterceptor(interceptor=[any], states=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `interceptor` | `any` | `true` |  |  |
+| `interceptor` | `any` | `true` | This can be a class or a closure/lambda that will listen to global events |  |
 | `states` | `any` | `false` |  | `[]` |
 
 ## Examples

@@ -2,7 +2,9 @@
 
 # Function: `GetFunctionCalledName`
 
-No description available.
+Get the name of the function that is being called.
+
+If no function is being called, an empty string is returned.
 
 ## Method Signature
 

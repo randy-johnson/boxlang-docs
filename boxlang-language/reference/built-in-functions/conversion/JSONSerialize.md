@@ -2,7 +2,7 @@
 
 # Function: `JSONSerialize`
 
-No description available.
+Converts a BoxLang variable into a JSON (JavaScript Object Notation) string.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ JSONSerialize(data=[any], queryFormat=[string], useSecureJSONPrefix=[string], us
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `data` | `any` | `true` |  |  |
-| `queryFormat` | `string` | `false` |  | `row` |
-| `useSecureJSONPrefix` | `string` | `false` |  | `false` |
-| `useCustomSerializer` | `boolean` | `false` |  |  |
+| `data` | `any` | `true` | The variable to convert to a JSON string. |  |
+| `queryFormat` | `string` | `false` | If the variable is a query, specifies whether to serialize the query by rows or by columns. | `row` |
+| `useSecureJSONPrefix` | `string` | `false` | If true, the JSON string is prefixed with a secure JSON prefix. | `false` |
+| `useCustomSerializer` | `boolean` | `false` | If true, the JSON string is serialized using a custom serializer. (Not used) |  |
 
 ## Examples
 

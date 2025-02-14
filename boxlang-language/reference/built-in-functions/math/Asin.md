@@ -2,7 +2,7 @@
 
 # Function: `Asin`
 
-No description available.
+Returns the arcsine (inverse sine) of a number
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Asin(number=[double])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `double` | `true` |  |  |
+| `number` | `double` | `true` | The number to calculate the arcsine of |  |
 
 ## Examples
 

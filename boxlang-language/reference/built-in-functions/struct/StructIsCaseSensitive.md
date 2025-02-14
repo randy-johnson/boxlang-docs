@@ -2,7 +2,7 @@
 
 # Function: `StructIsCaseSensitive`
 
-No description available.
+Returns whether the give struct is case sensitive
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ StructIsCaseSensitive(struct=[structloose])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` |  |  |
+| `struct` | `struct` | `true` | The struct to test for type |  |
 
 ## Examples
 

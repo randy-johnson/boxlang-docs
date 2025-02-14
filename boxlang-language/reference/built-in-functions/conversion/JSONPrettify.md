@@ -2,7 +2,7 @@
 
 # Function: `JSONPrettify`
 
-No description available.
+Prettifies a JSON string.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ JSONPrettify(var=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `var` | `string` | `true` |  |  |
+| `var` | `string` | `true` | The JSON string to prettify. |  |
 
 ## Examples
 

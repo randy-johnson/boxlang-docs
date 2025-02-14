@@ -2,7 +2,7 @@
 
 # Function: `CreateTimeSpan`
 
-No description available.
+Creates a timespan ,{@link java.time.Duration}
 
 ## Method Signature
 
@@ -15,11 +15,11 @@ CreateTimeSpan(days=[long], hours=[long], minutes=[long], seconds=[long], millis
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `days` | `long` | `true` |  |  |
-| `hours` | `long` | `true` |  |  |
-| `minutes` | `long` | `true` |  |  |
-| `seconds` | `long` | `true` |  |  |
-| `milliseconds` | `long` | `false` |  | `0` |
+| `days` | `long` | `true` | The number of days in the timespan |  |
+| `hours` | `long` | `true` | The number of hours in the timespan |  |
+| `minutes` | `long` | `true` | The number of minutes in the timespan |  |
+| `seconds` | `long` | `true` | The number of seconds in the timespan |  |
+| `milliseconds` | `long` | `false` | The number of milliseconds in the timespan | `0` |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 # Function: `GetLocale`
 
-No description available.
+Retrieves the the string representation of the current locale
 
 ## Method Signature
 

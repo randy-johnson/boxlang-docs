@@ -2,7 +2,7 @@
 
 # Function: `ToBinary`
 
-No description available.
+Calculates the binary representation of Base64-encoded data.
 
 ## Method Signature
 

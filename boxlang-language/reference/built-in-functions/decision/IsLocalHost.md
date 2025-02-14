@@ -2,7 +2,7 @@
 
 # Function: `IsLocalHost`
 
-No description available.
+Determine whether a given string value represents a loopback IP address, like `localhost`, `127.0.0.1` or `::1`.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ IsLocalHost(ip=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `ip` | `string` | `true` |  |  |
+| `ip` | `string` | `true` | String representing the IP address to test. |  |
 
 ## Examples
 

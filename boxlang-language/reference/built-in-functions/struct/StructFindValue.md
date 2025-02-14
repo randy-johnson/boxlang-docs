@@ -2,7 +2,7 @@
 
 # Function: `StructFindValue`
 
-No description available.
+Searches a struct for a given value and returns an array of results
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ StructFindValue(struct=[structloose], value=[string], scope=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` |  |  |
-| `value` | `string` | `true` |  |  |
-| `scope` | `string` | `false` |  | `one` |
+| `struct` | `struct` | `true` | The struct to search |  |
+| `value` | `string` | `true` | The value to search for |  |
+| `scope` | `string` | `false` | Either one (default), which finds the first instance or all to return all values | `one` |
 
 ## Examples
 

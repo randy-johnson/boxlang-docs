@@ -2,7 +2,7 @@
 
 # Function: `GetCanonicalPath`
 
-No description available.
+Returns the canonical path of a file, resolving all relative path elements and symlinks
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ GetCanonicalPath(path=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `path` | `string` | `true` |  |  |
+| `path` | `string` | `true` | The file or directory path string |  |
 
 ## Examples
 

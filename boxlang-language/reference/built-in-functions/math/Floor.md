@@ -2,7 +2,7 @@
 
 # Function: `Floor`
 
-No description available.
+Returns the absolute value of a number
 
 ## Method Signature
 

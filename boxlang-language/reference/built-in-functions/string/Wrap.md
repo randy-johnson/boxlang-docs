@@ -2,7 +2,7 @@
 
 # Function: `Wrap`
 
-No description available.
+Wraps a string at the specified limit, breaking at the last space within the limit.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ Wrap(string=[string], limit=[integer], strip=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
-| `limit` | `integer` | `true` |  |  |
-| `strip` | `boolean` | `false` |  | `false` |
+| `string` | `string` | `true` | The string to wrap. |  |
+| `limit` | `integer` | `true` | The character limit at which to wrap the string. |  |
+| `strip` | `boolean` | `false` | If true, replaces all line endings with spaces before wrapping. Default is false. | `false` |
 
 ## Examples
 

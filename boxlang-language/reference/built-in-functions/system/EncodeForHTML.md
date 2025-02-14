@@ -2,7 +2,10 @@
 
 # Function: `EncodeForHTML`
 
-No description available.
+Encodes the input string for safe output in the body of a HTML tag.
+
+The encoding in meant to mitigate Cross Site Scripting (XSS) attacks. This
+ function can provide more protection from XSS than the HTMLEditFormat or XMLFormat functions do.
 
 ## Method Signature
 
@@ -15,8 +18,8 @@ EncodeForHTML(string=[string], canonicalize=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
-| `canonicalize` | `boolean` | `true` |  | `false` |
+| `string` | `string` | `true` | The string to encode. |  |
+| `canonicalize` | `boolean` | `true` | If set to true, canonicalization happens before encoding. If set to false, the given input string will just be encoded. | `false` |
 
 ## Examples
 

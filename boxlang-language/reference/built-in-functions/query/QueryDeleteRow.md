@@ -2,7 +2,7 @@
 
 # Function: `QueryDeleteRow`
 
-No description available.
+This function deletes a row from the query
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryDeleteRow(query=[query], row=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `row` | `integer` | `true` |  |  |
+| `query` | `query` | `true` | The query to delete the row from |  |
+| `row` | `integer` | `true` | The row index to delete |  |
 
 ## Examples
 

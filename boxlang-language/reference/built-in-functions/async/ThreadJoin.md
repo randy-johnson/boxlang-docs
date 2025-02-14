@@ -2,7 +2,7 @@
 
 # Function: `ThreadJoin`
 
-No description available.
+Waits for the given thread object to finish running
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ ThreadJoin(threadName=[string], timeout=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `threadName` | `string` | `false` |  |  |
-| `timeout` | `numeric` | `false` |  | `0` |
+| `threadName` | `string` | `false` | The name of the thread to join to the main thread.<br>                      This can be the name of the thread or a comma-separated list of thread names. |  |
+| `timeout` | `numeric` | `false` | The maximum time in milliseconds to wait for the thread to finish running. If the thread does not finish running within this time, the join operation will be aborted. | `0` |
 
 ## Examples
 

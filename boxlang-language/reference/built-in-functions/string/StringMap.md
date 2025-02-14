@@ -2,7 +2,7 @@
 
 # Function: `StringMap`
 
-No description available.
+Iterates over all elements in a string and returns a new mapped string
 
 ## Method Signature
 
@@ -16,7 +16,7 @@ StringMap(list=[string], callback=[function:Function], delimiter=[string], inclu
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
 | `list` | `string` | `true` |  |  |
-| `callback` | `function:Function` | `true` |  |  |
+| `callback` | `function:Function` | `true` | The callback which returns a boolean and filters the string |  |
 | `delimiter` | `string` | `false` |  | `,` |
 | `includeEmptyFields` | `boolean` | `false` |  | `false` |
 | `parallel` | `boolean` | `false` |  | `false` |

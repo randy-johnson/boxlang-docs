@@ -2,7 +2,7 @@
 
 # Function: `GetBaseTagList`
 
-No description available.
+A comma-delimited list of ancestor tag names as a string.
 
 ## Method Signature
 

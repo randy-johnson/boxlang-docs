@@ -2,7 +2,7 @@
 
 # Function: `StringFilter`
 
-No description available.
+Filters all the elements in a string according to a specified callback
 
 ## Method Signature
 

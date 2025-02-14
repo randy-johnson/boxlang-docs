@@ -2,7 +2,7 @@
 
 # Function: `ListItemTrim`
 
-No description available.
+Trims each item in the list.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ ListItemTrim(list=[string], delimiter=[string], includeEmptyFields=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `list` | `string` | `true` |  |  |
-| `delimiter` | `string` | `false` |  | `,` |
-| `includeEmptyFields` | `boolean` | `false` |  | `false` |
+| `list` | `string` | `true` | string list to trim each item |  |
+| `delimiter` | `string` | `false` | string the list delimiter | `,` |
+| `includeEmptyFields` | `boolean` | `false` | boolean whether to include empty fields in the returned result | `false` |
 
 ## Examples
 

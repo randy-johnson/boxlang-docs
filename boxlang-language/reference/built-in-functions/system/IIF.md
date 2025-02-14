@@ -2,7 +2,10 @@
 
 # Function: `IIF`
 
-No description available.
+A boolean condition or value is passed into the first argument.
+
+If the condition is true the second argument is evaluated and returned, if false
+ the third argument is evaluated and returned.
 
 ## Method Signature
 
@@ -15,9 +18,9 @@ IIF(condition=[boolean], expression1=[string], expression2=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `condition` | `boolean` | `true` |  |  |
-| `expression1` | `string` | `true` |  |  |
-| `expression2` | `string` | `true` |  |  |
+| `condition` | `boolean` | `true` | The condition to evaluate |  |
+| `expression1` | `string` | `true` | The expression to evaluate if the condition is true |  |
+| `expression2` | `string` | `true` | The expression to evaluate if the condition is false |  |
 
 ## Examples
 

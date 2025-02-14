@@ -2,7 +2,7 @@
 
 # Function: `StripCR`
 
-No description available.
+Deletes return characters from a string.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ StripCR(string=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
+| `string` | `string` | `true` | The string or variable that contains the text. |  |
 
 ## Examples
 

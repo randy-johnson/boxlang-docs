@@ -2,7 +2,7 @@
 
 # Function: `ArrayMax`
 
-No description available.
+Get the max value from an array
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ ArrayMax(array=[array])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` |  |  |
+| `array` | `array` | `true` | The array to get max value from |  |
 
 ## Examples
 

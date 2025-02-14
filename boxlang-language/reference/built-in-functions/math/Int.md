@@ -2,7 +2,7 @@
 
 # Function: `Int`
 
-No description available.
+Returns the closest integer that is smaller than the number
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Int(number=[numeric])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `numeric` | `true` |  |  |
+| `number` | `numeric` | `true` | The number to calculate the closest integer for |  |
 
 ## Examples
 

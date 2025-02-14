@@ -2,7 +2,7 @@
 
 # Function: `Mid`
 
-No description available.
+Extract a substring from a string
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ Mid(string=[string], start=[integer], count=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
-| `start` | `integer` | `true` |  |  |
-| `count` | `integer` | `true` |  |  |
+| `string` | `string` | `true` | The string to extract from |  |
+| `start` | `integer` | `true` | The position of the first character to retrieve. |  |
+| `count` | `integer` | `true` | The number of characters to retrieve. |  |
 
 ## Examples
 

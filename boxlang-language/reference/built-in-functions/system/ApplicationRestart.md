@@ -2,7 +2,7 @@
 
 # Function: `ApplicationRestart`
 
-No description available.
+Restarts the currently running application
 
 ## Method Signature
 

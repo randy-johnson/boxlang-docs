@@ -2,7 +2,7 @@
 
 # Function: `FileSetAttribute`
 
-No description available.
+Sets a file access attribute
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ FileSetAttribute(file=[any], attribute=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `file` | `any` | `true` |  |  |
-| `attribute` | `string` | `true` |  |  |
+| `file` | `any` | `true` | The file path or File instance |  |
+| `attribute` | `string` | `true` | The attribute to set true |  |
 
 ## Examples
 

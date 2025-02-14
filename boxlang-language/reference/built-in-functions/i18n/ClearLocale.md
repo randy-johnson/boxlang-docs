@@ -2,7 +2,7 @@
 
 # Function: `ClearLocale`
 
-No description available.
+Clears the current request-level locale.
 
 ## Method Signature
 

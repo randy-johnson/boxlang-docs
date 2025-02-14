@@ -2,7 +2,7 @@
 
 # Function: `StructInsert`
 
-No description available.
+Inserts a key/value pair in to a struct - with an optional overwrite argument
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ StructInsert(struct=[modifiableStruct], key=[any], value=[any], overwrite=[boole
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `modifiableStruct` | `true` |  |  |
-| `key` | `any` | `true` |  |  |
-| `value` | `any` | `true` |  |  |
-| `overwrite` | `boolean` | `false` |  | `false` |
+| `struct` | `modifiableStruct` | `true` | The target struct |  |
+| `key` | `any` | `true` | The struct key |  |
+| `value` | `any` | `true` | The value to assign for the specified key |  |
+| `overwrite` | `boolean` | `false` | Whether to overwrite the existing value if the key exists ( default: false ) | `false` |
 
 ## Examples
 

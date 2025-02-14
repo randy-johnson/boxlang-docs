@@ -2,7 +2,7 @@
 
 # Function: `Println`
 
-No description available.
+Print a message with line break to the console
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ Println(message=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `message` | `any` | `true` |  |  |
+| `message` | `any` | `true` | The message to print |  |
 
 ## Examples
 

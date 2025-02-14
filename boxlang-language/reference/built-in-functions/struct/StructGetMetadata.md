@@ -2,7 +2,7 @@
 
 # Function: `StructGetMetadata`
 
-No description available.
+Gets Struct-specific metadata of the requested struct.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ StructGetMetadata(struct=[structloose])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` |  |  |
+| `struct` | `struct` | `true` | The struct from which to retrieve the metadata |  |
 
 ## Examples
 

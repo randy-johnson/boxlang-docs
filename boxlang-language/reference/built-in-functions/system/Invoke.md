@@ -2,7 +2,7 @@
 
 # Function: `Invoke`
 
-No description available.
+Invokes an object method and returns the result of the invoked method.
 
 ## Method Signature
 
@@ -16,8 +16,8 @@ Invoke(object=[any], method=[string], arguments=[any])
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
 | `object` | `any` | `true` |  |  |
-| `method` | `string` | `true` |  |  |
-| `arguments` | `any` | `false` |  |  |
+| `method` | `string` | `true` | The name of the method to invoke |  |
+| `arguments` | `any` | `false` | An array of positional arguments or a struct of named arguments to pass into the method. |  |
 
 ## Examples
 

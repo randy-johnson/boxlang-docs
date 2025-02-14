@@ -2,7 +2,7 @@
 
 # Function: `BitMaskSet`
 
-No description available.
+Performs a bitwise mask set operation.
 
 ## Method Signature
 
@@ -15,10 +15,10 @@ BitMaskSet(number=[integer], mask=[integer], start=[integer], length=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `number` | `integer` | `true` |  |  |
-| `mask` | `integer` | `true` |  |  |
-| `start` | `integer` | `true` |  |  |
-| `length` | `integer` | `true` |  |  |
+| `number` | `integer` | `true` | Numeric value for the bitwise mask set. |  |
+| `mask` | `integer` | `true` | Numeric value for the mask. |  |
+| `start` | `integer` | `true` | Start bit for the set mask (Integer in the range 0-31, inclusive). |  |
+| `length` | `integer` | `true` | Length of bits in the set mask (Integer in the range 0-31, inclusive). |  |
 
 ## Examples
 

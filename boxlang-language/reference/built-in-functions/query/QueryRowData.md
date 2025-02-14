@@ -2,7 +2,7 @@
 
 # Function: `QueryRowData`
 
-No description available.
+Returns the cells of a query row as a structure
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ QueryRowData(query=[query], rowNumber=[integer])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `query` | `query` | `true` |  |  |
-| `rowNumber` | `integer` | `true` |  |  |
+| `query` | `query` | `true` | The query object to which the row should be returned. |  |
+| `rowNumber` | `integer` | `true` | Position of the query row to return. |  |
 
 ## Examples
 

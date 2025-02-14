@@ -2,7 +2,7 @@
 
 # Function: `IsInstanceOf`
 
-No description available.
+Determines whether an object is an instance of a BoxLang interface or component, or of a Java class.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ IsInstanceOf(object=[any], typename=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `object` | `any` | `true` |  |  |
-| `typename` | `string` | `true` |  |  |
+| `object` | `any` | `true` | The CFC instance or Java object that you are testing |  |
+| `typename` | `string` | `true` | The name of the interface, component, or Java class of which the object might be an instance |  |
 
 ## Examples
 

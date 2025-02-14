@@ -2,7 +2,7 @@
 
 # Function: `URLDecode`
 
-No description available.
+Decodes a URL-encoded string.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ URLDecode(string=[any], charset=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `any` | `true` |  |  |
-| `charset` | `string` | `false` |  | `UTF-8` |
+| `string` | `any` | `true` | The URL-encoded string to decode. |  |
+| `charset` | `string` | `false` | The charset to use when decoding the string. Defaults to UTF-8. | `UTF-8` |
 
 ## Examples
 

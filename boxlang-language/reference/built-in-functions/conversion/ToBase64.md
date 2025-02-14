@@ -2,7 +2,10 @@
 
 # Function: `ToBase64`
 
-No description available.
+Calculates the Base64 representation of a string or binary object.
+
+The Base64 format uses printable characters, allowing binary data to be sent in
+ forms and e-mail, and stored in a database or file.
 
 ## Method Signature
 
@@ -15,8 +18,8 @@ ToBase64(string_or_object=[any], encoding=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string_or_object` | `any` | `true` |  |  |
-| `encoding` | `string` | `false` |  | `UTF-8` |
+| `string_or_object` | `any` | `true` | A string or a binary object. |  |
+| `encoding` | `string` | `false` | The character encoding (character set) of the string, used with binary data. | `UTF-8` |
 
 ## Examples
 

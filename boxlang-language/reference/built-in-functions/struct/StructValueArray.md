@@ -2,7 +2,7 @@
 
 # Function: `StructValueArray`
 
-No description available.
+Returns an array of all values of top level keys in a struct
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ StructValueArray(struct=[structloose])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `struct` | `struct` | `true` |  |  |
+| `struct` | `struct` | `true` | The target struct from which to retrieve values |  |
 
 ## Examples
 

@@ -2,7 +2,64 @@
 
 # Function: `IsDefined`
 
-No description available.
+Determine whether a given variable reference exists.
+
+<p>
+
+ For example:
+ 
+<ul>
+
+ 
+<li>
+<code>
+isDefined( "luis" )
+</code>
+ will test for the existence of an 
+<code>
+lmajano
+</code>
+ variable in any accessible scope.
+</li>
+
+ 
+<li>
+<code>
+isDefined( "variables.foo" )
+</code>
+ will test for the existence of a 
+<code>
+foo
+</code>
+ variable in the 
+<code>
+variables
+</code>
+ scope.
+</li>
+
+ 
+<li>
+<code>
+isDefined( "brad.age" )
+</code>
+ will test for the existence of an 
+<code>
+age
+</code>
+ key in the 
+<code>
+brad
+</code>
+ struct, in any accessible
+ scope
+</li>
+
+ 
+</ul>
+
+ 
+</p>
 
 ## Method Signature
 
@@ -15,7 +72,7 @@ IsDefined(variable=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `variable` | `string` | `true` |  |  |
+| `variable` | `string` | `true` | The variable reference to test for existence. For security reasons, only dot-notation is supported. Struct/array bracket<br>                    notation<br>                    is not supported, nor is function invocation, etc. |  |
 
 ## Examples
 

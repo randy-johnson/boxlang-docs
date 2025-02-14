@@ -2,7 +2,7 @@
 
 # Function: `SessionRotate`
 
-No description available.
+Creates a new session (using new session ids) and copies session scope into this new session, then invalidates the old session.
 
 ## Method Signature
 

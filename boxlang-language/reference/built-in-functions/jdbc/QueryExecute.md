@@ -2,7 +2,7 @@
 
 # Function: `QueryExecute`
 
-No description available.
+Execute an SQL query and returns the results.
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ QueryExecute(sql=[String], params=[any], options=[struct])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `sql` | `String` | `true` |  |  |
-| `params` | `any` | `false` |  | `[]` |
-| `options` | `struct` | `false` |  |  |
+| `sql` | `String` | `true` | The SQL to execute |  |
+| `params` | `any` | `false` | An array of binding parameters or a struct of named binding parameters | `[]` |
+| `options` | `struct` | `false` | A struct of query options |  |
 
 ## Examples
 

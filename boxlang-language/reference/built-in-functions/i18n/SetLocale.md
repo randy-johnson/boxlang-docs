@@ -2,7 +2,7 @@
 
 # Function: `SetLocale`
 
-No description available.
+Sets the current request-level locale.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ SetLocale(locale=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `locale` | `string` | `true` |  |  |
+| `locale` | `string` | `true` | The locale ISO directive, common name or alias |  |
 
 ## Examples
 

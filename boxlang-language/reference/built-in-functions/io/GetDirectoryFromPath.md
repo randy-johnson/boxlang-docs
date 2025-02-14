@@ -2,7 +2,7 @@
 
 # Function: `GetDirectoryFromPath`
 
-No description available.
+Retrieves the directory parent of a path
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ GetDirectoryFromPath(path=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `path` | `string` | `true` |  |  |
+| `path` | `string` | `true` | The path to extract the parent directory from |  |
 
 ## Examples
 

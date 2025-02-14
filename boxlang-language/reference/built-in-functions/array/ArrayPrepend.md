@@ -2,7 +2,7 @@
 
 # Function: `ArrayPrepend`
 
-No description available.
+Append a value to the start an array
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ ArrayPrepend(array=[modifiableArray], value=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiableArray` | `true` |  |  |
-| `value` | `any` | `true` |  |  |
+| `array` | `modifiableArray` | `true` | The array to prepend to |  |
+| `value` | `any` | `true` | The value to prepend |  |
 
 ## Examples
 

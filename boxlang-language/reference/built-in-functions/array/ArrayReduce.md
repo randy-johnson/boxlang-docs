@@ -2,7 +2,7 @@
 
 # Function: `ArrayReduce`
 
-No description available.
+Run the provided udf over the array to reduce the values to a single output
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ ArrayReduce(array=[array], callback=[function:BiFunction], initialValue=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` |  |  |
-| `callback` | `function:BiFunction` | `true` |  |  |
-| `initialValue` | `any` | `false` |  |  |
+| `array` | `array` | `true` | The array to reduce |  |
+| `callback` | `function:BiFunction` | `true` | The function to invoke for each item. The function will be passed 3 arguments: the accumulator, the current item, and the<br>                    current index. You can alternatively pass a Java BiFunction which will only receive the first 2 args. The function should return the new accumulator value. |  |
+| `initialValue` | `any` | `false` | The initial value of the accumulator |  |
 
 ## Examples
 

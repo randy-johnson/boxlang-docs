@@ -2,7 +2,7 @@
 
 # Function: `StringReduce`
 
-No description available.
+Run the provided udf over all characters in a string to reduce the values to a single output
 
 ## Method Signature
 
@@ -16,8 +16,8 @@ StringReduce(list=[string], callback=[function:BiFunction], initialValue=[any], 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
 | `list` | `string` | `true` |  |  |
-| `callback` | `function:BiFunction` | `true` |  |  |
-| `initialValue` | `any` | `false` |  |  |
+| `callback` | `function:BiFunction` | `true` | The callback to use for the test |  |
+| `initialValue` | `any` | `false` | The initial value of the reduction |  |
 | `delimiter` | `string` | `false` |  | `,` |
 | `includeEmptyFields` | `boolean` | `false` |  | `false` |
 | `multiCharacterDelimiter` | `boolean` | `false` |  | `true` |

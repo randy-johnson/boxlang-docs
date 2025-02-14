@@ -2,7 +2,10 @@
 
 # Function: `TransactionSetSavepoint`
 
-No description available.
+Sets a savepoint in the current transaction.
+
+This savepoint can then be a rollback point when executing a rollback via `transactionRollback(
+ "mySavepointName" )`.
 
 ## Method Signature
 
@@ -15,7 +18,7 @@ TransactionSetSavepoint(savepoint=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `savepoint` | `string` | `true` |  |  |
+| `savepoint` | `string` | `true` | Specify a savepoint name. |  |
 
 ## Examples
 

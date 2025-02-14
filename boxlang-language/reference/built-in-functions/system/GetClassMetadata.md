@@ -2,7 +2,7 @@
 
 # Function: `GetClassMetadata`
 
-No description available.
+Returns the current value of an internal millisecond timer.
 
 ## Method Signature
 
@@ -15,7 +15,7 @@ GetClassMetadata(path=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `path` | `any` | `true` |  |  |
+| `path` | `any` | `true` | The path to the class or interface or an instance of the object to get the metadata for. |  |
 
 ## Examples
 

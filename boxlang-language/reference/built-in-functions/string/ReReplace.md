@@ -2,7 +2,9 @@
 
 # Function: `ReReplace`
 
-No description available.
+Uses a regular expression (regex) to search a string for a string pattern and replace it with another.
+
+The search is case-sensitive.
 
 ## Method Signature
 
@@ -15,10 +17,10 @@ ReReplace(string=[string], regex=[string], substring=[string], scope=[string])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `string` | `string` | `true` |  |  |
-| `regex` | `string` | `true` |  |  |
-| `substring` | `string` | `true` |  |  |
-| `scope` | `string` | `true` |  | `one` |
+| `string` | `string` | `true` | The string to search |  |
+| `regex` | `string` | `true` | The regular expression to search for |  |
+| `substring` | `string` | `true` | The string to replace regex with |  |
+| `scope` | `string` | `true` | The scope to search in (one, all) | `one` |
 
 ## Examples
 

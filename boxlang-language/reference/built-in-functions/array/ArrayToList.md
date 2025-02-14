@@ -2,7 +2,7 @@
 
 # Function: `ArrayToList`
 
-No description available.
+Used to iterate over an array and run the function closure for each item in the array.
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ ArrayToList(array=[array], delimiter=[String], initialValue=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `array` | `true` |  |  |
-| `delimiter` | `String` | `false` |  | `,` |
+| `array` | `array` | `true` | The array to join together |  |
+| `delimiter` | `String` | `false` | The character to use as a separator | `,` |
 | `initialValue` | `any` | `false` |  |  |
 
 ## Examples

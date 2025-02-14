@@ -2,7 +2,7 @@
 
 # Function: `ArrayAppend`
 
-No description available.
+Append a value to an array
 
 ## Method Signature
 
@@ -15,9 +15,9 @@ ArrayAppend(array=[modifiableArray], value=[any], merge=[boolean])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `array` | `modifiableArray` | `true` |  |  |
-| `value` | `any` | `true` |  |  |
-| `merge` | `boolean` | `false` |  | `false` |
+| `array` | `modifiableArray` | `true` | The array to which the element should be appended. |  |
+| `value` | `any` | `true` | The element to append. Can be any type. |  |
+| `merge` | `boolean` | `false` | If true, the value is assumed to be an array and the elements of the array are appended to the array. If false, the value is<br>                 appended as a single element. | `false` |
 
 ## Examples
 

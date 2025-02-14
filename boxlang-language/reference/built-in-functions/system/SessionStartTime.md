@@ -2,7 +2,7 @@
 
 # Function: `SessionStartTime`
 
-No description available.
+Provides information about the time when the current users session scope was created
 
 ## Method Signature
 

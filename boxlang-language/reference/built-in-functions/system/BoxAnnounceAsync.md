@@ -2,7 +2,7 @@
 
 # Function: `BoxAnnounceAsync`
 
-No description available.
+Announce a BoxLang event to the system asynchronously
 
 ## Method Signature
 
@@ -15,8 +15,8 @@ BoxAnnounceAsync(state=[string], data=[struct])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `state` | `string` | `true` |  |  |
-| `data` | `struct` | `false` |  | `{}` |
+| `state` | `string` | `true` | The event to announce |  |
+| `data` | `struct` | `false` | The data to send with the event | `{}` |
 
 ## Examples
 

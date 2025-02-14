@@ -2,7 +2,7 @@
 
 # Function: `GetBoxVersionInfo`
 
-No description available.
+Get's the version information of the current Box Runtime
 
 ## Method Signature
 

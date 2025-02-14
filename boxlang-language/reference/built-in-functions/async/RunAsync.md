@@ -2,7 +2,10 @@
 
 # Function: `RunAsync`
 
-No description available.
+Executes the given code asynchronously and returns to you a BoxFuture object that you can use to interact with the
+ asynchronously executed code.
+
+A BoxFuture is a subclass of CompletableFuture.
 
 ## Method Signature
 
@@ -15,8 +18,8 @@ RunAsync(callback=[function], executor=[any])
 
 | Argument | Type | Required | Description | Default |
 |----------|------|----------|-------------|---------|
-| `callback` | `function` | `true` |  |  |
-| `executor` | `any` | `false` |  |  |
+| `callback` | `function` | `true` | The code to execute asynchronously, this can be a closure or lambda. |  |
+| `executor` | `any` | `false` | The executor to use for the asynchronous execution. This can be an instance of an Executor class, or the name of a registered executor in the AsyncService. |  |
 
 ## Examples
 
