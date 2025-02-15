@@ -2,7 +2,7 @@
 
 # Function: `GetLocaleDisplayName`
 
-Returns the ,{@link java.util.Locale}, display name with an optional display language/locale
+Returns the {@link java.util.Locale} display name with an optional display language/locale
 
 ## Method Signature
 

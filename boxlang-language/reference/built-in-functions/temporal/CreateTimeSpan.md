@@ -2,7 +2,7 @@
 
 # Function: `CreateTimeSpan`
 
-Creates a timespan ,{@link java.time.Duration}
+Creates a timespan {@link java.time.Duration}
 
 ## Method Signature
 

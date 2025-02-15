@@ -2,111 +2,30 @@
 
 # Function: `CreateObject`
 
-Creates a new object representation according to the ,{@code type}, and ,{@code className}, arguments.
+Creates a new object representation according to the {@code type} and {@code className} arguments.
 
 <p>
-
- Available 
-<strong>
-types
-</strong>
- are:
- 
-<ul>
-
- 
-<li>
-<strong>
-class/component
-</strong>
- - Creates a new instance of a BoxLang class (Default if not used)
-</li>
-
- 
-<li>
-<strong>
-java
-</strong>
- - Creates a new instance of a Java class
-</li>
-
- 
-<li>
-<strong>
-{anything}
-</strong>
- - Passes the request to the 
-{@code BoxEvent.ON_CREATEOBJECT_REQUEST}
- event for further processing
-</li>
-
- 
-</ul>
-
- 
-<p>
-
- If the type requested is not supported, then it passes to an interception call to the 
-{@code BoxEvent.ON_CREATEOBJECT_REQUEST}
- event,
+ Available <strong>types</strong> are:
+ <ul>
+ <li><strong>class/component</strong> - Creates a new instance of a BoxLang class (Default if not used)</li>
+ <li><strong>java</strong> - Creates a new instance of a Java class</li>
+ <li><strong>{anything}</strong> - Passes the request to the {@code BoxEvent.ON_CREATEOBJECT_REQUEST} event for further processing</li>
+ </ul>
+ <p>
+ If the type requested is not supported, then it passes to an interception call to the {@code BoxEvent.ON_CREATEOBJECT_REQUEST} event,
  so any listeners can contribute to the object creation request (if any). If there are no listeners, an exception is thrown.
- 
-<p>
-
- You can also target an explicit class from a loaded BoxLang module by using the 
-{@code @moduleName}
- suffix.
- Example: 
-{@code createObject( 'class', 'class.name.path@module' )}
-
- 
-<p>
-
- The 
-<strong>
-properties
-</strong>
- is an optional argument that can be used to pass to the object creation process according to the type.
- 
-<ul>
-
- 
-<li>
-<strong>
-class/component
-</strong>
- - The properties are not used
-</li>
-
- 
-<li>
-<strong>
-java
-</strong>
- - The properties can be a single or an array of absolute path(s) to a directory containing Jars/Classes, or absolute path(s) to specific Jars/Classes to classload
-</li>
-
- 
-<li>
-<strong>
-{anything}
-</strong>
- - The properties can be any object that the listener can use to create the object
-</li>
-
- 
-</ul>
-
- 
-<p>
-
- 
-<strong>
-IMPORTANT:
-</strong>
- This does NOT create an instance of the class, for that you will need to call the 
-{@code init()}
- method on the returned object.
+ <p>
+ You can also target an explicit class from a loaded BoxLang module by using the {@code @moduleName} suffix.
+ Example: {@code createObject( 'class', 'class.name.path@module' )}
+ <p>
+ The <strong>properties</strong> is an optional argument that can be used to pass to the object creation process according to the type.
+ <ul>
+ <li><strong>class/component</strong> - The properties are not used</li>
+ <li><strong>java</strong> - The properties can be a single or an array of absolute path(s) to a directory containing Jars/Classes, or absolute path(s) to specific Jars/Classes to classload</li>
+ <li><strong>{anything}</strong> - The properties can be any object that the listener can use to create the object</li>
+ </ul>
+ <p>
+ <strong>IMPORTANT:</strong> This does NOT create an instance of the class, for that you will need to call the {@code init()} method on the returned object.
 
 ## Method Signature
 

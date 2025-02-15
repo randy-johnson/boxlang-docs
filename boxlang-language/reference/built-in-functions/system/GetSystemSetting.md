@@ -5,15 +5,10 @@
 Retrieve a Java System property or environment value by name.
 
 <p>
-
  It looks at properties first then environment variables second.
- 
-<p>
-
+ <p>
  Please note that the property or environment variable name is case-sensitive.
- 
-<p>
-
+ <p>
  You can also pass a default value to return if the property or environment variable is not found.
 
 ## Method Signature

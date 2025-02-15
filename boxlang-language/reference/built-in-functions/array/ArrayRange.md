@@ -6,20 +6,14 @@ Build an array out of a range of numbers or using our range syntax: {start}..{en
  or using the from and to arguments
 
 <p>
-
  You can also build negative ranges
- 
-<p>
+ <p>
 
-
- 
-<pre>
-
+ <pre>
  arrayRange( "1..5" )
  arrayRange( "-10..5" )
  arrayRange( 1, 500 )
- 
-</pre>
+ </pre>
 
 ## Method Signature
 

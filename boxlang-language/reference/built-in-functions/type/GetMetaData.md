@@ -4,11 +4,7 @@
 
 Gets metadata (the methods, properties, and parameters of a component) associated with an object.
 
-This returns the 
-<code>
-$bx.meta
-</code>
- object for the object.
+This returns the <code>$bx.meta</code> object for the object.
 
 ## Method Signature
 

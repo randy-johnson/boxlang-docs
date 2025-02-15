@@ -6,7 +6,6 @@ Determine whether the given value is a string, numeric, or date.Arrays, structs,
  structures will return false.
 
 <p>
-
  Note we expressly do not support the `eurodate` type, since date formats vary across EU countries. For this, prefer the `LSIsDate( date, locale )`
  method instead.
 

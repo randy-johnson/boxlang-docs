@@ -5,9 +5,7 @@
 Converts a struct to a query string using the specified delimiter.
 
 <p>
-
- The default delimiter is 
-{@code "&"}
+ The default delimiter is {@code "&"}
 
 ## Method Signature
 
