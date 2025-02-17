@@ -703,7 +703,7 @@
     * [xml](boxlang-language/reference/components/xml/README.md)
       * [XML](boxlang-language/reference/components/xml/XML.md)
     * [zip](boxlang-language/reference/components/zip/README.md)
-      * [Zip](boxlang-language/reference/components/zip/Zip.md)  * [Exceptions](boxlang-language/reference/Exceptions.md)
+      * [Zip](boxlang-language/reference/components/zip/Zip.md)
 
 ## BoxLang Framework
 
