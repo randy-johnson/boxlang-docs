@@ -34,7 +34,7 @@ boxlang-miniserver.bat
 
 {% tab title="JAR Execution" %}
 ```bash
-java -jar /usr/local/lib/boxlang-miniserver-1.0.0-all.jar
+java -jar /usr/local/lib/boxlang-miniserver-1.0.0.jar
 ```
 {% endtab %}
 {% endtabs %}
@@ -119,7 +119,7 @@ java -cp {jarpath;jarpath2} ortus.boxlang.web.MiniServer
 
 
 # Example
-java -cp boxlang-miniserver-1.0.0-all.jar;/path/to/my.jar;/path/to/another.jar ortus.boxlang.web.MiniServer
+java -cp boxlang-miniserver-1.0.0.jar;/path/to/my.jar;/path/to/another.jar ortus.boxlang.web.MiniServer
 ```
 
 ### Modules

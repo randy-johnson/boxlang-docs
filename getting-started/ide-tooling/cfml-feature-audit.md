@@ -61,7 +61,7 @@ You can call the tool using our script or the full path to the jar.
 boxlang featureAudit <options here>
 
 // Using the full path to the jar
-java -cp boxlang-1.0.0-all.jar ortus.boxlang.compiler.FeatureAudit  <options here>
+java -cp boxlang-1.0.0.jar ortus.boxlang.compiler.FeatureAudit  <options here>
 ```
 
 ### CLI Options
@@ -85,7 +85,7 @@ Get a full report of all BIFs and Components used in a file
 boxlang featureAudit --source includes/myFile.cfm
 
 // Using the full path
-java -cp boxlang-1.0.0-all.jar ortus.boxlang.compiler.FeatureAudit --source includes/myFile.cfm
+java -cp boxlang-1.0.0.jar ortus.boxlang.compiler.FeatureAudit --source includes/myFile.cfm
 ```
 
 Scan all your models for missing BIFs and Components
@@ -95,7 +95,7 @@ Scan all your models for missing BIFs and Components
 boxlang featureAudit --source ./models/ --missing
 
 // Using the full path
-java -cp boxlang-1.0.0-all.jar ortus.boxlang.compiler.FeatureAudit --source ./models/ --missing
+java -cp boxlang-1.0.0.jar ortus.boxlang.compiler.FeatureAudit --source ./models/ --missing
 ```
 
 Same as above, but aggregate results per file and write results to a CSV report
@@ -105,15 +105,15 @@ Same as above, but aggregate results per file and write results to a CSV report
 boxlang featureAudit --source ./models/ --missing --aggregate --quiet --reportFile /path/to/models-missing-features.csv
 
 // Uisng the Full path
-java -cp boxlang-1.0.0-all.jar ortus.boxlang.compiler.FeatureAudit --source ./models/ --missing --aggregate --quiet --reportFile /path/to/models-missing-features.csv
+java -cp boxlang-1.0.0.jar ortus.boxlang.compiler.FeatureAudit --source ./models/ --missing --aggregate --quiet --reportFile /path/to/models-missing-features.csv
 ```
 
 Get a summary level aggregate report of all missing features in ColdBox output to the console
 
 ```css
 // Using the script
-boxlang featureAudit --source ./coldbox/ --missing --aggregate summary 
+boxlang featureAudit --source ./coldbox/ --missing --aggregate summary
 
 // Using the full path
-java -cp boxlang-1.0.0-all.jar ortus.boxlang.compiler.FeatureAudit --source ./coldbox/ --missing --aggregate summary 
+java -cp boxlang-1.0.0.jar ortus.boxlang.compiler.FeatureAudit --source ./coldbox/ --missing --aggregate summary
 ```

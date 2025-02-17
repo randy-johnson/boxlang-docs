@@ -20,14 +20,14 @@ Make sure you have installed the OS version of [BoxLang](../installation/) so yo
 ```bash
 // Using the script
 boxlang compile
-    --source /path/to/webroot/index.cfm 
-    --target /path/to/compiled-webroot/index.cfm 
+    --source /path/to/webroot/index.cfm
+    --target /path/to/compiled-webroot/index.cfm
     --basePath /path/to/webroot
 
 // Using the full path to jar
-java -cp boxlang-1.0.0-all.jar ortus.boxlang.compiler.BXCompiler 
---source /path/to/webroot/index.cfm 
---target /path/to/compiled-webroot/index.cfm 
+java -cp boxlang-1.0.0.jar ortus.boxlang.compiler.BXCompiler
+--source /path/to/webroot/index.cfm
+--target /path/to/compiled-webroot/index.cfm
 --basePath /path/to/webroot
 ```
 
@@ -40,14 +40,14 @@ And an entire directory like so:
 ```bash
 // Using the script
 boxlang compile
-    --source /path/to/webroot/ 
-    --target /path/to/compiled-webroot/ 
+    --source /path/to/webroot/
+    --target /path/to/compiled-webroot/
     --basePath /path/to/webroot
 
 // Using the full path to the jar
-java -cp boxlang-1.0.0-all.jar ortus.boxlang.compiler.BXCompiler 
---source /path/to/webroot/ 
---target /path/to/compiled-webroot/ 
+java -cp boxlang-1.0.0.jar ortus.boxlang.compiler.BXCompiler
+--source /path/to/webroot/
+--target /path/to/compiled-webroot/
 --basePath /path/to/webroot
 ```
 

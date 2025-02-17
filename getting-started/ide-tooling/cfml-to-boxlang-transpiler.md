@@ -18,20 +18,20 @@ You can call the tool using our script or the full path to the jar.
 boxlang cftranspile <options here>
 
 // Using the full path to the jar
-java -cp boxlang-1.0.0-all.jar ortus.boxlang.compiler.CFTranspiler  <options here>
+java -cp boxlang-1.0.0.jar ortus.boxlang.compiler.CFTranspiler  <options here>
 ```
 
 ### Examples
 
 ```bash
 // Using the script
-boxlang cftranspile 
-    --source /path/to/file.cfc 
+boxlang cftranspile
+    --source /path/to/file.cfc
     --target /path/to/file.bx
 
 // Using the full path
-java -cp boxlang-1.0.0-all.jar ortus.boxlang.compiler.CFTranspiler 
---source /path/to/file.cfc 
+java -cp boxlang-1.0.0.jar ortus.boxlang.compiler.CFTranspiler
+--source /path/to/file.cfc
 --target /path/to/file.bx
 ```
 
@@ -40,14 +40,14 @@ java -cp boxlang-1.0.0-all.jar ortus.boxlang.compiler.CFTranspiler
 ```bash
 // Using the script
 boxlang cftranspile
-    --source /path/to/CF/code 
-    --target /path/to/BL/code 
+    --source /path/to/CF/code
+    --target /path/to/BL/code
     --stopOnError
 
 // Using the full path
-java -cp boxlang-1.0.0-all.jar ortus.boxlang.compiler.CFTranspiler 
---source /path/to/CF/code 
---target /path/to/BL/code 
+java -cp boxlang-1.0.0.jar ortus.boxlang.compiler.CFTranspiler
+--source /path/to/CF/code
+--target /path/to/BL/code
 --stopOnError
 ```
 

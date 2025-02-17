@@ -45,8 +45,8 @@ boxlang.bat mytemplate.bxm
 
 {% tab title="Jar" %}
 ```ruby
-java -jar boxlang-1.0.0-all.jar task.bx
-java -jar boxlang-1.0.0-all.jar /full/path/to/test.bxs
+java -jar boxlang-1.0.0.jar task.bx
+java -jar boxlang-1.0.0.jar /full/path/to/test.bxs
 ```
 {% endtab %}
 {% endtabs %}
@@ -88,7 +88,7 @@ If you execute this function above, the output will be:
 
 ```bash
 Hola from my task! {ts '2025-02-11 22:15:44'}
-The passed args are: 
+The passed args are:
 [
   hello,
   luis,
@@ -104,7 +104,7 @@ In addition to executing classes, you can execute `*.bxs`scripts that can do you
 
 {% code title="hello.bxs" %}
 ```groovy
-message = "Hola from my task! #now()#" 
+message = "Hola from my task! #now()#"
 println( message )
 println( "The passed args are: " )
 println( CLIGetArgs() )
@@ -117,7 +117,7 @@ Then, if we execute it, we can see this output:
 ╰─ boxlang hello.bxs hola luis=majano --test
 
 Hola from my task! {ts '2025-02-11 22:29:44'}
-The passed args are: 
+The passed args are:
 {
   positionals : [
       hola,
@@ -139,7 +139,7 @@ You can also get the arguments via the `server.cli.parsed`variable, which alread
 {% endhint %}
 
 ```groovy
-message = "Hola from my task! #now()#" 
+message = "Hola from my task! #now()#"
 println( message )
 println( "The passed args are: " )
 println( server.cli.parsed )
@@ -151,7 +151,7 @@ Here is the output:
 ╰─ boxlang hello.bxs hola luis=majano --test
 
 Hola from my task! {ts '2025-02-11 22:29:44'}
-The passed args are: 
+The passed args are:
 {
   positionals : [
       hola,
@@ -300,11 +300,11 @@ Hooray! You have executed your first script using BoxLang. Now let's build a cla
 class{
 
         function main( args=[] ){
-        
+
                println( "Task called with " & arguments.toString() )
-                
+
                 writedump( args )
-        
+
         }
 
 }
@@ -327,7 +327,7 @@ Task called with {ARGS=[boxlang, rocks]}
 You can also pipe statements into the BoxLang binary for execution as well. This assumes script, not tags.
 
 ```bash
-echo "2+2" | java -jar boxlang-1.0.0-all.jar
+echo "2+2" | java -jar boxlang-1.0.0.jar
 echo "2+2" | boxlang
 ```
 
@@ -335,11 +335,11 @@ or
 
 ```bash
 # on *nix
-cat test.cfs | java -jar boxlang-1.0.0-all.jar
+cat test.cfs | java -jar boxlang-1.0.0.jar
 cat test.cfs | boxlang
 
 # on Windows
-type test.cfs | java -jar boxlang-1.0.0-all.jar
+type test.cfs | java -jar boxlang-1.0.0.jar
 type test.cfs | boxlang.bat
 ```
 

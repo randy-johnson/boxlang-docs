@@ -66,7 +66,7 @@ boxlang.bat
 
 {% tab title="Jar" %}
 ```
-java -jar path/to/boxlang-1.0.0-all.jar
+java -jar path/to/boxlang-1.0.0.jar
 ```
 {% endtab %}
 {% endtabs %}
@@ -149,8 +149,8 @@ boxlang.bat mytemplate.bxm
 
 {% tab title="Jar" %}
 ```ruby
-java -jar boxlang-1.0.0-all.jar task.bx
-java -jar boxlang-1.0.0-all.jar /full/path/to/test.bxs
+java -jar boxlang-1.0.0.jar task.bx
+java -jar boxlang-1.0.0.jar /full/path/to/test.bxs
 ```
 {% endtab %}
 {% endtabs %}
@@ -215,7 +215,7 @@ This assumes script, not templating tags.
 You can also pipe statements into the BoxLang binary for execution as well. This assumes script, not tags.
 
 ```bash
-echo "2+2" | java -jar boxlang-1.0.0-all.jar
+echo "2+2" | java -jar boxlang-1.0.0.jar
 echo "2+2" | boxlang
 ```
 
@@ -223,11 +223,11 @@ or
 
 ```bash
 # on *nix
-cat test.cfs | java -jar boxlang-1.0.0-all.jar
+cat test.cfs | java -jar boxlang-1.0.0.jar
 cat test.cfs | boxlang
 
 # on Windows
-type test.cfs | java -jar boxlang-1.0.0-all.jar
+type test.cfs | java -jar boxlang-1.0.0.jar
 type test.cfs | boxlang.bat
 ```
 
