@@ -879,14 +879,14 @@ function Boolean isAlive(){
 BoxLang classes are enhanced in many capabilities compared to Java, but they are similar to Groovy and CFML.
 
 * Automatic `package` definition
-* Automatic Hash Code and Equals
-* Automatic constructor created for you
+* Automatic Hash Code and Equals methods
+* Automatic constructor created for you based on the defined `properties`
 * No need to add a name to the `class` definition, we use the filename
 * Implements by default `IClassRunnable, IReferenceable, IType, Serializable`
-* Automatic getters and setters for any `property` definition
+* Automatic getters and setters for any `property` definition&#x20;
+* Automatic implicit property accessors and mutators
 * Allows for pseudo constructor blocks for initializations and more (Space between last property and first function)
 * Output is **false** by default for pseudo-constructors and functions
-* You can activate Implicit property accessors and mutators
 * Automatic metadata registration into the `$bx` BoxMeta programming object
 * Allows for single inheritance
 * Allows for interfaces
@@ -1042,7 +1042,7 @@ myClass = new MyClass()
 writeOutput( myClass.$bx.meta ) or println( myClass.$bx.meta )
 ```
 
-The `$bx` object is the BoxLang meta object. It contains all the necessary metadata information about an object. From it's Java Class, to functions, properties, data, etc. It can be used on ANY BoxLang Type. Here are the properties in the `$bx` object available to you. It also contains many methods that exist in the `BoxMeta` object.
+The `$bx` object is the BoxLang meta-object. It contains all the necessary metadata information about an object, it's Java class representations and useful methods for meta-programming. From it's Java Class, to functions, properties, data, etc. It can be used on ANY BoxLang Type. Here are the properties in the `$bx` object available to you. It also contains many methods that exist in the `BoxMeta` object.
 
 * `meta` - A struct of metadata about the class
 * `$class` - The Java `Class` that represents your class
@@ -1077,16 +1077,23 @@ myClass = new MyClass().setFirstname( "luis" );
 
 ### Implicit Accessors
 
-If you don't want to see the setter/getter method calls, turn on implicit access since it's `false` by default.
+Implicit accessor/mutator invocations are on by default in BoxLang.  You can disable them by adding the `invokeImplicitAccessor` annotation to false.  Implicit accessors allows you to invoke getters and mutators as if you are working properties on a class.  It's just syntactical sugar to make your code look a lot less verbose when calling getters and setters.
 
 ```cfscript
-@invokeImplicitAccessor true
 class{
     property name="firstName" type="string" default="boxlang";
     property name="age" type="numeric"
 }
 
+// Invoke Using implicit invokers
 myClass = new MyClass();
 myClass.age = 23
 printLn( myClass.age )
+
+// Disable invokers
+@invokeImplicitAccessor( false )
+class{
+    property name="firstName" type="string" default="boxlang";
+    property name="age" type="numeric"
+}
 ```
