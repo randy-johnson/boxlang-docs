@@ -4,13 +4,13 @@ description: They gotta exist somewhere!
 
 # Variable Scopes
 
-In the BoxLang language, many persistence and visibility scopes exist for variables to be placed. These are differentiated by context: in a class, function, tag module, thread, or template.&#x20;
+In the BoxLang language, many persistence and visibility scopes exist for variables to be placed in. These are differentiated by context: in a class, function, tag module, thread, or template.&#x20;
 
 {% hint style="info" %}
 All BoxLang scopes are implemented as BoxLang [structures](structures.md), basically case-insensitive concurrent hash maps behind the scenes.&#x20;
 {% endhint %}
 
-This idea that the variables you declare in templates, classes, and functions are stored in a structure makes it highly flexible since you can interact with the entire scope fluently and with many different BIFs available.  You can also bind them to function calls, attributes, etc.  Thus, it capitulates on being a dynamic language.
+This idea that the variables you declare in templates, classes, and functions are stored in a structure makes your code highly flexible since you can interact with the entire scope fluently and with many different BIFs available.  You can also bind them to function calls, attributes, etc.  Thus, it capitulates on BoxLang being a dynamic language.
 
 ```javascript
 // Examples
@@ -99,7 +99,7 @@ class extends="MyParent"{
 }
 ```
 
-### Function Assignment Scopes
+### Class Function Scopes
 
 Depending on the function's visibility, BoxLang places a pointer for the function in the different scopes below.  Why? Because BoxLang is a dynamic language. Meaning at runtime, you can add/remove/modify functions if you want to.
 
@@ -124,7 +124,7 @@ class {
 }
 ```
 
-## Function Scopes
+## Templates/Scripts Function Scopes
 
 All user-defined functions will have the following scopes available:
 
@@ -133,7 +133,7 @@ All user-defined functions will have the following scopes available:
 * `local` - Function-scoped variables only exist within the function execution. Referred to as `var` scoping. The default assignment scope in a function.
 * `arguments` - Incoming variables to a function
 
-### Closure Scopes
+## Closure Scopes
 
 All closures are context-aware. Meaning they know about their birthplace and surrounding scopes.&#x20;
 
@@ -142,11 +142,16 @@ All closures are context-aware. Meaning they know about their birthplace and sur
 * `local` - Function-scoped variables only exist within the function execution. Referred to as `var` scoping. The default assignment scope in a function.
 * `arguments` - Incoming variables to a function
 
-### Lambdas (Pure Function) Scopes
+## Lambdas (Pure Function) Scopes
 
-Lambdas&#x20;
+Lambdas are pure functions in BoxLang, they do not carry their surrounding or birth context.  They are simpler and faster.
 
-## Tag Scopes
+* `local` - Function-scoped variables only exist within the function execution. Referred to as `var` scoping. The default assignment scope in a function.
+* `arguments` - Incoming variables to a function
+
+## Tag Component Scopes
+
+In BoxLang, you can extend the templating language and create your own tags that act like components:
 
 * `attributes` - Incoming tag attributes
 * `variables` - The default scope for variable assignments
@@ -154,8 +159,10 @@ Lambdas&#x20;
 
 ## Thread Scopes
 
+When you create threads with the `thread`component, you will have these scopes:
+
 * `attributes` - Passed variables via a thread
-* `thread` - A thread specific scope that can be used for storage and retrieval
+* `thread` - A thread-specific scope that can be used for storage and retrieval
 * `local` - Variables local to the thread context
 
 ## **Evaluating Unscoped Variables**
