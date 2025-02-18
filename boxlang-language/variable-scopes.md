@@ -4,13 +4,13 @@ description: They gotta exist somewhere!
 
 # Variable Scopes
 
-In the BoxLang language, there are many persistence and visibility scopes that exist for variables to be placed in. These are differentiated by context: in a class, in a function, tag module, thread or in a template.&#x20;
+In the BoxLang language, many persistence and visibility scopes exist for variables to be placed. These are differentiated by context: in a class, function, tag module, thread, or template.&#x20;
 
 {% hint style="info" %}
-All BoxLang scopes are implemented as BoxLang structures which are basically case-insensitive concurrent hash maps behind the scenes.&#x20;
+All BoxLang scopes are implemented as BoxLang [structures](structures.md), basically case-insensitive concurrent hash maps behind the scenes.&#x20;
 {% endhint %}
 
-This idea that your variables you declare in templates, classes and functions are stored in a structure makes it extremely flexible since you can interact with the entire scope fluently and with many different BIFs available to you.  You can also bind them to function calls, attributes and much more.
+This idea that the variables you declare in templates, classes, and functions are stored in a structure makes it highly flexible since you can interact with the entire scope fluently and with many different BIFs available.  You can also bind them to function calls, attributes, etc.  Thus, it capitulates on being a dynamic language.
 
 ```javascript
 // Examples
@@ -19,6 +19,7 @@ This idea that your variables you declare in templates, classes and functions ar
  * Get the state representation of the scheduler task
  */
 function getMemento(){
+	// I can do a filter on an entire scope
 	return variables.filter( ( key, value ) => {
 		return isCustomFunction( value ) || listFindNoCase( "this", key ) ? false : true;
 	} );
@@ -29,11 +30,18 @@ function getMemento(){
 results = matchClassRules( argumentCollection = arguments );
 results = matchClassRules( argumentCollection = myMap );
 
+// I can dump entire scopes
 writedump( variables )
 
 ```
 
-The only language keyword that can be used to tell the variable to store in a function's local scope is called `var`.  However, you can also just use the `local`scope directly or none at all. However, we do recommend being explicit.
+The only language keyword that can be used to tell the variable to store in a function's local scope is called `var`.  However, you can also just use the `local`scope directly or none at all. However, we do recommend being explicit on some occasions to avoid ambiguity.&#x20;
+
+{% hint style="warning" %}
+It's a good idea to scope variables to avoid scope lookups, which could in turn create issues or even leaks.
+{% endhint %}
+
+
 
 ```javascript
 function getData(){
@@ -48,26 +56,26 @@ function getData(){
 
 ## Scripts & Template Scopes (bxm,bxs)
 
-All scripts and templates have the following scopes available to it.  Please note that the `variables`scope can also be implicit.  You don't have to declare it.
+All scripts and templates have the following scopes available to them.  Please note that the `variables`scope can also be implicit.  You don't have to declare it.
 
-* `variables` - The default or implicit scope where all variables are assigned to.
+* `variables` - The default or implicit scope to which all variables are assigned.
 
 ```javascript
 a = "hello"
 writeOutput( a )
 
-or
+// Is the same as
 variables.a = "hello"
 writeOutput( variables.a )
 ```
 
 ## Class Scopes (bx)
 
-All clases in BoxLang follow Object Oriented patterns and have the following scopes available to you.  Another important aspect of classes is that all declared functions in a class will be placed also in a visibility scope.
+All classes in BoxLang follow Object-oriented patterns and have the following scopes available.  Another critical aspect of classes is that all declared functions will be placed in a visibility scope.
 
 * `variables` - Private scope, visible internally to the class only
 * `this` - Public scope, visible from the outside world
-* `static` - No need for a class instance, available as a class representation
+* `static` - Store variables in the classes blueprint and not the instance
 * `super`- Only available if you use inheritance
 
 ```java
@@ -93,20 +101,50 @@ class extends="MyParent"{
 
 ### Function Assignment Scopes
 
-Depending on the function's visbility, BoxLang places a pointer of the function to the different scopes below.  Why? Because BoxLang is dynamic. Meaning at runtime you can add/remove/modify functions if you wanted to.
+Depending on the function's visibility, BoxLang places a pointer for the function in the different scopes below.  Why? Because BoxLang is a dynamic language. Meaning at runtime, you can add/remove/modify functions if you want to.
 
-* Private Function
+* `Private` Function
   * `variables`
-* Public Function
+* `Public or Remote` Functions
   * `variables`
   * `this`
 
+```java
+// Try it out
+class {
+
+    function main(){
+        writedump( var: this, label: "public" );
+        writedump( var: variables, label: "private" );
+    }
+    
+    private function test(){}
+    public function hello(){}
+
+}
+```
+
 ## Function Scopes
 
-* `variables` - Has access to private variables within a Component or Page
-* `this` - Has access to public variables within a Component or Page
-* `local` - Function scoped variables, only exist within the function execution. Referred to as `var` scoping
+All user-defined functions will have the following scopes available:
+
+* `variables` - Has access to private variables within a Class or Page
+* `this` - Has access to public variables within a Class or Page
+* `local` - Function-scoped variables only exist within the function execution. Referred to as `var` scoping. The default assignment scope in a function.
 * `arguments` - Incoming variables to a function
+
+### Closure Scopes
+
+All closures are context-aware. Meaning they know about their birthplace and surrounding scopes.&#x20;
+
+* `variables` - Has access to private variables from where they where created
+* `this` - Has access to public variables from where they where created
+* `local` - Function-scoped variables only exist within the function execution. Referred to as `var` scoping. The default assignment scope in a function.
+* `arguments` - Incoming variables to a function
+
+### Lambdas (Pure Function) Scopes
+
+Lambdas&#x20;
 
 ## Tag Scopes
 
